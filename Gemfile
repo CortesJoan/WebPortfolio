@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'jekyll', '3.9.0'
 gem 'github-pages-health-check', '1.17.9'
@@ -47,5 +48,4 @@ gem 'rouge', '3.26.0'
 gem 'safe_yaml', '1.0.5'
 gem 'sass', '3.7.4'
 gem "webrick", "~> 1.7"
-gem "minimal-mistakes-jekyll"
-
+gem "minimal-mistakes-jekyll" 
