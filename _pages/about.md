@@ -1,8 +1,21 @@
 ---
 permalink: /about/
-title: "About"
+title: "About me"
+
+link: https://github.com
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I am a Unity video game programmer with 3
+years of experience using it.
+I am open to
+opportunities that allow me to develop my
+skills as a professional in the industry.
+I always search for new technology to try in my free times and side projects and if didn't exist I will make it myself!
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Currently, I am doing an internship at Team
+Garden, an indie studio based in Barcelona that
+develops an AA game called [Garden World](https://www.gardenworldgame.com/).
+I joined the team to help them to implement
+closed extensible systems and finalize existing
+systems too.
+ 
