@@ -1,6 +1,8 @@
 ---
-title: "GameJam"
+title: "GameJam español"
 comments: true
+lang: es
+ref: gamejam1Post
 header:
   image: assets/images/foodBattles1.png
   caption: "GamePhoto"
