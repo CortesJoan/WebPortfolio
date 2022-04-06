@@ -12,7 +12,7 @@ categories:
   - Uncategorized
 tags:
   - C#
-  - Cartoonfoo
+  - Cartoon
   - Online
   - GameJam
   - Netcode
