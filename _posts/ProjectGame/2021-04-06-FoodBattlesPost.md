@@ -31,6 +31,10 @@ gallery:
     image_path: /assets/images/games/food-battles/previewArmy.png
     alt: "placeholder image 2"
     title: "Warrior Nuggets and War HotDogs are ready for the battle!"
+  - url: /assets/images/games/food-battles/attack1.gif
+    image_path: /assets/images/games/food-battles/attack1.gif
+    alt: "placeholder image 2"
+    title: "Attack!"
 ---
 ## Description
 This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
