@@ -32,10 +32,9 @@ gallery:
     alt: "placeholder image 2"
     title: "Warrior Nuggets and War HotDogs are ready for the battle!"
 ---
-## Description
-This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
-In the game you have to command your food faction to become the best food in the table destroying all the other factions.
 
+## Description
+A horror/mistery game where you have to go out of a haunted house
 
  
  

@@ -24,7 +24,6 @@ gallery:
     alt: "Playing well"
     title: "Playing well"
 ---
-
 ## Description
 Music game made in less than 1 week
 
