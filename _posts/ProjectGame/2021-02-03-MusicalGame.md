@@ -1,6 +1,8 @@
 ---
 title: "Musical game"
 comments: true
+excerpt: "Music game made in less than 1 week with Unity"
+
 lang: es
 ref: gamejam1Post
 header:

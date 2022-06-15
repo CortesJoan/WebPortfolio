@@ -1,6 +1,7 @@
 ---
 title: "Artistception"
 comments: true
+excerpt: "2D plataformer  created with Unity  where the art takes an important part"
 lang: es
 ref: gamejam1Post
 header:

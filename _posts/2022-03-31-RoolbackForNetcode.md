@@ -1,6 +1,7 @@
 ---
 title: "Rollback for NetcodeForGameObjects"
 comments: true
+excerpt: "Unity tool that add support for rollback netcode to a Unity project"
 lang: en
 ref: gamejam1Post
 header:

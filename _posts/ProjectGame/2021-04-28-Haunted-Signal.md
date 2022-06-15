@@ -1,12 +1,13 @@
 ---
 title: "Haunted Signal"
+excerpt: "An horror/mistery game where you have to go out of a haunted house"
 comments: true
 lang: es
 ref: gamejam1Post
 header:
   image: assets/images/foodBattles1.png
   caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
-categories:
+categories: 
   - Unity3d
   - Videogame project
   - Uncategorized
