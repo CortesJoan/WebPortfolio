@@ -11,15 +11,15 @@ header:
       url: "/latest/"
   excerpt: <br>This is my portfolio web<br/>
 feature_row:
-  - image_path: /assets/images/foodBattles1.png
-    alt: "customizable"
-    title: "View my videogame related projects"
+  - image_path: /assets/images/foodBattlesCrop2.png
+    alt: "default"
+    title: "Videogame related projects"
     url: "/categories/#videogame-project"
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/meowfyLogo241f.png
-    alt: "customizable"
-    title: "View my applications"
+    alt: "default"
+    title: "Applications"
     url: "/categories/#application-project"
     btn_class: "btn--primary"
     btn_label: "Learn more"
