@@ -4,6 +4,7 @@ excerpt: "An horror/mistery game where you have to go out of a haunted house"
 comments: true
 lang: es
 ref: gamejam1Post
+thumbnail: assets/images/foodBattles1.png
 header:
   image: assets/images/foodBattles1.png
   caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"

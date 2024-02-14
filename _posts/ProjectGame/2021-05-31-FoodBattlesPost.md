@@ -4,6 +4,8 @@ comments: true
 excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
 ref: gamejam1Post
+preview: assets/images/foodBattles1.png
+
 header:
   image: assets/images/foodBattles1.png
   caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
