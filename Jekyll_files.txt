@@ -1,0 +1,3188 @@
+/* 
+File: .\404.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/404.jpg"
+title: "404"
+description: "404 Page Not Find"
+---
+
+{% include page_header.html %}
+/* 
+File: .\about-me.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/about-bg-2.jpg"
+title: "Joan Cortés"
+bio: "I’m a Unity developer from Spain"
+description: "I’m a Unity game programmer with more than 3 years of experience using the engine and a strong desire to develop and test new technologies and diverse projects.
+"
+---
+<section class="about-banner" style="background-image:url({{page.header_image}});">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h4 class="text-color">{{page.title}}</h4>
+				<h3>{{page.bio}}</h3>
+				<p class="text-sm-2 mt-4 mb-5 text-black">{{page.description}}</p>
+				<ul class="list-inline socials-links">
+					<li class="list-inline-item">
+						<a href="#" class="active"><i class="ti-facebook"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#"><i class="ti-twitter"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#"><i class="ti-vimeo"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#"><i class="ti-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Portfolio Start -->
+<section class="pt200 section portfolio-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <span class="h5 text-color text-uppercase">
+          my works
+        </span>
+        <h3 class="mb-4 mt-2">A collection of some recently completed projects, covering a wide range of design
+          disciplines</h3>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap align-items-center justify-content-between mb-5">
+      <div class="btn-group btn-group-toggle " data-toggle="buttons">
+        <label class="btn border-0 active">
+          <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+        </label>
+        <label class="btn border-0 ">
+          <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+        </label>
+        <label class="btn border-0">
+          <input type="radio" name="shuffle-filter" value="branding" />branding
+        </label>
+        <label class="btn border-0">
+          <input type="radio" name="shuffle-filter" value="illustration" />Web Development
+        </label>
+        <label class="btn border-0">
+          <input type="radio" name="shuffle-filter" value="photo" />Photography
+        </label>
+      </div>
+      <a href="portfolio-2.html" class="btn btn-outline-primary">All work</a>
+    </div>
+
+
+    <div class="row shuffle-wrapper portfolio-gallery">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-1.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Painting</h5>
+                  <p>Design</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-2.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Web dev</h5>
+                  <p>Development</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-3.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Business</h5>
+                  <p>Marketing</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item"
+        data-groups="[&quot;design&quot;,&quot;photo&quot;,&quot;branding&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-4.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Modern app</h5>
+                  <p>App dev</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-5.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Artictech</h5>
+                  <p>Design</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative ">
+            <img src="{{'/assets/images/portfolio/p-6.jpg' | relative_url}}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content text-center" href="portfolio-single.html">
+                  <h5 class="mb-0 text-white">Painting</h5>
+                  <p>Design</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio End -->
+
+<!-- Service Start -->
+<section class="section service bg-secondary position-relative">
+	<img src="/assets/images/bg/feature-bg.png" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<span class="h5 text-color text-uppercase">
+					services
+				</span>
+				<h3 class="mb-5 mt-2 text-white">We Create Products that Make
+					People Happy.</h3>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-ruler-pencil text-color"></i>
+					<h4 class="my-4 text-white">Brand Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-announcement text-color"></i>
+					<h4 class="my-4 text-white">Seo & Marketing</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-palette text-color"></i>
+					<h4 class="my-4 text-white">Creative Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Service End -->
+
+<!-- Skill Start -->
+<section class="section skill">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<span class="h5 text-color text-uppercase">
+					our skill
+				</span>
+				<h3 class="mb-4 mt-2">We are Design & Development Team.</h3>
+				<p class="mb-0">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.sint occaecat cup
+				idatat non proident sunt.</p>
+			</div>	
+
+			<div class="col-lg-6 offset-lg-1 mb-5">
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Branding</h6>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-striped" data-percent="85">
+					  	<span class="skill-number">85</span>
+					  </div>
+					</div>
+				</div>
+					
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Consulting</h6>
+					<div class="progress">
+					  	<div class="progress-bar progress-bar-striped" data-percent="90">
+					  		<span class="skill-number">90</span>
+					  	</div>
+					</div>
+				</div>
+					
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Business</h6>
+					<div class="progress">
+					  	<div class="progress-bar progress-bar-striped" data-percent="75">
+					  		<span class="skill-number">75</span>
+					  	</div>
+					</div>
+				</div>
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Promotion</h6>
+					<div class="progress mb-0">
+					  	<div class="progress-bar progress-bar-striped" data-percent="90">
+					  		<span class=" skill-number">90</span>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Skill End -->
+
+<!-- Call To action Start -->
+<section class="position-relative section-sm bg-extra">
+	<img src="/assets/images/bg/cta-bg-2.png" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-9 mb-5 mb-lg-0">
+				<h2 class="text-white mb-0">dizer give the smart solution for your business</h2>
+			</div>
+			<div class="col-lg-3">
+				<a href="contact.html" class="btn btn-primary">get a quote</a>	
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Call to action End -->
+
+/* 
+File: .\about.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/about-bg.jpg"
+title: "About Us"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis."
+---
+
+{% include page_header.html %}
+<!-- About Start -->
+<section class="section about overflow-hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="about-img">
+					<img src="{{'/assets/images/about/about.jpg' | relative_url}}" alt="" class="img-fluid w-100"/>
+					<div class="video-play">
+						<div class="play-bg">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i class="fa fa-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-7 offset-lg-1 mt-5 mt-md-0">
+				<span class="text-color h5 text-uppercase">About Us</span>
+				<h3 class="mb-4 mt-3">We are Design & <br>Development Team.</h3>
+				<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim
+					veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure. </p>
+				<p class="mb-5">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
+					est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+				<a href="#" class="btn btn-primary">Purchase now</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About End -->
+
+<!-- Service Start -->
+<section class="section service bg-secondary position-relative">
+	<img src="{{'/assets/images/bg/feature-bg.png' | relative_url}}" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<span class="h5 text-color text-uppercase">
+					services
+				</span>
+				<h3 class="mb-5 mt-2 text-white">We Create Products that Make
+					People Happy.</h3>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-ruler-pencil text-color"></i>
+					<h4 class="my-4 text-white">Brand Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-announcement text-color"></i>
+					<h4 class="my-4 text-white">Seo & Marketing</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-palette text-color"></i>
+					<h4 class="my-4 text-white">Creative Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Service End -->
+
+<!-- Team Start -->
+<section class="section team-2">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<span class="h5 text-color text-uppercase">
+					Our Team
+				</span>
+				<h3 class="mb-5 mt-2">Meet Our Team</h3>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-lg-4">
+				<div class="team-item position-relative">
+					<img src="{{'/assets/images/team/team-1.jpg' | relative_url}}" alt="" class="img-fluid w-100">
+					<div class="team-overlay-content px-4 py-3">
+						<h5 class="mb-0 text-white">Liam Hughes</h5>
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="team-item position-relative">
+					<img src="{{'/assets/images/team/team-2.jpg' | relative_url}}" alt="" class="img-fluid w-100">
+					<div class="team-overlay-content px-4 py-3">
+						<h5 class="mb-0 text-white">Liam Hughes</h5>
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="team-item position-relative">
+					<img src="{{'/assets/images/team/team-3.jpg' | relative_url}}" alt="" class="img-fluid w-100">
+					<div class="team-overlay-content px-4 py-3">
+						<h5 class="mb-0 text-white">Liam Hughes</h5>
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Team End -->
+
+<!-- Clients Start -->
+<section class="section-sm bg-secondary">
+	<div class="container">
+		<div class="row clients-wrap">
+			<div>
+				<img src="{{'/assets/images/clients/client-1.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+			<div>
+				<img src="{{'/assets/images/clients/client-2.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+			<div>
+				<img src="{{'/assets/images/clients/client-3.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+			<div>
+				<img src="{{'/assets/images/clients/client-4.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+			<div>
+				<img src="{{'/assets/images/clients/client-5.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+			<div>
+				<img src="{{'/assets/images/clients/client-3.png' | relative_url}}" alt="" class="img-fluid mx-auto">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Clients End -->
+
+<!-- Testimonial Start -->
+<section class="section testimonial position-relative bg-2 overflow-hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<span class="h5 text-color text-uppercase">
+					testimonials
+				</span>
+				<h3 class="mb-5 mt-2">Our Clients Say</h3>
+			</div>
+		</div>
+
+		<div class="row testimonial-slider">
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-1.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-2.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4 pattern-bg">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-3.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-1.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-2.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4 pattern-bg">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-3.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-1.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-2.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card text-center rounded-0 shadow mb-4 pattern-bg">
+					<div class="img-block position-relative mb-4">
+						<img src="{{'/assets/images/team/test-3.jpg' | relative_url}}" alt="" class="img-fluid">
+						<i class="fa fa-quote-right"></i>
+					</div>
+					<p>Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim
+						veniam.</p>
+					<h5 class="mb-0 mt-2">Liam Hughes</h5>
+					<span class="text-color">Manager</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Testimonial End -->
+
+<!-- Call To action Start -->
+<section class="position-relative section-sm bg-extra">
+	<img src="/assets/images/bg/cta-bg-2.png" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-9 mb-5 mb-lg-0">
+				<h2 class="text-white mb-0">dizer give the smart solution for your business</h2>
+			</div>
+			<div class="col-lg-3">
+				<a href="contact.html" class="btn btn-primary">get a quote</a>	
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Call to action End -->
+
+/* 
+File: .\blog-1.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/blog-bg.jpg"
+title: "Our Blog"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
+minim veniam quis."
+---
+
+{% include page_header.html %}
+
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			{% for post in site.posts %}
+			<div class="col-lg-4 col-md-6">
+				<div class="blog-item mb-5">
+					{% if post.post_image %}
+					<div class="blog-img position-relative">
+						<a href="{{post.url | relative_url}}.html"><img src="{{post.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100" /></a>
+					</div>
+					{% endif %}
+					<h4 class="mt-4 mb-2"><a href="{{post.url | relative_url}}.html">{{post.title}}</a></h4>
+					<div class="post-meta text-uppercase mb-3">
+						{% if post.author %}
+						<a href="#" class="text-color">by {{post.author}} </a>
+						{% endif %}
+						<span class="text-color">{{post.date | date_to_long_string }}</span>
+					</div>
+					<p>{{post.excerpt | strip_html | truncatewords: "20"}}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% include pagination.html %}
+	</div>
+</section>
+
+{% include call_to_action.html %}/* 
+File: .\blog-2.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/blog-bg.jpg"
+title: "Our Blog"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis."
+pagination:
+  enabled: true
+---
+
+{% include page_header.html %}
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                {% for post in pagination.posts %}
+				<div class="col-lg-12 col-md-12">
+					<div class="blog-item mb-5">
+						{% if post.post_image %}
+						<div class="blog-img position-relative">
+							<a href="{{post.url | relative_url}}.html"><img src="{{post.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100"/></a>
+						</div>
+						{% endif %}
+						<h4 class="mt-4 mb-2"><a href="{{post.url | relative_url}}.html">{{post.title}}</a></h4>
+						<div class="post-meta text-uppercase mb-3">
+							{% if post.author %}
+							 <a href="#" class="text-color">by {{post.author}}</a>
+							{% endif %}
+							{% if post.date %}
+						      <span class="text-color">/ {{post.date | date_to_long_string}}</span>
+							{% endif %}
+						</div>
+						<p>{{post.excerpt | strip_html | truncatewords:"25"}}</p>
+						<a href="{{post.url | relative_url}}.html" class="btn btn-solid-border">Read More </a>
+					</div>
+				</div>
+                {% endfor %}
+             </div>
+            </div>
+            <div class="col-lg-4">
+              {% include sidebar.html %}
+            </div>
+        </div>
+        {% include pagination.html %}
+    </div>
+</section>
+
+{% include call_to_action.html %}
+/* 
+File: .\contact.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/bg-portfolio.jpg"
+title: "Contact Me"
+description: "If you have any inquiries or if you'd like to discuss a project or opportunity, feel free to get in touch. I'll respond as soon as possible.
+"
+---
+
+{% include page_header.html %}
+
+<section class="contact-form-wrap section">
+	<div class="container">
+		<div class="row justify-content-center align-items-center bg-gray">
+			<div class="col-lg-10">
+				<div class="contact-content pl-lg-5 mb-5 mb-lg-0">
+					<h3 class="mb-4 font-weight-bold">Contact Information</h3>
+					<p>
+						You can reach me in several ways. However, the best way to contact me is through email or <a href="https://www.linkedin.com/in/joan-cort%C3%A9s/">LinkedIn</a>
+						. 
+					</p>
+
+					<div class="row mt-5">
+						<div class="col-lg-4">
+							<div class="contact-info mt-3">
+								<i class="ti-location-pin text-color"></i>
+								<div class="info">
+									<h4>My Address</h4>
+									<p>Barcelona Spain</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact-info mt-3">
+								<i class="ti-mobile text-color"></i>
+								<div class="info">
+									<h4>Call Me</h4>
+									<p>+(34) 691-392-276</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact-info mt-3">
+								<i class="ti-email text-color"></i>
+								<div class="info">
+									<h4>Email Me</h4>
+									<p>cortesjoancontact@gmail.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--	 	  Map Start 
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="google-map position-relative my-5">
+					<div id="map" data-latitude="51.507351" data-longitude="-0.127758" data-marker="{{'/assets/images/marker.png' | relative_url}}">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	   -->
+
+		<div class="row justify-content-center">
+			<div class="col-lg-10 mt-4">
+				<div class="contact-form">
+					<h3 class="mb-4 font-weight-bold">Get In Touch</h3>
+					<form class="contact__form" method="post" action="{{site.contact_form_action}}">
+						<!-- form message -->
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control" type="text" name="name" id="name" placeholder="Name*">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control" type="text" name="email" id="email" placeholder="Email*">
+								</div>
+							</div>
+							<div class="col-12">
+								<textarea class="form-control mt-3 mb-4" name="message" id="message" cols="30" rows="6"
+									placeholder="Message"></textarea>
+								<button type="submit" class="btn btn-primary" value="Submit Message"> Submit Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div> 
+	</div>
+</section>
+
+{% include call_to_action.html %}/* 
+File: .\index-2.html     
+/* 
+---
+layout: default
+---
+
+{% include hero_area.html %}
+{% include services.html %}
+{% include about.html %}
+{% include portfolios.html %}
+{% include count_down.html %}
+{% include skills.html %}
+{% include testimonials.html %}
+{% include clients.html %}
+{% include team.html %}
+{% include blog.html %}/* 
+File: .\index-3.html     
+/* 
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
+  <!-- Navuigation Start -->
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg fixed-top main-nav main-nav-black hide-nav" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="{{site.baseurl}}">
+        <img src="{{site.logo | relative_url}}" alt="{{site.title}}" class="img-fluid w-logo" />
+      </a>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars"
+        aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-menu"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbars">
+        {% include navigation.html %}
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation End -->
+
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-lg navbar-light" id="sidebar">
+    <div class="container">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidebarCollapse"
+        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="{{site.baseurl}}">
+        <img src="{{site.logo | relative_url}}" class="navbar-brand-img ml-auto" alt="{{site.title}}" />
+      </a>
+
+      <!-- Collapse -->
+      <div class="navbar-collapse collapse" id="sidebarCollapse">
+        {% include navigation_2.html %}
+        <ul class="list-inline menu-socials-links fixed-bottom">
+          {% for social in site.social %}
+          <li class="list-inline-item mb-2">
+            <a href="{{ social.link }}" class="active"><i class="{{social.icon}}"></i></a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div> <!-- / .container -->
+  </nav>
+
+  <div class="main-content">
+    <div class="container">
+      <section class="section portfolio-2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+              <span class="h5 text-color text-uppercase">
+                our works
+              </span>
+              <h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide <span
+                  class="text-color">range of design disciplines</span></h3>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <div class="col-12">
+              <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                <label class="btn border-0 active">
+                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+                </label>
+                {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
+                {% for category in categories %}
+                <label class="btn border-0">
+                  <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+                </label>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="row shuffle-wrapper portfolio-gallery">
+            {% include portfolio_loop.html %}
+          </div>
+        </div>
+      </section>
+    </div>
+    {% include footer_2.html %}
+  </div>
+</body>
+
+</html>/* 
+File: .\index-4.html     
+/* 
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0" class="">
+
+  <div class="d-flex position-relative">
+    <!-- sidebar -->
+    <div class="side-nav shadow">
+      <a class="navbar-brand text-black p-4" href="{{site.baseurl}}">d<span class="dot"></span></a>
+      <a href="#" class="toggler"><i class="ti-align-right"></i></a>
+      <div class="fixed-bottom">
+        <div class="meta-share">
+          <div class="social-links">
+            {% for social in site.social %}
+            <a target="_blank" href="{{social.link}}"><i class="{{social.icon}}"></i></a>
+            {% endfor %}
+          </div>
+          <div class="share-btn"><i class="ti-share"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- /sidebar -->
+
+    <!-- navigation -->
+    <nav class="full-nav navbar">
+      {% include navigation_2.html %}
+    </nav>
+    <!-- /navigation -->
+
+    <div class="w-100">
+      <!-- POrtfolio  Start -->
+      <section class="section portfolio-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <span class="h5 text-color text-uppercase">
+                our works
+              </span>
+              <h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide <span
+                  class="text-color">range of design disciplines</span></h3>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-10">
+              <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                <label class="btn border-0 active">
+                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+                </label>
+                {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
+                {% for category in categories %}
+                <label class="btn border-0">
+                  <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+                </label>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="row shuffle-wrapper portfolio-gallery">
+            {% include portfolio_loop.html %}
+          </div>
+        </div>
+      </section>
+      {% include footer_2.html %}
+    </div>
+  </div>
+
+</body>
+
+</html>/* 
+File: .\index.html     
+/* 
+---
+layout: default
+---
+
+{% include hero_area_2.html %}
+{% include services_2.html %}
+{% include portfolios_2.html %}
+{% include testimonials_2.html %}
+{% include count_down_2.html %}
+{% include blog.html %}
+{% include contact.html %}/* 
+File: .\portfolio-1.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/about-bg.jpg"
+title: "Portfolio"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis."
+---
+
+{% include page_header.html %}
+<!-- Portfolio  Start -->
+<section class="section portfolio-2">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+				<span class="h5 text-color text-uppercase">
+					my works
+				</span>
+				<h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide range of design disciplines</h3>
+			</div>
+		</div>
+
+    <div class="row align-items-center mb-5">
+      	<div class="col-12 text-center">
+	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+	          <label class="btn border-0 active">
+	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+	          </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+	          </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="branding" />branding
+	          </label>
+	          <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="illustration" />Web Development
+	          </label>
+	           <label class="btn border-0">
+	            <input type="radio" name="shuffle-filter" value="photo" />Photography
+	          </label>
+	        </div>
+      </div>
+    </div>		
+    <div class="row shuffle-wrapper portfolio-gallery">
+      {% include portfolio_loop.html %}
+    </div>
+	</div>
+</section>
+<!-- Portfolio  End -->/* 
+File: .\portfolio-2.html     
+/* 
+---
+layout: default_2
+title: "Our Portfolios"
+---
+
+{% include header_2.html %}
+<!-- POrtfolio  Start -->
+<section class="section portfolio-5">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+				<span class="h5 text-color text-uppercase">
+					our works
+				</span>
+				<h3 class="mb-5 mt-2">Wide Grid Portfolio</h3>
+			</div>
+		</div>
+
+    <div class="row align-items-center mb-5">
+      	<div class="col-12 text-center">
+	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+	          <label class="btn border-0 active">
+	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+	          </label>
+						{% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
+						{% for category in categories %}
+						<label class="btn border-0">
+							<input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+						</label>
+						{% endfor %}
+	        </div>
+      </div>
+    </div>    
+  </div>		
+
+
+  <div class="container-fluid">
+    <div class="row shuffle-wrapper portfolio-gallery">
+      {% include portfolio_loop.html %}
+    </div>
+	</div>
+</section>
+<!-- Portfolio  End -->/* 
+File: .\services.html     
+/* 
+---
+layout: default
+header_image: "/assets/images/bg/about-bg.jpg"
+title: "Our Services"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
+minim veniam quis."
+---
+
+{% include page_header.html %}
+<!-- Service Start -->
+<section class="service-main section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<span class="h5 text-color text-uppercase">
+					Services
+				</span>
+				<h3 class="mb-5 mt-2">We Use our Design Skills in <br>Various Ways</h3>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 text-center px-4 py-5">
+					<i class="ti-ruler-pencil text-color icon-md"></i>
+					<h4 class="my-4">Brand Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 border-left">
+				<div class="service-item mb-4 text-center px-4 py-5">
+					<i class="ti-announcement text-color icon-md"></i>
+					<h4 class="my-4 ">Seo & Marketing</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 text-center px-4 py-5">
+					<i class="ti-palette text-color icon-md"></i>
+					<h4 class="my-4">Creative Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row border-top">
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
+					<i class="ti-ruler-pencil text-color icon-md"></i>
+					<h4 class="my-4">Brand Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 border-left-top">
+				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
+					<i class="ti-announcement text-color icon-md"></i>
+					<h4 class="my-4 ">Seo & Marketing</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
+					<i class="ti-palette text-color icon-md"></i>
+					<h4 class="my-4">Creative Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Service End -->
+
+<!-- Testimonial Start -->
+<section class="section bg-secondary position-relative">
+	<img src="/assets/images/bg/testimonial-bg.png" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<span class="h5 text-color text-uppercase">
+					testimonials
+				</span>
+				<h3 class="mb-4 mt-2 text-white">clients feedback</h3>
+			</div>
+		</div>
+
+		<div class="row testimonial-wrap">
+			<div class="col-lg-12 ">
+				<div class="test-wrap ">
+					<i class="text-color ti-quote-left"></i>
+					<div class="testimonial-content">
+						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
+							aliqu. enim minim veniam.quis nos
+							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
+							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
+						<div class="test-author d-flex mt-4">
+							<div>
+								<img src="/assets/images/team/test-1.jpg" alt="" class="img-fluid mr-3">
+							</div>
+							<div>
+								<h5 class="mb-0 mt-2 text-white">Liam Hughes</h5>
+								<span class="text-color">Manager</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12 ">
+				<div class="test-wrap ">
+					<i class="text-color ti-quote-left"></i>
+					<div class="testimonial-content">
+						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
+							aliqu. enim minim veniam.quis nos
+							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
+							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
+						<div class="test-author d-flex mt-4">
+							<div>
+								<img src="/assets/images/team/test-2.jpg" alt="" class="img-fluid mr-3">
+							</div>
+							<div>
+								<h5 class="mb-0 mt-2 text-white">Jane Austin</h5>
+								<span class="text-color">Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12 ">
+				<div class="test-wrap ">
+					<i class="text-color ti-quote-left"></i>
+					<div class="testimonial-content">
+						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
+							aliqu. enim minim veniam.quis nos
+							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
+							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
+						<div class="test-author d-flex mt-4">
+							<div>
+								<img src="/assets/images/team/test-3.jpg" alt="" class="img-fluid mr-3">
+							</div>
+							<div>
+								<h5 class="mb-0 mt-2 text-white">Liolane hussy</h5>
+								<span class="text-color">Developer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Testimonial End -->
+
+<!-- Pricing Start -->
+<section class="section pricing">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<span class="h5 text-color text-uppercase">
+					Pricing Table
+				</span>
+				<h3 class="mb-5 mt-2">Services Package.</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="card border-0 rounded-0 shadow-lg text-center p-4 mb-5 mb-lg-0">
+					<div class="card-header">
+						<span class="package d-inline-block text-capitalize">basic</span>
+						<h3 class="price mt-4 font-weight-bold">$49 <small class="text-color text-sm"> / mo</small></h3>
+						<p>Best for small individuals</p>
+					</div>
+
+					<div class="card-body">
+						<ul class="list-unstyled lh-45 mt-3 mb-4">
+							<li>Express Service</li>
+							<li>Customs Clearance</li>
+							<li class="text-muted">Time-Critical Services</li>
+						</ul>
+
+						<a href="#" class="btn btn-outline-primary">select plan</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card border-0 rounded-0 shadow-lg text-center p-4 featured mb-5 mb-lg-0">
+					<div class="card-header">
+						<span class="package d-inline-block text-capitalize">professional</span>
+						<h3 class="price mt-4 font-weight-bold">$59 <small class="text-color text-sm"> / mo</small></h3>
+						<p>Best for small individuals</p>
+					</div>
+
+					<div class="card-body">
+						<ul class="list-unstyled lh-45 mt-3 mb-4">
+							<li>Express Service</li>
+							<li>Customs Clearance</li>
+							<li class="text-white-50">Time-Critical Services</li>
+						</ul>
+
+						<a href="#" class="btn btn-outline-primary">select plan</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card border-0 rounded-0 shadow-lg text-center p-4">
+					<div class="card-header">
+						<span class="package d-inline-block text-capitalize">business</span>
+						<h3 class="price mt-4 font-weight-bold">$79 <small class="text-color text-sm"> / mo</small></h3>
+						<p>Best for small individuals</p>
+					</div>
+
+					<div class="card-body">
+						<ul class="list-unstyled lh-45 mt-3 mb-4">
+							<li>Express Service</li>
+							<li>Customs Clearance</li>
+							<li class="text-muted">Time-Critical Services</li>
+						</ul>
+
+						<a href="#" class="btn btn-outline-primary">select plan</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- Pricing End -->
+
+<!-- Call To action Start -->
+<section class="position-relative section-sm bg-extra">
+	<img src="/assets/images/bg/cta-bg-2.png" alt="" class="overlay-shape">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-9 mb-5 mb-lg-0">
+				<h2 class="text-white mb-0">dizer give the smart solution for your business</h2>
+			</div>
+			<div class="col-lg-3">
+				<a href="contact.html" class="btn btn-primary">get a quote</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Call to action End -->/* 
+File: .\defaultReadme.md     
+/* 
+# Minimal Mistakes remote theme starter
+
+Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+
+Contains basic configuration to get you a site with:
+
+- Sample posts.
+- Sample top navigation.
+- Sample author sidebar with social links.
+- Sample footer links.
+- Paginated home page.
+- Archive pages for posts grouped by year, category, and tag.
+- Sample about page.
+- Sample 404 page.
+- Site wide search.
+
+Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+
+---
+
+## Troubleshooting
+
+If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+
+- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
+- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+/* 
+File: .\README.md     
+/* 
+# Dizer Jekyll
+
+Dizer Jekyll Creative Portfolio Template ported from [Dizer HTML Template](https://themefisher.com/products/dizer/)
+
+![dizer-jekyll](https://demo.themefisher.com/thumbnails/dizer.png)
+
+[Live Preview](http://demo.themefisher.com/dizer-jekyll/)
+
+## Setup
+
+To start your project, fork this repository
+After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
+
+Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
+
+## Customize
+
+Things you can customize in `_data/settings.yml` (no HTML/CSS):
+
+- Theme General Settings ( name, logo, email, phone, address )
+- Hero Section
+- About Section
+- Team Section
+- Skills Section
+- Experience Section
+- Education Section
+- Services Section
+- Portfolio Section
+- Testimonials Section
+- Client Slider Section
+- Contact Section
+
+## Deployment
+
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the **Kross Theme**. Please Search [existing issues](https://github.com/themefisher/dizer-jekyll/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/dizer-jekyll/issues/new)
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
+
+<!-- licence -->
+## License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/dizer-jekyll/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+/* 
+File: .\_portfolios\branding_01.md     
+/* 
+---
+layout: portfolio
+title: "New Branding"
+categories: ["Branding"]
+thumbnail: "/assets/images/portfolio/p-3.jpg"
+description: "tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\branding_02.md     
+/* 
+---
+layout: portfolio
+title: "Branding Special"
+categories: ["Branding"]
+thumbnail: "/assets/images/portfolio/p-4.jpg"
+description: "labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\design_01.md     
+/* 
+---
+layout: portfolio
+title: "Paintaining"
+categories: ["Design"]
+thumbnail: "/assets/images/meowfyLogo241f.png"
+description: "labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\design_02.md     
+/* 
+---
+layout: portfolio
+title: "Designing"
+categories: ["Design"]
+thumbnail: "/assets/images/portfolio/p-6.jpg"
+description: "incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint "
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\design_03.md     
+/* 
+---
+layout: portfolio
+title: "Paintaining"
+categories: ["Design"]
+thumbnail: "/assets/images/portfolio/p-6.jpg"
+description: "incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\food-battle.md     
+/* 
+---
+layout: portfolio
+title: "Food battle"
+categories: ["VideoGame Projects","Unity3D"]
+thumbnail: "/assets/images/portfolio/p-2.jpg"
+description: "Online multiplayer RTS(max 4 players)  made with Unity"
+thumbnail: assets/images/foodBattles1.png
+tags:
+  - C#
+  - Cartoon
+  - Online
+  - GameJam
+  - Netcode
+  - Group project
+body: >
+  ## Description
+  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
+  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+###################### Team ######################
+team:
+  enable : true
+  item:
+  - name : "Joan Cortés"
+    designation : "Lead Programmer"
+    image : "/assets/images/teams/logo300.png"
+    
+  - name : "Eric Bujaldon Marco"
+    designation : "3D Artist"
+    image : "/assets/images/teams/eric.png"
+    
+  - name : "Sergi Granell "
+    designation : "Programmer and Lead Game Designer"
+    image : "/assets/images/teams/sergi.png"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-12 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+		</div>
+		<div class="col-lg-12 text-center">
+			<p class="text-color font-weight-bold mb-2"></p>
+			<p></p>
+		</div>
+	</div> 
+	
+	
+<h2>Related Posts</h2>
+<ul>
+{% for post in site.posts %}
+  {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
+    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a>
+	</li>
+	
+  {% endif %}
+{% endfor %}
+</ul>
+
+
+<div class="row justify-content-center align-items-center text-center mb-5">
+<div class="col-12">
+	<div class="btn-group btn-group-toggle " data-toggle="buttons">
+	<label class="btn border-0 active">
+		<input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+	</label>
+	{% assign posts = site.posts| map: 'categories' | join: ',' | split: ',' | uniq %}
+	{% for post in posts %}
+	<label class="btn border-0">
+		<input type="radio" name="shuffle-filter" value="{{ post | downcase | slugify }}" />{{ post }}
+	</label>
+	{% endfor %}
+	</div>
+	<div class="row shuffle-wrapper portfolio-gallery">
+{% include portfolio_loop_posts.html %}
+</div>
+</div>
+</div> 
+ {% include share_this_on.html %}
+
+ 
+</section>
+<div class="col-lg-8 text-center">
+  <h3 class="mb-5 mt-2">{{page.title}}</h3>
+  <p>
+    {% capture md-content %}
+      {{page.body}}
+    {% endcapture %}
+    {{md-content | markdownify}}
+  </p>
+</div>
+{% include team.html %}	 
+/* 
+File: .\_portfolios\haunted_signal.md     
+/* 
+---
+layout: portfolio
+title: "Haunted Signal"
+categories: ["VideoGame Projects","Unity3D"]
+thumbnail: "/assets/images/portfolio/p-2.jpg"
+description: "An horror/mistery game where you have to go out of a haunted house"
+###################### Team ######################
+team:
+  enable : true
+  item:
+  - name : "Joan Cortés"
+    designation : "Manager"
+    image : "/assets/images/team/team-1.jpg"
+    
+  - name : "Marc López Macías"
+    designation : "3D Artist"
+    image : "/assets/images/teams/marc.png"
+    
+  - name : "Gerard Bystron Santanach"
+    designation : "Programmer and Game Designer"
+    image : "/assets/images/teams/gerard.png"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-12 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+		</div>
+		<div class="col-lg-12 text-center">
+			<p class="text-color font-weight-bold mb-2"></p>
+			<p></p>
+		</div>
+	</div> 
+	
+	
+<h2>Related Posts</h2>
+<ul>
+{% for post in site.posts %}
+  {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
+    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a>
+	</li>
+	
+  {% endif %}
+{% endfor %}
+</ul>
+
+
+<div class="row justify-content-center align-items-center text-center mb-5">
+<div class="col-12">
+	<div class="btn-group btn-group-toggle " data-toggle="buttons">
+	<label class="btn border-0 active">
+		<input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+	</label>
+	{% assign posts = site.posts| map: 'categories' | join: ',' | split: ',' | uniq %}
+	{% for post in posts %}
+	<label class="btn border-0">
+		<input type="radio" name="shuffle-filter" value="{{ post | downcase | slugify }}" />{{ post }}
+	</label>
+	{% endfor %}
+	</div>
+	<div class="row shuffle-wrapper portfolio-gallery">
+{% include portfolio_loop_posts.html %}
+</div>
+</div>
+</div> 
+ {% include share_this_on.html %}
+
+ 
+</section>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.
+	</p>
+</div>	
+{% include team.html %}	 
+/* 
+File: .\_portfolios\photography_01.md     
+/* 
+---
+layout: portfolio
+title: "Photography"
+categories: ["Web Development"]
+thumbnail: "/assets/images/portfolio/p-2.jpg"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\photography_02.md     
+/* 
+---
+layout: portfolio
+title: "Drawing"
+categories: ["Photography"]
+thumbnail: "/assets/images/portfolio/p-5.jpg"
+description: "consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\photography_03.md     
+/* 
+---
+layout: portfolio
+title: "Paintaining"
+categories: ["Photography"]
+thumbnail: "/assets/images/portfolio/p-3.jpg"
+description: "sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_portfolios\web_development_01.md     
+/* 
+---
+layout: portfolio
+title: "Development"
+categories: ["Web Development"]
+thumbnail: "/assets/images/portfolio/p-2.jpg"
+description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui"
+---
+<div class="col-lg-8 text-center">
+	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<p>{{page.description}}</p>
+
+<hr class="my-5">
+	
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Clients</p>
+			<p>Christopher Ronald</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Category</p>
+			<p>Design, Branding, Mobile</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<p class="text-color font-weight-bold mb-2">Location</p>
+			<p>780 Lynnway, Lynn MA 1905</p>
+		</div>
+	</div>
+
+<div class="post-single-share py-4 mt-4 mb-5">
+		<h6 class="text-white">Share This on</h6>
+		<ul class="list-inline socials-links mb-0">
+			<li class="list-inline-item">
+				<a href="#" class="active"><i class="ti-facebook"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-twitter"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-vimeo"></i></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#"><i class="ti-linkedin"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-12 mt-5">
+	<div class="carousel slide" id="single-slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
+			</div>
+		</div>
+		 <div class="text-center mt-4">
+		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
+			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
+			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
+			  </a>
+		 </div>
+	</div>
+</div>
+<div class="col-lg-8 text-center mt-5">
+	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+</div>													/* 
+File: .\_posts\2019-12-03-tips-for-taking-a-long-term-trip.md     
+/* 
+---
+layout: post
+title: "Tips for Taking a Long-term Trip"
+date: 2019-12-03 12:37:13 +0600
+categories: [Technology]
+author: ecuelass_chapman
+post_image: "/assets/images/blog/blog-13.jpg"
+author: "Themefisher"
+featured: true
+---
+
+<p>11 time-saving pro tips for web designers working in Webflow11 <a href="#">time-saving pro</a> tips for web designers working in Webflow Consectetuer magna vivamus varius. Faucibus vestibulum faucibus elementum vulputate suscipit. Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui elit feugiat nulla, vehicula eos nec dolor conubia, aliquam proinEtiam id euismod. Purus ut dis feugiat, ac massa error leo sed fermentum, non sem velit eget arcu, lectus luctus congue leo dapibus tincidunt. Nunc vitae quis eu. Sit id ullamcorper semper ridiculus, accumsan augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium, id facere atque eum! sit nonummy tellus velit vivamus, eu sagittis gravida ut ante. Ut voluptas vestibulum leo pellentesque nulla, taciti congue, vitae nunc metus, imperdiet orci neque sed vestibulum, vestibulum magna ullamcorper posuere massa interdum </p>
+<h4>Risus sociis urna elementum ultricies justo quisque </h4> <p> mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet ultricies vitae dui tempor </p>
+<blockquote class="blockquote single-quote">
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non labore totam tempora sed neque repellat numquam eaque inventore! Iusto saepe ipsum, ex, commodi asperiores iure dolores amet dolorem eos voluptatum, aliquid incidunt non perferendis earum dignissimos quod iste accusantium deleniti.Risus sociis urna elementum ultricies justo quisque, mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet </p>
+</blockquote>
+<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<p>eleifend hac porta faucibus aliquam eros, massa facilisis, sed pede maecenas porttitor id magnis. Ac sed aliquam in felis amet, adipiscing pede a amet faucibus sit, quis in et ullamcorper vel commodo. Volutpat ut pede sem ipsum non, sapien adipiscing, suspendisse neque, quis dolor donec dolor. Sit voluptatibus, scelerisque in semper lacus nostra, ac integer dolor mauris tempus eget</p>
+
+Accumsan augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium
+
+<b>augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentiumaugue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium  </b>/* 
+File: .\_posts\2022-03-31-RoolbackForNetcode.md     
+/* 
+---
+title: "Rollback for NetcodeForGameObjects"
+comments: true
+excerpt: "Unity tool that add support for rollback netcode to a Unity project"
+lang: en
+ref: gamejam1Post
+header:
+  image: assets/images/foodBattles1.png
+  caption: "A cubes used in the test scene"
+categories:
+  - Unity3d
+  - Library
+  - Uncategorized
+tags:
+  - C#
+  - Online
+  - GameJam
+  - Netcode
+  - Solo project
+
+gallery:
+  - url: /assets/images/games/food-battles/previewMcBurger.png
+    image_path: /assets/images/games/food-battles/previewMcBurger.png
+    alt: "placeholder image 1"
+    title: "The McBurger Count strikes again!"
+  - url: /assets/images/games/food-battles/previewpinchitos.png
+    image_path: /assets/images/games/food-battles/previewpinchitos.png
+    alt: "placeholder image 2"
+    title: "Skewers fight!"
+  - url: /assets/images/games/food-battles/previewArmy.png
+    image_path: /assets/images/games/food-battles/previewArmy.png
+    alt: "placeholder image 2"
+    title: "Warrior Nuggets and War HotDogs are ready for the battle!"
+  - url: /assets/images/games/food-battles/attack1.gif
+    image_path: /assets/images/games/food-battles/attack1.gif
+    alt: "placeholder image 2"
+    title: "Attack!"
+---
+## Description
+This is a package for Unity 2021 and **NetcodeForGameObjects** 1.0 that adds rollback netcode for a project.
+The reason I did this library is  because NetcodeForGameObjects and similar network frameworks doesn't have a rollback netcode support and I wanted to make some simple library to avoid having to use external C++ libraries like GGPO
+Currently still in **alpha** version so expect bugs
+ 
+ 
+## Data sheet
+* **Engine**: Unity3d
+* **Release**: PC
+* **Requeriments**: TMP, NetcodeForGameObjects>1.0prev3
+* **Developer(s)**: Joan Cortés 
+
+## Features
+The main features are:
+* Deterministic rollback netcode* Use class or struct type to store the important data
+* Easy to understand code
+* Works with Package manager remotely
+* Examples scene
+* Works with Unity Physics in the same platform
+* Deterministic Math included (Thanks to XXXXX)
+
+## Demo 
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+
+## My work
+
+## Images:
+{% include gallery caption="Some demo examples" %}
+
+## Download
+[GitLab Source with instructions to add it to the package manager](https://gitlab.com/EvilHack/NetworkRollbackTestGit){: .btn .btn--primary} 
+  
+/* 
+File: .\_posts\Applications\2021-09-28-Meowfy.md     
+/* 
+---
+title: "Meowfy"
+comments: true
+excerpt: "A simple music player  made with Java and Android Studio"
+
+lang: es
+ref: meowfy
+header:
+  image: assets/images/applications/meowfyLogo.png
+  caption: "The logo of the application"
+categories:
+  - Android Studio
+  - Application project
+  - Uncategorized
+tags:
+  - Java
+  - Android
+  - Pair project
+
+gallery:
+  - url: /assets/images/applications/launchScreen.png
+    image_path: /assets/images/applications/launchScreen.png
+    alt: "Launch screen"
+    title: "The launch screen"
+  - url: /assets/images/applications/homeScreen.png
+    image_path: /assets/images/applications/homeScreen.png
+    alt: "The home screen"
+    title: "The home screen"
+  - url: /assets/images/applications/library.png
+    image_path: /assets/images/applications/library.png
+    alt: "The library"
+    title: "The music library"
+  - url: /assets/images/applications/playlist.png
+    image_path: /assets/images/applications/playlist.png
+    alt: "A playlist example"
+    title: "A playlist example"
+  - url: /assets/images/applications/searchScreen.png
+    image_path: /assets/images/applications/searchScreen.png
+    alt: "The search screen"
+    title: "The search screen"
+  - url: /assets/images/applications/player.png
+    image_path: /assets/images/applications/player.png
+    alt: "The player"
+    title: "The player"          
+---
+## Description
+A simple music player using the Spotify API made by 2 people
+
+## Data sheet
+* **Made with**: Android Studio
+* **Release**: Android
+* **Developer(s)**: Sergi Granell, Joan Cortés 
+## Features
+* Add your favorite songs to a favorite list
+* Recomendations
+* A simple player with shuffle ,loop ..etc
+* Save playlist to you library or create your one ones
+* A search that works with songs, artists and playlist
+* Login using Spotify account
+## Demo video 
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1CcLzuNwkFhcgXEirxSiKj_etGGEm17rS/view?usp=share_link" frameborder="0" allowfullscreen></iframe>
+
+## My work
+Mainly, I did the backend work of the app (the API connexion, data management, JSON parse) and the player features.
+## Images:
+{% include gallery caption="Meowfy Screen Images" %}
+
+## Download
+[GitHub Source](https://github.com/CortesJoan/Meowfy){: .btn .btn--primary} 
+  
+/* 
+File: .\_posts\ProjectGame\2021-02-03-MusicalGame.md     
+/* 
+---
+title: "Musical game"
+comments: true
+excerpt: "Music game made in less than 1 week with Unity"
+
+lang: es
+ref: gamejam1Post
+header:
+  image: assets/images/games/music-game/background.png
+  caption: "The game"
+categories:
+  - Unity3d
+  - Videogame project
+  - Uncategorized
+  - 1 week game
+tags:
+  - C#
+  - Solo project
+gallery:
+  - url: /assets/images/games/music-game/badPlay.gif
+    image_path: /assets/images/games/music-game/badPlay.gif
+    alt: "Not playing very well"
+    title: "Not playing very well"
+  - url: //assets/images/games/music-game/goodPlay.mp4
+    image_path: 
+    alt: "Playing well"
+    title: "Playing well"
+---
+## Description
+Music game made in less than 1 week
+
+## Data sheet
+* **Engine**: Unity3d
+* **Release**: PC
+* **Genre**: Rythim
+* **Mode(s)**: Singleplayer
+* **Developer(s)**: Joan Cortés 
+* **Graphic Style**: 2D
+## Mechanics
+The main mechanics are:
+* Play a song and earn score
+* A combo system
+## Gameplay 
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+
+## My work
+I did all the code and the game and the graphics are default Unity ones
+## Images:
+{% include gallery caption="Game images" %}
+
+## Download
+[GitLab Source](https://gitlab.com/EvilHack/GuitarHeroTest){: .btn .btn--primary} 
+  
+/* 
+File: .\_posts\ProjectGame\2021-02-28-Artistception.md     
+/* 
+---
+title: "Artistception"
+comments: true
+excerpt: "2D plataformer  created with Unity  where the art takes an important part"
+lang: es
+ref: gamejam1Post
+header:
+  image: assets/images/games/artistception/menu1.png
+  caption: "One of the main screens"
+categories:
+  - Unity3d
+  - Videogame project
+  - Uncategorized
+tags:
+  - C#
+  - Artistic
+  - Group project
+
+gallery:
+  - url: /assets/images/games/artistception/menu2.png
+    image_path: /assets/images/games/artistception/menu2.png
+    alt: "Menu 1"
+    title: "First version of the menu"
+  - url: /assets/images/games/artistception/pickUpTorch.png
+    image_path: /assets/images/games/artistception/pickUpTorch.png
+    alt: "placeholder image 2"
+    title: "And then there was light."
+  - url: /assets/images/games/artistception/mamoothA.png
+    image_path: /assets/images/games/artistception/mamoothA.png
+    alt: "The first boss cinematic"
+    title: "The first boss cinematic"
+  - url: /assets/images/games/artistception/fish1.png
+    image_path: /assets/images/games/artistception/fish1.png
+    alt: "The fish in the second level"
+    title: "The fish in the second level"
+  - url: /assets/images/games/artistception/fish2.png
+    image_path: /assets/images/games/artistception/fish2.png
+    alt: "placeholder image 2"
+    title: "Fish searching for the moon"
+  - url: /assets/images/games/artistception/fishBoss.png
+    image_path: /assets/images/games/artistception/fishBoss.png
+    alt: "The final boss"
+    title: "The final boss of the game"
+---
+## Description
+This game is a 2D plataformer  created with Unity by a team of 3 people where the player enters to a different painting each level.
+Currently there are 2 fully functional levels
+
+ 
+ 
+## Data sheet
+* **Engine**: Unity3d
+* **Release**: PC
+* **Genre**: Adventure
+* **Mode(s)**: SinglePlayer
+* **Developer(s)**: Joan Lecha, Roger Lario, Joan Cortés 
+* **Graphic Style**: 2D
+
+## Mechanics
+The main mechanics are:
+* 2 different graphic styles
+* Educational dialogues
+* 1 painting → 1 level
+* Cinematics
+* 2 bosses
+* 2 levels
+* Sounds
+* Weapons
+* Main menu with variations
+* Game in Spanish and English
+ 
+
+## Gameplay 
+//TODO
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+
+## My work
+Mainly, I made the menus, the bosses code, the weapons system , the cinematics system, and helped to implement some character mechanics
+## Images:
+{% include gallery caption="Artistception Sample Images" %}
+
+## Download
+[GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary} 
+
+/* 
+File: .\_posts\ProjectGame\2021-04-28-Haunted-Signal.md     
+/* 
+---
+title: "Haunted Signal"
+excerpt: "An horror/mistery game where you have to go out of a haunted house"
+comments: true
+lang: es
+ref: gamejam1Post
+thumbnail: assets/images/foodBattles1.png
+header:
+  image: assets/images/foodBattles1.png
+  caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
+categories: 
+  - Unity3d
+  - Videogame project
+  - Uncategorized
+tags:
+  - C#
+  - Cartoon
+  - Online
+  - GameJam
+  - Netcode
+  - Group project
+
+gallery:
+  - url: /assets/images/games/food-battles/previewMcBurger.png
+    image_path: /assets/images/games/food-battles/previewMcBurger.png
+    alt: "placeholder image 1"
+    title: "The McBurger Count strikes again!"
+  - url: /assets/images/games/food-battles/previewpinchitos.png
+    image_path: /assets/images/games/food-battles/previewpinchitos.png
+    alt: "placeholder image 2"
+    title: "Skewers fight!"
+  - url: /assets/images/games/food-battles/previewArmy.png
+    image_path: /assets/images/games/food-battles/previewArmy.png
+    alt: "placeholder image 2"
+    title: "Warrior Nuggets and War HotDogs are ready for the battle!"
+---
+
+## Description
+A horror/mistery game where you have to go out of a haunted house
+
+ 
+ 
+## Data sheet
+* **Engine**: Unity3d
+* **Release**: PC
+* **Genre**: Real Time Strategy(RTS)
+* **Mode(s)**: Multiplayer PvP (2-4 players)
+* **Developer(s)**: Sergi Granell, Joan Cortés, Eric Bujaldrón 
+* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
+
+## Mechanics
+The main mechanics are:
+* Construction.
+* Resource collection.
+* Combat.
+* Expiration.
+* Morale buffs and debuffs.
+
+## Gameplay 
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+
+## My work
+Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings.
+## Images:
+{% include gallery caption="Food Battle Sample Images" %}
+
+## Download
+[GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary} 
+  
+/* 
+File: .\_posts\ProjectGame\2021-05-31-FoodBattlesPost.md     
+/* 
+---
+title: "Food Battle"
+comments: true
+excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
+lang: es
+ref: gamejam1Post
+preview: assets/images/foodBattles1.png
+
+header:
+  image: assets/images/foodBattles1.png
+  caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
+  teaser: assets/images/foodBattles1.png
+categories:
+  - Unity3d
+  - Videogame project
+  - Uncategorized
+ 
+tags:
+  - C#
+  - Cartoon
+  - Online
+  - GameJam
+  - Netcode
+  - Group project
+
+gallery:
+  - url: /assets/images/games/food-battles/previewMcBurger.png
+    image_path: /assets/images/games/food-battles/previewMcBurger.png
+    alt: "placeholder image 1"
+    title: "The McBurger Count strikes again!"
+  - url: /assets/images/games/food-battles/previewpinchitos.png
+    image_path: /assets/images/games/food-battles/previewpinchitos.png
+    alt: "placeholder image 2"
+    title: "Skewers fight!"
+  - url: /assets/images/games/food-battles/previewArmy.png
+    image_path: /assets/images/games/food-battles/previewArmy.png
+    alt: "placeholder image 2"
+    title: "Warrior Nuggets and War HotDogs are ready for the battle!"
+  - url: /assets/images/games/food-battles/attack1.gif
+    image_path: /assets/images/games/food-battles/attack1.gif
+    alt: "placeholder image 2"
+    title: "Attack!"
+---
+## Description
+This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
+In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+
+
+ 
+ 
+## Data sheet
+* **Engine**: Unity3d
+* **Release**: PC
+* **Genre**: Real Time Strategy(RTS)
+* **Mode(s)**: Multiplayer PvP (2-4 players)
+* **Developer(s)**: Sergi Granell, Joan Cortés, Eric Bujaldrón 
+* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
+
+## Mechanics
+The main mechanics are:
+* Construction.
+* Resource collection.
+* Combat.
+* Expiration.
+* Morale buffs and debuffs.
+
+## Gameplay 
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+
+## My work
+Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings.
+## Images:
+{% include gallery caption="Food Battle Sample Images" %}
+
+## Download
+[GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary} 
+  
+/* 
+File: .\_config.yml     
+/* 
+baseurl: "/WebPortfolio2" # the subpath of your site, e.g. /blog
+url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+title: "Joan Cortés portfolio"
+email: "cortesjoancontact@gmail.com"
+phone: ""
+address: "Barcelona,Spain"
+author: Joan Cortés
+description: >- # this means to ignore newlines
+  descriptionDizer - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+logo: "/assets/images/logo64.png"
+logo_icon: "/assets/images/logo64.png"
+# contact form action
+contact_form_action: "#" # works with https://fomrspree.io
+mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
+footer_content: "nothing to put at the moment"
+copyright: "joan cortés &copy; 2024 All Right Reserved"
+# page header default image
+cover_image: "/assets/images/bg/about-bg.jpg"
+google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
+
+############### Call to Action ###############
+cta:
+  enable: false
+  title: "call to actiondizer give the smart solution for your business"
+  bg_image: "/assets/images/bg/cta-bg-2.png"
+  button:
+    label: "get a quote"
+    link: "contact"
+
+################## Social site ###############
+social:
+  - name: facebook
+    icon: "ti-facebook"
+    link: "#"
+
+  - name: twitter
+    icon: "ti-twitter-alt"
+    link: "#"
+
+  - name: linkedin
+    icon: "ti-linkedin"
+    link: "#"
+
+  - name: pinterest
+    icon: "ti-pinterest"
+    link: "#"
+
+# Build settings
+permalink: "/:title"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-archives
+
+# Scss Directory
+sass:
+  sass_dir: assets/scss
+  style: compressed
+
+#collections
+collections:
+  portfolios:
+    output: true
+
+########################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  # Site-wide kill switch, disabled here it doesn't run at all
+  enabled: true
+
+  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination page
+  debug: true
+
+  # The default document collection to paginate if nothing is specified ('posts' is default)
+  collection: "posts"
+
+  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 6
+
+  # The permalink structure for the paginated pages (this can be any level deep)
+  #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  permalink: "/blog/:num/" # Pages are simple html file
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+
+  # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+  title: ":title - page :num"
+
+  # Limit how many pagenated pages to create (default: 0, means all)
+  limit: 0
+
+  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
+  sort_field: "date"
+
+  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+  sort_reverse: true
+
+  # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
+  category: "posts"
+
+  # Optional, the default tag to use, omit to disable
+  tag: ""
+
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: ""
+
+  # Optional,omit or set both before and after to zero to disable.
+  # Controls how the pagination trail for the paginated pages look like.
+  trail:
+    before: 2
+    after: 2
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: "html"
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: "index"
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+jekyll-archives:
+  enabled: all
+  layout: category
+  permalinks:
+    category: "/category/:name/"
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
+/* 
+File: .\_data\homepage_1.yml     
+/* 
+######################### Hero Area ##############################
+hero_area:
+  background_image : "/assets/images/bg/banner-2.png"
+  subtitle: "Joan Cortés"
+  title : "I am a creative  Unity Developer from Barcelona."
+  content : "I have a focus on game development but I also have knowledge of Software Development"
+  image : "/assets/images/banner/banner-img-2.png"
+  button:
+    enable : true
+    label : "contact me"
+    link : "/contact"
+
+########################### Service ##############################
+services:
+- title : "Brand Design"
+  icon : "ti-ruler-pencil"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+- title : "Seo & Marketing"
+  icon : "ti-announcement"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+- title : "Creative Design"
+  icon : "ti-palette"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+
+########################### Testimonial ###########################
+testimonial:
+  enable : false
+  title : "clients feedback"
+  subtitle : "testimonials"
+  bg_image : "/assets/images/bg/testimonial-bg.png"
+  item:
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+    
+  - name : "Jane Austin"
+    designation : "Designer"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+    
+  - name : "Liolane hussy"
+    designation : "Developer"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+
+
+######################## Fun facts ########################
+funfacts:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg.png"
+  item:
+  - name : "work completed"
+    icon : "ti-briefcase"
+    value : "370"
+    
+  - name : "new projects"
+    icon : "ti-paint-bucket"
+    value : "450"
+    
+  - name : "Happy customers"
+    icon : "ti-heart"
+    value : "5000"
+    
+  - name : "awards win"
+    icon : "ti-cup"
+    value : "37"/* 
+File: .\_data\homepage_2.yml     
+/* 
+################## Hero Area #######################
+hero_area:
+  title : "Design Studio"
+  image : "/assets/images/banner/banner-3.png"
+  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.<br>aliqua enim ad minim veniam quis."
+  button:
+    enable : true
+    label : "Contact Us"
+    link : "/contact"
+
+###################### Services #####################
+services:
+  enable : true
+  bg_image : "/assets/images/bg/feature-bg.png"
+  item:
+  - name : "Brand Design"
+    icon : "ti-ruler-pencil"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    
+  - name : "Seo & Marketing"
+    icon : "ti-announcement"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    
+  - name : "Creative Design"
+    icon : "ti-palette"
+    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+################## About ###########################
+about:
+  enable : true
+  subtitle : "About Us"
+  title : "We are Design & <br>Development Team."
+  video_thumb : "/assets/images/about/about.jpg"
+  video_url : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.
+  
+
+  Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+  "
+  button:
+    enable : true
+    label : "Purchase now"
+    link : "/pricing"
+
+
+###################### Funfacts #########################
+funfacts:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg.png"
+  item:
+  - name : "work completed"
+    icon : "ti-briefcase"
+    value : "370"
+    
+  - name : "new projects"
+    icon : "ti-paint-bucket"
+    value : "450"
+    
+  - name : "Happy customers"
+    icon : "ti-heart"
+    value : "5000"
+    
+  - name : "awards win"
+    icon : "ti-cup"
+    value : "37"
+
+###################### Skill #############################
+skill:
+  enable : false
+  subtitle : "our skill"
+  title : "We are Design & Development Team."
+  image : "/assets/images/about/skill.jpg"
+  item:
+  - name : "Branding"
+    percentage : "85%"
+    
+  - name : "Consulting"
+    percentage : "90%"
+    
+  - name : "Business"
+    percentage : "75%"
+    
+  - name : "Promotion"
+    percentage : "95%"
+
+
+######################### Testimonail ####################
+testimonial:
+  enable : false
+  subtitle : "testimonials"
+  title : "Our Clients Say"
+  item:
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+
+
+###################### Clients ######################
+clients:
+  enable : false
+  logos:
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+    - "/assets/images/clients/client-1.png"
+    - "/assets/images/clients/client-2.png"
+    - "/assets/images/clients/client-3.png"
+    - "/assets/images/clients/client-4.png"
+    - "/assets/images/clients/client-5.png"
+    
+
+###################### Team ######################
+team:
+  enable : true
+  item:
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/team-1.jpg"
+    
+  - name : "Marc López Macías"
+    designation : "3D artist"
+    image : "/assets/images/teams/marc.jpg"
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/team-3.jpg"
+    
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/team-4.jpg"/* 
+File: .\_data\i18n.yml     
+/* 
+in:
+  label: English
+  icon: 🇬🇧
+  read_it_in: "Read it in"
+it is:
+  label: Spanish
+  icon: 🇪🇸
+  read_it_in: "Read it on"/* 
+File: .\_data\navigation.yml     
+/* 
+#Please use the main menu items under the "name"
+main:
+  - name: Home
+    url: /
+    submenu:
+      - name: Home
+        url: /index.html
+      - name: Home 2
+        url: /index-2.html
+      - name: Home 3
+        url: /index-3.html
+      - name: Home 4
+        url: /index-4.html
+  - name: About
+    url: "#"
+    submenu:
+      - name: About
+        url: /about.html
+      - name: About Me
+        url: /about-me.html
+  - name: Blog
+    url: /blog-1.html
+  - name: Pages
+    url: /
+    submenu:
+      - name: Services
+        url: /services.html
+      - name: Portfolio One
+        url: /portfolio-1.html
+      - name: Portfolio Two
+        url: /portfolio-2.html
+      - name: 404
+        url: /404
+  - name: Contact
+    url: /contact.html
+
+########## footer menu ###############
+footer:
+  - name: Services
+    url: /services.html
+  - name: Portfolio One
+    url: /portfolio-1.html
+  - name: Portfolio Two
+    url: /portfolio-2.html
+  - name: Single Portfolio
+    url: /portfolio-single.html
+  - name: Contact
+    url: /contact.html
+
+############## Bottom menu ###############
+bottom:
+  - name: Terms of Service
+    link: "#"
+  - name: Privacy Policy
+    link: "#"
+/* 
+File: .\_data\plugins.yml     
+/* 
+################ CSS Plugins #####################
+css:
+  - "/assets/plugins/bootstrap/bootstrap.min.css"
+  - "/assets/plugins/themify/css/themify-icons.css"
+  - "/assets/plugins/magnific-popup/magnific-popup.css"
+  - "/assets/plugins/slick-carousel/slick/slick.css"
+
+
+################ JS Plugins ######################
+js:
+  - "/assets/plugins/jQuery/jquery.min.js"
+  - "/assets/plugins/bootstrap/bootstrap.min.js"
+  - "/assets/plugins/slick-carousel/slick/slick.min.js"
+  - "/assets/plugins/shuffle/shuffle.min.js"
+  - "/assets/plugins/magnific-popup/magnific-popup.min.js"
+  - "/assets/plugins/google-map/gmap.js"
+  - "/assets/plugins/search/search.min.js"

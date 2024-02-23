@@ -5,7 +5,17 @@ categories: ["VideoGame Projects","Unity3D"]
 thumbnail: "/assets/images/portfolio/p-2.jpg"
 description: "Online multiplayer RTS(max 4 players)  made with Unity"
 thumbnail: assets/images/foodBattles1.png
-
+tags:
+  - C#
+  - Cartoon
+  - Online
+  - GameJam
+  - Netcode
+  - Group project
+body: >
+  ## Description
+  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
+  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
 ###################### Team ######################
 team:
   enable : true
@@ -74,10 +84,13 @@ team:
 
  
 </section>
-<div class="col-lg-8 text-center mt-5">
-	<p> 
-	## Description
-This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
-In the game you have to command your food faction to become the best food in the table destroying all the other factions.	</p>
-</div>	
+<div class="col-lg-8 text-center">
+  <h3 class="mb-5 mt-2">{{page.title}}</h3>
+  <p>
+    {% capture md-content %}
+      {{page.body}}
+    {% endcapture %}
+    {{md-content | markdownify}}
+  </p>
+</div>
 {% include team.html %}	 
