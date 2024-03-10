@@ -5,6 +5,7 @@ excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
 ref: gamejam1Post
 preview: assets/images/foodBattles1.png
+layout: post
 
 header:
   image: assets/images/foodBattles1.png
