@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
 {% include header_2.html %}
  {{content}}
 {% include footer.html %}
 </body>
+<script>
+    $(document).ready(function(){
+      $('.carousel .carousel-item img').click(function(){
+        var imgSrc = this.src;
+        $('#lightbox-img').attr('src', imgSrc);
+      });
+    });
+    </script>
 </html>
