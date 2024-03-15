@@ -59,7 +59,6 @@ gallery:
 
 </div>
 
-   
 <div class="row">
   <div class="col-lg-12 text-center">
    <p class="text-color font-weight-bold mb-2">Category</p>
@@ -117,40 +116,24 @@ The main mechanics are:
 
 <div class="col-lg-12 text-center" markdown=1>
 
- 
-
 ## My work
 
 Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings
- 
 
 ## Images
 
  {% include gallery caption="Food Battle Sample Images" %}
 Explain
-<div class="carousel-item">
-  <img src="..." alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>.header 5</h5>
-    <p>.ppppppppp</p>
-  </div>
-</div>
+  
+<!-- Carousel Begins Here -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  carrousel a
   <ol class="carousel-indicators">
     {% for image in page.gallery %}
       <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}"></li>
     {% endfor %}
   </ol>
-
-  <div class="carousel-inner">
-    {% for image in page.gallery %}
-      <div class="carousel-item {% if forloop.first %} active {% endif %}">
-        <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}">
-      </div>
-    {% endfor %}
-  </div>
-
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
@@ -158,7 +141,55 @@ Explain
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <div class="carousel-inner">
+    {% for image in page.gallery %}
+      <div class="carousel-item {% if forloop.first %} active {% endif %}">
+        <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}"
+             alt="{{ image.alt }}"
+             data-toggle="modal"
+             data-target="#lightboxModal">
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+
+<!-- Modal Begins Here -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" class="img-fluid" id="lightbox-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Script for Modal Begins Here -->
+<script>
+$(document).ready(function() {
+    $('.carousel img').click(function(event) {
+        event.preventDefault(); // Prevent the default action
+
+        var imgSrc = this.src;
+        $('#lightbox-img').attr('src', imgSrc);
+
+        console.log('Modal should be open now without jumping the page.'); // Debug message
+    });
+
+    // Check if the modal is being shown and log it
+    $('#lightboxModal').on('show.bs.modal', function () {
+        console.log('Modal is being shown.');
+    });
+
+    // Check if the modal has finished being hidden and log it
+    $('#lightboxModal').on('hidden.bs.modal', function () {
+        console.log('Modal has been hidden.');
+    });
+});
+</script>
 
 ## Download
 
@@ -180,7 +211,7 @@ Explain
 {% endfor %}
 
 </ul>
- 
+
 <h2>Related Posts</h2>
 <ul>
 {% for post in site.posts %}
