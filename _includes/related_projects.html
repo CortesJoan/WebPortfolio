@@ -1,0 +1,22 @@
+<section class="section related-project">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="mb-5">{{ include.title }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in include.collection limit:include.limit %}
+            <div class="col-lg-4">
+                <div class="portfolio-block text-center border-0 ">
+                    <img src="{{ item.thumbnail | relative_url }}" class="img-fluid" alt="{{ item.title }}"/>
+                    <a class="card-img-overlay" href="{{ item.url }}">
+                      <h5 class="card-title text-white mb-0">{{ item.title }}</h5>
+                      <p class="card-text text-white text-uppercase text-sm">{{ item.category }}</p>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

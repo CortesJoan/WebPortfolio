@@ -1,0 +1,25 @@
+{% assign related_posts = site.posts | where:include.property,include.value | where_exp:"item", "item != page" %}
+{% if related_posts.size > 0 %}
+<section class="section related-project">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="mb-5">Related Posts</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in related_posts %}
+            <div class="col-lg-4">
+                <div class="portfolio-block text-center border-0 ">
+                    <img src="{{post.thumbnail | relative_url}}" class="img-fluid" alt="{{post.title}}"/>
+                    <a class="card-img-overlay" href="{{ site.baseurl }}{{ post.url }}">
+                        <h5 class="card-title text-white mb-0">{{post.title}}</h5>
+                      <p class="card-text text-white text-uppercase text-sm">{{post.excerpt | join: ", "}}</p>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
