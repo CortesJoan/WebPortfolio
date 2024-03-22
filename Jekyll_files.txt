@@ -782,196 +782,6 @@ description: "If you have any inquiries or if you'd like to discuss a project or
 </section>
 
 {% include call_to_action.html %}/* 
-File: .\index-2.html     
-/* 
----
-layout: default
----
-
-{% include hero_area.html %}
-{% include services.html %}
-{% include about.html %}
-{% include portfolios.html %}
-{% include count_down.html %}
-{% include skills.html %}
-{% include testimonials.html %}
-{% include clients.html %}
-{% include team.html %}
-{% include blog.html %}/* 
-File: .\index-3.html     
-/* 
----
----
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-
-<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
-  <!-- Navuigation Start -->
-  <!-- Header Start -->
-  <nav class="navbar navbar-expand-lg fixed-top main-nav main-nav-black hide-nav" id="main-nav">
-    <div class="container">
-      <a class="navbar-brand" href="{{site.baseurl}}">
-        <img src="{{site.logo | relative_url}}" alt="{{site.title}}" class="img-fluid w-logo" />
-      </a>
-
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars"
-        aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="ti-menu"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbars">
-        {% include navigation.html %}
-      </div>
-    </div>
-  </nav>
-  <!-- Navigation End -->
-
-  <nav class="navbar navbar-vertical fixed-left navbar-expand-lg navbar-light" id="sidebar">
-    <div class="container">
-
-      <!-- Toggler -->
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidebarCollapse"
-        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="{{site.baseurl}}">
-        <img src="{{site.logo | relative_url}}" class="navbar-brand-img ml-auto" alt="{{site.title}}" />
-      </a>
-
-      <!-- Collapse -->
-      <div class="navbar-collapse collapse" id="sidebarCollapse">
-        {% include navigation_2.html %}
-        <ul class="list-inline menu-socials-links fixed-bottom">
-          {% for social in site.social %}
-          <li class="list-inline-item mb-2">
-            <a href="{{ social.link }}" class="active"><i class="{{social.icon}}"></i></a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div> <!-- / .container -->
-  </nav>
-
-  <div class="main-content">
-    <div class="container">
-      <section class="section portfolio-2">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-              <span class="h5 text-color text-uppercase">
-                our works
-              </span>
-              <h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide <span
-                  class="text-color">range of design disciplines</span></h3>
-            </div>
-          </div>
-
-          <div class="row justify-content-center align-items-center text-center mb-5">
-            <div class="col-12">
-              <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                <label class="btn border-0 active">
-                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
-                </label>
-                {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
-                {% for category in categories %}
-                <label class="btn border-0">
-                  <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
-                </label>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-
-          <div class="row shuffle-wrapper portfolio-gallery">
-            {% include portfolio_loop.html %}
-          </div>
-        </div>
-      </section>
-    </div>
-    {% include footer_2.html %}
-  </div>
-</body>
-
-</html>/* 
-File: .\index-4.html     
-/* 
----
----
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-
-<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0" class="">
-
-  <div class="d-flex position-relative">
-    <!-- sidebar -->
-    <div class="side-nav shadow">
-      <a class="navbar-brand text-black p-4" href="{{site.baseurl}}">d<span class="dot"></span></a>
-      <a href="#" class="toggler"><i class="ti-align-right"></i></a>
-      <div class="fixed-bottom">
-        <div class="meta-share">
-          <div class="social-links">
-            {% for social in site.social %}
-            <a target="_blank" href="{{social.link}}"><i class="{{social.icon}}"></i></a>
-            {% endfor %}
-          </div>
-          <div class="share-btn"><i class="ti-share"></i></div>
-        </div>
-      </div>
-    </div>
-    <!-- /sidebar -->
-
-    <!-- navigation -->
-    <nav class="full-nav navbar">
-      {% include navigation_2.html %}
-    </nav>
-    <!-- /navigation -->
-
-    <div class="w-100">
-      <!-- POrtfolio  Start -->
-      <section class="section portfolio-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8">
-              <span class="h5 text-color text-uppercase">
-                our works
-              </span>
-              <h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide <span
-                  class="text-color">range of design disciplines</span></h3>
-            </div>
-          </div>
-
-          <div class="row mb-5">
-            <div class="col-10">
-              <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                <label class="btn border-0 active">
-                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
-                </label>
-                {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
-                {% for category in categories %}
-                <label class="btn border-0">
-                  <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
-                </label>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-
-          <div class="row shuffle-wrapper portfolio-gallery">
-            {% include portfolio_loop.html %}
-          </div>
-        </div>
-      </section>
-      {% include footer_2.html %}
-    </div>
-  </div>
-
-</body>
-
-</html>/* 
 File: .\index.html     
 /* 
 ---
@@ -1034,296 +844,6 @@ description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt l
 	</div>
 </section>
 <!-- Portfolio  End -->/* 
-File: .\portfolio-2.html     
-/* 
----
-layout: default_2
-title: "Our Portfolios"
----
-
-{% include header_2.html %}
-<!-- POrtfolio  Start -->
-<section class="section portfolio-5">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-10 text-center">
-				<span class="h5 text-color text-uppercase">
-					our works
-				</span>
-				<h3 class="mb-5 mt-2">Wide Grid Portfolio</h3>
-			</div>
-		</div>
-
-    <div class="row align-items-center mb-5">
-      	<div class="col-12 text-center">
-	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
-	          <label class="btn border-0 active">
-	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
-	          </label>
-						{% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
-						{% for category in categories %}
-						<label class="btn border-0">
-							<input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
-						</label>
-						{% endfor %}
-	        </div>
-      </div>
-    </div>    
-  </div>		
-
-
-  <div class="container-fluid">
-    <div class="row shuffle-wrapper portfolio-gallery">
-      {% include portfolio_loop.html %}
-    </div>
-	</div>
-</section>
-<!-- Portfolio  End -->/* 
-File: .\services.html     
-/* 
----
-layout: default
-header_image: "/assets/images/bg/about-bg.jpg"
-title: "Our Services"
-description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
-minim veniam quis."
----
-
-{% include page_header.html %}
-<!-- Service Start -->
-<section class="service-main section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center">
-				<span class="h5 text-color text-uppercase">
-					Services
-				</span>
-				<h3 class="mb-5 mt-2">We Use our Design Skills in <br>Various Ways</h3>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-			<div class="col-lg-4 col-md-6">
-				<div class="service-item mb-4 text-center px-4 py-5">
-					<i class="ti-ruler-pencil text-color icon-md"></i>
-					<h4 class="my-4">Brand Design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 border-left">
-				<div class="service-item mb-4 text-center px-4 py-5">
-					<i class="ti-announcement text-color icon-md"></i>
-					<h4 class="my-4 ">Seo & Marketing</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="service-item mb-4 text-center px-4 py-5">
-					<i class="ti-palette text-color icon-md"></i>
-					<h4 class="my-4">Creative Design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row border-top">
-			<div class="col-lg-4 col-md-6">
-				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
-					<i class="ti-ruler-pencil text-color icon-md"></i>
-					<h4 class="my-4">Brand Design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 border-left-top">
-				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
-					<i class="ti-announcement text-color icon-md"></i>
-					<h4 class="my-4 ">Seo & Marketing</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="service-item mb-4 mb-lg-0 text-center px-4 py-5">
-					<i class="ti-palette text-color icon-md"></i>
-					<h4 class="my-4">Creative Design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Service End -->
-
-<!-- Testimonial Start -->
-<section class="section bg-secondary position-relative">
-	<img src="/assets/images/bg/testimonial-bg.png" alt="" class="overlay-shape">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<span class="h5 text-color text-uppercase">
-					testimonials
-				</span>
-				<h3 class="mb-4 mt-2 text-white">clients feedback</h3>
-			</div>
-		</div>
-
-		<div class="row testimonial-wrap">
-			<div class="col-lg-12 ">
-				<div class="test-wrap ">
-					<i class="text-color ti-quote-left"></i>
-					<div class="testimonial-content">
-						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
-							aliqu. enim minim veniam.quis nos
-							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
-							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
-						<div class="test-author d-flex mt-4">
-							<div>
-								<img src="/assets/images/team/test-1.jpg" alt="" class="img-fluid mr-3">
-							</div>
-							<div>
-								<h5 class="mb-0 mt-2 text-white">Liam Hughes</h5>
-								<span class="text-color">Manager</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-12 ">
-				<div class="test-wrap ">
-					<i class="text-color ti-quote-left"></i>
-					<div class="testimonial-content">
-						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
-							aliqu. enim minim veniam.quis nos
-							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
-							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
-						<div class="test-author d-flex mt-4">
-							<div>
-								<img src="/assets/images/team/test-2.jpg" alt="" class="img-fluid mr-3">
-							</div>
-							<div>
-								<h5 class="mb-0 mt-2 text-white">Jane Austin</h5>
-								<span class="text-color">Designer</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-12 ">
-				<div class="test-wrap ">
-					<i class="text-color ti-quote-left"></i>
-					<div class="testimonial-content">
-						<p class="text-white">Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna
-							aliqu. enim minim veniam.quis nos
-							trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in
-							culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis.</p>
-						<div class="test-author d-flex mt-4">
-							<div>
-								<img src="/assets/images/team/test-3.jpg" alt="" class="img-fluid mr-3">
-							</div>
-							<div>
-								<h5 class="mb-0 mt-2 text-white">Liolane hussy</h5>
-								<span class="text-color">Developer</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Testimonial End -->
-
-<!-- Pricing Start -->
-<section class="section pricing">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center">
-				<span class="h5 text-color text-uppercase">
-					Pricing Table
-				</span>
-				<h3 class="mb-5 mt-2">Services Package.</h3>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				<div class="card border-0 rounded-0 shadow-lg text-center p-4 mb-5 mb-lg-0">
-					<div class="card-header">
-						<span class="package d-inline-block text-capitalize">basic</span>
-						<h3 class="price mt-4 font-weight-bold">$49 <small class="text-color text-sm"> / mo</small></h3>
-						<p>Best for small individuals</p>
-					</div>
-
-					<div class="card-body">
-						<ul class="list-unstyled lh-45 mt-3 mb-4">
-							<li>Express Service</li>
-							<li>Customs Clearance</li>
-							<li class="text-muted">Time-Critical Services</li>
-						</ul>
-
-						<a href="#" class="btn btn-outline-primary">select plan</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="card border-0 rounded-0 shadow-lg text-center p-4 featured mb-5 mb-lg-0">
-					<div class="card-header">
-						<span class="package d-inline-block text-capitalize">professional</span>
-						<h3 class="price mt-4 font-weight-bold">$59 <small class="text-color text-sm"> / mo</small></h3>
-						<p>Best for small individuals</p>
-					</div>
-
-					<div class="card-body">
-						<ul class="list-unstyled lh-45 mt-3 mb-4">
-							<li>Express Service</li>
-							<li>Customs Clearance</li>
-							<li class="text-white-50">Time-Critical Services</li>
-						</ul>
-
-						<a href="#" class="btn btn-outline-primary">select plan</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="card border-0 rounded-0 shadow-lg text-center p-4">
-					<div class="card-header">
-						<span class="package d-inline-block text-capitalize">business</span>
-						<h3 class="price mt-4 font-weight-bold">$79 <small class="text-color text-sm"> / mo</small></h3>
-						<p>Best for small individuals</p>
-					</div>
-
-					<div class="card-body">
-						<ul class="list-unstyled lh-45 mt-3 mb-4">
-							<li>Express Service</li>
-							<li>Customs Clearance</li>
-							<li class="text-muted">Time-Critical Services</li>
-						</ul>
-
-						<a href="#" class="btn btn-outline-primary">select plan</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- Pricing End -->
-
-<!-- Call To action Start -->
-<section class="position-relative section-sm bg-extra">
-	<img src="/assets/images/bg/cta-bg-2.png" alt="" class="overlay-shape">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-9 mb-5 mb-lg-0">
-				<h2 class="text-white mb-0">dizer give the smart solution for your business</h2>
-			</div>
-			<div class="col-lg-3">
-				<a href="contact.html" class="btn btn-primary">get a quote</a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Call to action End -->/* 
 File: .\defaultReadme.md     
 /* 
 # Minimal Mistakes remote theme starter
@@ -1785,11 +1305,12 @@ description: "incididunt labore et dolore magna aliqua enim minim veniam quis no
 File: .\_portfolios\food-battle.md     
 /* 
 ---
-layout: portfolio
+project_id: "FoodBattle"
+layout: project
 title: "Food battle"
 categories: ["VideoGame Projects","Unity3D"]
 thumbnail: "/assets/images/portfolio/p-2.jpg"
-description: "Online multiplayer RTS(max 4 players)  made with Unity"
+description: "Online multiplayer RTS  made with Unity and Mirror"
 thumbnail: assets/images/foodBattles1.png
 tags:
   - C#
@@ -1798,10 +1319,7 @@ tags:
   - GameJam
   - Netcode
   - Group project
-body: >
-  ## Description
-  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
-  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+ 
 ###################### Team ######################
 team:
   enable : true
@@ -1817,69 +1335,143 @@ team:
   - name : "Sergi Granell "
     designation : "Programmer and Lead Game Designer"
     image : "/assets/images/teams/sergi.png"
+gallery:
+  - url: /assets/images/games/food-battles/previewMcBurger.png
+    image_path: /assets/images/games/food-battles/previewMcBurger.png
+    alt: "placeholder image 1"
+    title: "The McBurger Count strikes again!"
+  - url: /assets/images/games/food-battles/previewpinchitos.png
+    image_path: /assets/images/games/food-battles/previewpinchitos.png
+    alt: "placeholder image 2"
+    title: "Skewers fight!"
+  - url: /assets/images/games/food-battles/previewArmy.png
+    image_path: /assets/images/games/food-battles/previewArmy.png
+    alt: "placeholder image 2"
+    title: "Warrior Nuggets and War HotDogs are ready for the battle!"
+  - url: /assets/images/games/food-battles/attack1.gif
+    image_path: /assets/images/games/food-battles/attack1.gif
+    alt: "placeholder image 2"
+    title: "Attack!"
 ---
-<div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
 
-<hr class="my-5">
-	
+ <!--Title and desription. -->
+<div class="col-lg-8 text-center" markdown=1>
+
+## {{page.title}}
+
+     {{page.description}}
+
+</div>
+
 <div class="row">
-		<div class="col-lg-12 text-center">
-			<p class="text-color font-weight-bold mb-2">Category</p>
-			<p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-		</div>
-		<div class="col-lg-12 text-center">
-			<p class="text-color font-weight-bold mb-2"></p>
-			<p></p>
-		</div>
-	</div> 
-	
-	
-<h2>Related Posts</h2>
-<ul>
-{% for post in site.posts %}
-  {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
-    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a>
-	</li>
-	
-  {% endif %}
-{% endfor %}
-</ul>
+  <div class="col-lg-12 text-center">
+   <p class="text-color font-weight-bold mb-2">Category</p>
+   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+  </div>
+  <div class="col-lg-12 text-center">
+   <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
+   <p>aqui habia algo?</p>
+  </div>
+</div>
+
+<div class="col-lg-8 text-center" markdown=1>
+
+## Description
+{% for portfolio in site.portfolios %}
+  {{ portfolio.title }} - {{ portfolio.project_id }}<br>
+{% endfor %}  
+ This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
+ In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+</div>
+
+<div class="col-lg-8 text-center" markdown=1>
+
+## Developers
+
+{% include team.html %}
+
+## Data sheet
+
+* **Engine**: Unity3d
+* **Release**: PC
+* **Genre**: Real Time Strategy(RTS)
+* **Mode(s)**: Multiplayer PvP (2-4 players)
+* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
+
+</div>
+
+<div class="col-lg-8 text-center" markdown=1>
+
+## Mechanics
+
+The main mechanics are:
+
+* Construction.
+* Resource collection.
+* Combat.
+* Expiration.
+* Morale buffs and debuffs.
+
+  </div>
+
+## Gameplay
+
+<div class="col-lg-12 text-center" markdown=1>
+ <iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="col-lg-12 text-center" markdown=1>
+
+## My work
+
+Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics including some units and buildings
+
+## Images
+  
+   {% include carousel.html gallery=page.gallery %}
+{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
 
 
-<div class="row justify-content-center align-items-center text-center mb-5">
-<div class="col-12">
-	<div class="btn-group btn-group-toggle " data-toggle="buttons">
-	<label class="btn border-0 active">
-		<input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
-	</label>
-	{% assign posts = site.posts| map: 'categories' | join: ',' | split: ',' | uniq %}
-	{% for post in posts %}
-	<label class="btn border-0">
-		<input type="radio" name="shuffle-filter" value="{{ post | downcase | slugify }}" />{{ post }}
-	</label>
-	{% endfor %}
-	</div>
-	<div class="row shuffle-wrapper portfolio-gallery">
-{% include portfolio_loop_posts.html %}
+ {% include modal.html %}
+
+<!-- Script for Modal Begins Here -->
+<script>
+$(document).ready(function() {
+    $('.carousel img').click(function(event) {
+        event.preventDefault(); // Prevent the default action
+
+        var imgSrc = this.src;
+        $('#lightbox-img').attr('src', imgSrc);
+
+        console.log('Modal should be open now without jumping the page.'); // Debug message
+    });
+
+    // Check if the modal is being shown and log it
+    $('#lightboxModal').on('show.bs.modal', function () {
+        console.log('Modal is being shown.');
+    });
+
+    // Check if the modal has finished being hidden and log it
+    $('#lightboxModal').on('hidden.bs.modal', function () {
+        console.log('Modal has been hidden.');
+    });
+});
+</script>
+
+## Download
+
+ [GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary}
+
 </div>
-</div>
-</div> 
- {% include share_this_on.html %}
+
+<div class="col-lg-12 text-center" markdown=1>
 
  
-</section>
-<div class="col-lg-8 text-center">
-  <h3 class="mb-5 mt-2">{{page.title}}</h3>
-  <p>
-    {% capture md-content %}
-      {{page.body}}
-    {% endcapture %}
-    {{md-content | markdownify}}
-  </p>
 </div>
-{% include team.html %}	 
+{% include related_posts.html property="project_id" value=page.project_id %}
+
+
+ {% include share_this_on.html %}
 /* 
 File: .\_portfolios\haunted_signal.md     
 /* 
@@ -2263,30 +1855,6 @@ description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt l
 <div class="col-lg-8 text-center mt-5">
 	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
 </div>													/* 
-File: .\_posts\2019-12-03-tips-for-taking-a-long-term-trip.md     
-/* 
----
-layout: post
-title: "Tips for Taking a Long-term Trip"
-date: 2019-12-03 12:37:13 +0600
-categories: [Technology]
-author: ecuelass_chapman
-post_image: "/assets/images/blog/blog-13.jpg"
-author: "Themefisher"
-featured: true
----
-
-<p>11 time-saving pro tips for web designers working in Webflow11 <a href="#">time-saving pro</a> tips for web designers working in Webflow Consectetuer magna vivamus varius. Faucibus vestibulum faucibus elementum vulputate suscipit. Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui elit feugiat nulla, vehicula eos nec dolor conubia, aliquam proinEtiam id euismod. Purus ut dis feugiat, ac massa error leo sed fermentum, non sem velit eget arcu, lectus luctus congue leo dapibus tincidunt. Nunc vitae quis eu. Sit id ullamcorper semper ridiculus, accumsan augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium, id facere atque eum! sit nonummy tellus velit vivamus, eu sagittis gravida ut ante. Ut voluptas vestibulum leo pellentesque nulla, taciti congue, vitae nunc metus, imperdiet orci neque sed vestibulum, vestibulum magna ullamcorper posuere massa interdum </p>
-<h4>Risus sociis urna elementum ultricies justo quisque </h4> <p> mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet ultricies vitae dui tempor </p>
-<blockquote class="blockquote single-quote">
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non labore totam tempora sed neque repellat numquam eaque inventore! Iusto saepe ipsum, ex, commodi asperiores iure dolores amet dolorem eos voluptatum, aliquid incidunt non perferendis earum dignissimos quod iste accusantium deleniti.Risus sociis urna elementum ultricies justo quisque, mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet </p>
-</blockquote>
-<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-<p>eleifend hac porta faucibus aliquam eros, massa facilisis, sed pede maecenas porttitor id magnis. Ac sed aliquam in felis amet, adipiscing pede a amet faucibus sit, quis in et ullamcorper vel commodo. Volutpat ut pede sem ipsum non, sapien adipiscing, suspendisse neque, quis dolor donec dolor. Sit voluptatibus, scelerisque in semper lacus nostra, ac integer dolor mauris tempus eget</p>
-
-Accumsan augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium
-
-<b>augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentiumaugue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium  </b>/* 
 File: .\_posts\2022-03-31-RoolbackForNetcode.md     
 /* 
 ---
@@ -2360,6 +1928,287 @@ The main features are:
 [GitLab Source with instructions to add it to the package manager](https://gitlab.com/EvilHack/NetworkRollbackTestGit){: .btn .btn--primary} 
   
 /* 
+File: .\_posts\2023-03-31-DefaultJekylllPostcopia.md     
+/* 
+---
+layout: post
+title: "MarkdownPost"
+date: 2023-12-03 12:37:13 +0600
+categories: [Technology]
+author: ecuelass_chapman
+post_image: "/assets/images/blog/blog-13.jpg"
+author: "Themefishern't"
+featured: true
+---
+-
+
+# h1 Heading 8-)
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
+
+## Horizontal Rules
+
+___
+
+---
+
+***
+
+
+## Typographic replacements
+
+Enable typographer option to see result.
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+test.. test... test..... test?..... test!....
+
+!!!!!! ???? ,,  -- ---
+
+"Smartypants, double quotes" and 'single quotes'
+
+
+## Emphasis
+
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+
+
+## Blockquotes
+
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+
+## Lists
+
+Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+Right aligned columns
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :cry: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+- 19^th^
+- H~2~O
+
+
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+==Marked text==
+
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1
+with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+*here be dragons*
+:::
+#11 time-saving pro tips for web designers working in Webflow11
+##fgdsgfgg
+*fff*
+<blockquote class="blockquote single-quote">
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non labore totam tempora sed neque repellat numquam eaque inventore! Iusto saepe ipsum, ex, commodi asperiores iure dolores amet dolorem eos voluptatum, aliquid incidunt non perferendis earum dignissimos quod iste accusantium deleniti.Risus sociis urna elementum ultricies justo quisque, mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet </p>
+</blockquote>
+<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<p>eleifend hac porta faucibus aliquam eros, massa facilisis, sed pede maecenas porttitor id magnis. Ac sed aliquam in felis amet, adipiscing pede a amet faucibus sit, quis in et ullamcorper vel commodo. Volutpat ut pede sem ipsum non, sapien adipiscing, suspendisse neque, quis dolor donec dolor. Sit voluptatibus, scelerisque in semper lacus nostra, ac integer dolor mauris tempus eget</p>
+
+ 
+<b>augue ullamcorper eros viverra neque,  feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentiumaugue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium  </b>/* 
+File: .\_posts\DefaultJekylllPost.md     
+/* 
+---
+layout: post
+title: "Tips for Taking a Long-term Trip"
+date: 2019-12-03 12:37:13 +0600
+categories: [Technology]
+author: ecuelass_chapman
+post_image: "/assets/images/blog/blog-13.jpg"
+author: "Themefisher"
+featured: true
+---
+
+<p>11 time-saving pro tips for web designers working in Webflow11 <a href="#">time-saving pro</a> tips for web designers working in Webflow Consectetuer magna vivamus varius. Faucibus vestibulum faucibus elementum vulputate suscipit. Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui elit feugiat nulla, vehicula eos nec dolor conubia, aliquam proinEtiam id euismod. Purus ut dis feugiat, ac massa error leo sed fermentum, non sem velit eget arcu, lectus luctus congue leo dapibus tincidunt. Nunc vitae quis eu. Sit id ullamcorper semper ridiculus, accumsan augue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium, id facere atque eum! sit nonummy tellus velit vivamus, eu sagittis gravida ut ante. Ut voluptas vestibulum leo pellentesque nulla, taciti congue, vitae nunc metus, imperdiet orci neque sed vestibulum, vestibulum magna ullamcorper posuere massa interdum </p>
+<h4>Risus sociis urna elementum ultricies justo quisque </h4> <p> mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet ultricies vitae dui tempor </p>
+<blockquote class="blockquote single-quote">
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non labore totam tempora sed neque repellat numquam eaque inventore! Iusto saepe ipsum, ex, commodi asperiores iure dolores amet dolorem eos voluptatum, aliquid incidunt non perferendis earum dignissimos quod iste accusantium deleniti.Risus sociis urna elementum ultricies justo quisque, mattis in eros facilisis mauris vestibulum sed, luctus proin nibh nonummy integer, nullam sit eget cum duis. Et sodales blandit, libero pede suscipit, tincidunt amet </p>
+</blockquote>
+<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<p>eleifend hac porta faucibus aliquam eros, massa facilisis, sed pede maecenas porttitor id magnis. Ac sed aliquam in felis amet, adipiscing pede a amet faucibus sit, quis in et ullamcorper vel commodo. Volutpat ut pede sem ipsum non, sapien adipiscing, suspendisse neque, quis dolor donec dolor. Sit voluptatibus, scelerisque in semper lacus nostra, ac integer dolor mauris tempus eget</p>
+
+ 
+<b>augue ullamcorper eros viverra neque,  feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentiumaugue ullamcorper eros viverra neque, libero est metus libero. Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium  </b>/* 
 File: .\_posts\Applications\2021-09-28-Meowfy.md     
 /* 
 ---
@@ -2576,87 +2425,16 @@ Mainly, I made the menus, the bosses code, the weapons system , the cinematics s
 [GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary} 
 
 /* 
-File: .\_posts\ProjectGame\2021-04-28-Haunted-Signal.md     
-/* 
----
-title: "Haunted Signal"
-excerpt: "An horror/mistery game where you have to go out of a haunted house"
-comments: true
-lang: es
-ref: gamejam1Post
-thumbnail: assets/images/foodBattles1.png
-header:
-  image: assets/images/foodBattles1.png
-  caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
-categories: 
-  - Unity3d
-  - Videogame project
-  - Uncategorized
-tags:
-  - C#
-  - Cartoon
-  - Online
-  - GameJam
-  - Netcode
-  - Group project
-
-gallery:
-  - url: /assets/images/games/food-battles/previewMcBurger.png
-    image_path: /assets/images/games/food-battles/previewMcBurger.png
-    alt: "placeholder image 1"
-    title: "The McBurger Count strikes again!"
-  - url: /assets/images/games/food-battles/previewpinchitos.png
-    image_path: /assets/images/games/food-battles/previewpinchitos.png
-    alt: "placeholder image 2"
-    title: "Skewers fight!"
-  - url: /assets/images/games/food-battles/previewArmy.png
-    image_path: /assets/images/games/food-battles/previewArmy.png
-    alt: "placeholder image 2"
-    title: "Warrior Nuggets and War HotDogs are ready for the battle!"
----
-
-## Description
-A horror/mistery game where you have to go out of a haunted house
-
- 
- 
-## Data sheet
-* **Engine**: Unity3d
-* **Release**: PC
-* **Genre**: Real Time Strategy(RTS)
-* **Mode(s)**: Multiplayer PvP (2-4 players)
-* **Developer(s)**: Sergi Granell, Joan Cortés, Eric Bujaldrón 
-* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
-
-## Mechanics
-The main mechanics are:
-* Construction.
-* Resource collection.
-* Combat.
-* Expiration.
-* Morale buffs and debuffs.
-
-## Gameplay 
-<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
-
-## My work
-Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings.
-## Images:
-{% include gallery caption="Food Battle Sample Images" %}
-
-## Download
-[GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary} 
-  
-/* 
 File: .\_posts\ProjectGame\2021-05-31-FoodBattlesPost.md     
 /* 
 ---
-title: "Food Battle"
+title: "First release"
 comments: true
 excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
-ref: gamejam1Post
-preview: assets/images/foodBattles1.png
+thumbnail: assets/images/foodBattles1.png
+layout: post
+project_id: "FoodBattle"
 
 header:
   image: assets/images/foodBattles1.png
@@ -2693,37 +2471,11 @@ gallery:
     alt: "placeholder image 2"
     title: "Attack!"
 ---
-## Description
-This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
-In the game you have to command your food faction to become the best food in the table destroying all the other factions.
-
-
+## Version info
+In this release you have the McBurgerCount faction fully playable.
  
- 
-## Data sheet
-* **Engine**: Unity3d
-* **Release**: PC
-* **Genre**: Real Time Strategy(RTS)
-* **Mode(s)**: Multiplayer PvP (2-4 players)
-* **Developer(s)**: Sergi Granell, Joan Cortés, Eric Bujaldrón 
-* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
-
-## Mechanics
-The main mechanics are:
-* Construction.
-* Resource collection.
-* Combat.
-* Expiration.
-* Morale buffs and debuffs.
-
-## Gameplay 
-<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
-
-## My work
-Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings.
-## Images:
-{% include gallery caption="Food Battle Sample Images" %}
-
+{% assign related_portfolios = site.portfolios | where:"project_id",page.project_id %}
+{% include related_projects.html title="Related Projects" portfolios=related_portfolios current_item=page limit=3 %}
 ## Download
 [GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary} 
   
@@ -2738,7 +2490,7 @@ phone: ""
 address: "Barcelona,Spain"
 author: Joan Cortés
 description: >- # this means to ignore newlines
-  descriptionDizer - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+  Joan Cortés Web Portfolio
 logo: "/assets/images/logo64.png"
 logo_icon: "/assets/images/logo64.png"
 # contact form action
@@ -3117,13 +2869,7 @@ main:
     url: /
     submenu:
       - name: Home
-        url: /index.html
-      - name: Home 2
-        url: /index-2.html
-      - name: Home 3
-        url: /index-3.html
-      - name: Home 4
-        url: /index-4.html
+        url: /index.html 
   - name: About
     url: "#"
     submenu:
@@ -3166,7 +2912,12 @@ bottom:
     link: "#"
   - name: Privacy Policy
     link: "#"
-/* 
+other: 
+  submenu:
+      - name: Home2
+        url: /index2.html 
+      - name: Home3
+        url: /index2.html /* 
 File: .\_data\plugins.yml     
 /* 
 ################ CSS Plugins #####################

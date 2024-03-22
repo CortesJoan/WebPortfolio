@@ -1,5 +1,6 @@
 ---
-layout: portfolio
+project_id: "FoodBattle"
+layout: project
 title: "Food battle"
 categories: ["VideoGame Projects","Unity3D"]
 thumbnail: "/assets/images/portfolio/p-2.jpg"
@@ -12,10 +13,7 @@ tags:
   - GameJam
   - Netcode
   - Group project
-body: >
-  ## Description
-  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
-  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+ 
 ###################### Team ######################
 team:
   enable : true
@@ -73,7 +71,9 @@ gallery:
 <div class="col-lg-8 text-center" markdown=1>
 
 ## Description
-
+{% for portfolio in site.portfolios %}
+  {{ portfolio.title }} - {{ portfolio.project_id }}<br>
+{% endfor %}  
  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
 </div>
@@ -118,54 +118,15 @@ The main mechanics are:
 
 ## My work
 
-Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics and some units and buildings
+Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics including some units and buildings
 
 ## Images
-
- {% include gallery caption="Food Battle Sample Images" %}
-Explain
   
-<!-- Carousel Begins Here -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  carrousel a
-  <ol class="carousel-indicators">
-    {% for image in page.gallery %}
-      <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}"></li>
-    {% endfor %}
-  </ol>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <div class="carousel-inner">
-    {% for image in page.gallery %}
-      <div class="carousel-item {% if forloop.first %} active {% endif %}">
-        <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}"
-             alt="{{ image.alt }}"
-             data-toggle="modal"
-             data-target="#lightboxModal">
-      </div>
-    {% endfor %}
-  </div>
-  </div>
+   {% include carousel.html gallery=page.gallery %}
+{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
 
-<!-- Modal Begins Here -->
-<div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="" class="img-fluid" id="lightbox-img">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+ {% include modal.html %}
 
 <!-- Script for Modal Begins Here -->
 <script>
@@ -197,29 +158,11 @@ $(document).ready(function() {
 
 </div>
 
-{% include share_this_on.html %}
-<div class="col-lg-8 text-center" >
- <h2>Related Posts</h2>
+<div class="col-lg-12 text-center" markdown=1>
+
+ 
 </div>
+{% include related_posts.html property="project_id" value=page.project_id %}
 
-<ul>
 
-{% for post in site.posts %}
-  {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
-    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a></li>
-  {% endif %}
-{% endfor %}
-
-</ul>
-
-<h2>Related Posts</h2>
-<ul>
-{% for post in site.posts %}
-  {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
-    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a>
- </li>
-
-  {% endif %}
-{% endfor %}
-</ul>
  {% include share_this_on.html %}
