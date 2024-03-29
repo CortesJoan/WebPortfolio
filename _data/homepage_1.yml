@@ -12,19 +12,26 @@ hero_area:
 
 ########################### Service ##############################
 services:
-- title : "Brand Design"
-  icon : "ti-ruler-pencil"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+- title : "Tools & Pipeline Development"
+  icon : " ti-wand"
+  content : "To streamline development and empower designers, I can create custom editor tools, automate workflows, and build content pipelines tailored to your project's needs. Whether it's a level editor, animation importer, or data management system, I strive to create intuitive tools that boost productivity."
 
-- title : "Seo & Marketing"
-  icon : "ti-announcement"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+- title : "Specialized Game Development"
+  icon : "ti-game"
+  content : "Unity game development expertise with 3+ years of experience. Skilled in implementing scalable, maintainable systems and collaborating with designers and programmers."
 
-- title : "Creative Design"
-  icon : "ti-palette"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+- title : "Adaptable Problem Solver"
+  icon : "ti-light-bulb"
+  content : "Adept at tackling diverse challenges, from gameplay mechanics to editor tools. Experience spans 3D and 2D Unity projects. Quickly learns and applies new technologies."
 
+- title : "Clean Code Practitioner"
+  icon : "ti-shortcode"
+  content : "Applies SOLID principles, design patterns and clean coding practices. Proficient in C#, with Java and Python knowledge. Uses version control (Git, SVN)."
 
+- title : "Passionate Solo Developer"
+  icon : "ti-heart"
+  content : "Creates small solo projects like games and gamedev tools in free time. Driven
+"
 ########################### Testimonial ###########################
 testimonial:
   enable : false

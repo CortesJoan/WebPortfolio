@@ -1,40 +1,31 @@
 ---
-project_id: "FoodBattle"
+project_id: "RollbackNetcode"
 layout: project
-title: "Food battle"
-categories: ["VideoGame Projects","Unity3D"]
-thumbnail: "/assets/images/portfolio/p-2.jpg"
-description: "Online multiplayer RTS  made with Unity and Mirror"
+title: "Rollback for NetcodeForGameObjects"
+categories: ["Unity3D","Library"]
+description: "Unity tool that adds support for rollback netcode to a Unity project"
 thumbnail: assets/images/foodBattles1.png
 tags:
   - C#
-  - Cartoon
   - Online
   - GameJam
   - Netcode
-  - Group project
+  - Solo project
  
 ###################### Team ######################
 team:
   enable : true
   item:
   - name : "Joan Cortés"
-    designation : "Lead Programmer"
+    designation : "Solo Developer"
     image : "/assets/images/teams/logo300.png"
-    
-  - name : "Eric Bujaldon Marco"
-    designation : "3D Artist"
-    image : "/assets/images/teams/eric.png"
-    
-  - name : "Sergi Granell "
-    designation : "Programmer and Lead Game Designer"
-    image : "/assets/images/teams/sergi.png"
+
 gallery:
   - url: /assets/images/games/food-battles/previewMcBurger.png
     image_path: /assets/images/games/food-battles/previewMcBurger.png
     alt: "placeholder image 1"
     title: "The McBurger Count strikes again!"
-  - url: /assets/images/games/food-battles/previewpinchitos.png
+ - url: /assets/images/games/food-battles/previewpinchitos.png
     image_path: /assets/images/games/food-battles/previewpinchitos.png
     alt: "placeholder image 2"
     title: "Skewers fight!"
@@ -48,7 +39,6 @@ gallery:
     title: "Attack!"
 ---
 
- <!--Title and desription. -->
 <div class="col-lg-8 text-center" markdown=1>
 
 ## {{page.title}}
@@ -56,26 +46,21 @@ gallery:
      {{page.description}}
 
 </div>
- <!-- <div class="row">-->
 
+<div class="row">
   <div class="col-lg-12 text-center">
    <p class="text-color font-weight-bold mb-2">Category</p>
    <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
   </div>
-   <!--<div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
-   <p>aqui habia algo?</p> -->
-  <!--</div>-->[text](food-battle.md)
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
 
 ## Description
-{% for portfolio in site.portfolios %}
-  {{ portfolio.title }} - {{ portfolio.project_id }}<br>
-{% endfor %}  
- This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
- In the game you have to command your food faction to become the best food in the table destroying all the other factions.
+This is a package for Unity 2021 and **NetcodeForGameObjects** 1.0 that adds rollback netcode for a project.
+The reason I did this library is because NetcodeForGameObjects and similar network frameworks don't have rollback netcode support and I wanted to make a simple library to avoid having to use external C++ libraries like GGPO.
+Currently still in **alpha** version so expect bugs
+
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -88,37 +73,38 @@ gallery:
 
 * **Engine**: Unity3d
 * **Release**: PC
-* **Genre**: Real Time Strategy(RTS)
-* **Mode(s)**: Multiplayer PvP (2-4 players)
-* **Graphic Style**: 3D Low Poly (Magicavoxel), Cartoon
+* **Requirements**: TMP, NetcodeForGameObjects > 1.0prev3
+* **Developer(s)**: Joan Cortés 
 
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
 
-## Mechanics
+## Features
 
-The main mechanics are:
+The main features are:
 
-* Construction.
-* Resource collection.
-* Combat.
-* Expiration.
-* Morale buffs and debuffs.
+* Deterministic rollback netcode 
+* Use class or struct type to store the important data
+* Easy to understand code
+* Works with Package Manager remotely
+* Example scenes
+* Works with Unity Physics on the same platform
+* Deterministic Math included (Thanks to XXXXX)
 
-  </div>
+</div>
 
-## Gameplay
+## Demo 
 
 <div class="col-lg-12 text-center" markdown=1>
  <iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div class="col-lg-8 text-center" markdown=1>
 
 ## My work
 
-Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics including some units and buildings
+I developed the entire library from scratch.
 
 ## Images
   
@@ -127,12 +113,11 @@ Mainly, I have been dedicated to the implementation of the multiplayer and the d
 
 
  {% include modal.html %}
-
-
+ 
 
 ## Download
 
- [GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary}
+ [GitLab Source with instructions to add it to the package manager](https://gitlab.com/EvilHack/NetworkRollbackTestGit){: .btn .btn--primary}
 
 </div>
 
