@@ -1,8 +1,8 @@
 baseurl: "/WebPortfolio2" # the subpath of your site, e.g. /blog
-url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+url: "https://cortesjoan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "Joan Cortés portfolio"
 email: "cortesjoancontact@gmail.com"
-phone: ""
+phone: "(+34) 691392276"
 address: "Barcelona,Spain"
 author: Joan Cortés
 description: >- # this means to ignore newlines
@@ -10,9 +10,9 @@ description: >- # this means to ignore newlines
 logo: "/assets/images/logo64.png"
 logo_icon: "/assets/images/logo64.png"
 # contact form action
-contact_form_action: "#" # works with https://fomrspree.io
+contact_form_action: "https://formspree.io/f/xgekoqro" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
-footer_content: "nothing to put at the moment"
+footer_content: "You can reach me by the  contact page or in the next sites:"
 copyright: "joan cortés &copy; 2024 All Right Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
@@ -29,22 +29,22 @@ cta:
 
 ################## Social site ###############
 social:
-  - name: facebook
-    icon: "ti-facebook"
-    link: "#"
+###  - name: facebook
+ ###   icon: "ti-facebook"
+###    link: "#"
 
-  - name: twitter
-    icon: "ti-twitter-alt"
-    link: "#"
+  ###- name: twitter
+ ###   icon: "ti-twitter-alt"
+ ###   link: "#"
 
   - name: linkedin
     icon: "ti-linkedin"
-    link: "#"
+    link: "https://www.linkedin.com/in/joan-cort%C3%A9s/"
 
-  - name: pinterest
-    icon: "ti-pinterest"
-    link: "#"
-
+###  - name: pinterest
+ ###   icon: "ti-pinterest"
+###    link: "#"
+#/
 # Build settings
 permalink: "/:title"
 markdown: kramdown
