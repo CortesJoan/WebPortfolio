@@ -2,7 +2,7 @@
 project_id: "Meowfy"
 layout: project
 title: "Meowfy"
-categories: ["Android Studio","Application Projects"]
+categories: ["Application Projects"]
 description: "A simple music player made with Java and Android Studio"
 thumbnail: assets/images/applications/meowfyLogo.png
 tags:
@@ -57,22 +57,22 @@ gallery:
 
 </div>
 
-  <div class="col-lg-8-text-center">
+  <div class="col-lg-12 text-center">
    <p class="text-color font-weight-bold mb-2">Category</p>
    <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
   </div>
- <div class="col-lg-8 text-center" markdown=1>
+ <div class="col-lg-12 text-center" markdown=1>
 
 ## Description
 
 A simple music player using the Spotify API made by 2 people
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div class="col-lg-12 text-center" markdown=1>
 
 ## Developers
 
-<div class="col-lg-8 text-center" markdown=1>
+<div class="col-lg-12 text-center" markdown=1>
 {% include team.html %}
 </div>
 ## Data sheet

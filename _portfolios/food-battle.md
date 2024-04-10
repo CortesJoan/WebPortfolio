@@ -2,7 +2,7 @@
 project_id: "FoodBattle"
 layout: project
 title: "Food battle"
-categories: ["VideoGame Projects","Unity3D"]
+categories: ["Video game Projects"]
 thumbnail: "/assets/images/portfolio/p-2.jpg"
 description: "Online multiplayer RTS  made with Unity and Mirror"
 thumbnail: assets/images/foodBattles1.png
