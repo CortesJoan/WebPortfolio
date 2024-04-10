@@ -5,9 +5,8 @@ excerpt: "Music game made in less than 1 week with Unity"
 
 lang: es
 ref: gamejam1Post
-header:
-  image: assets/images/games/music-game/background.png
-  caption: "The game"
+post_image: "/assets/images/games/music-game/background.png"
+ 
 categories:
   - Unity3d
   - Videogame project

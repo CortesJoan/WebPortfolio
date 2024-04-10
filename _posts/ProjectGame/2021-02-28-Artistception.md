@@ -1,9 +1,11 @@
 ---
-title: "Artistception"
+title: "Artistception- First Release"
 comments: true
-excerpt: "2D plataformer  created with Unity  where the art takes an important part"
+excerpt: "The release of 2D plataformer  created with Unity  where the art takes an important part"
 lang: es
-ref: gamejam1Post
+layout: post
+project_id: "Artistception"
+
 header:
   image: assets/images/games/artistception/menu1.png
   caption: "One of the main screens"

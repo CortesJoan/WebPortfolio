@@ -1,9 +1,9 @@
 ---
-title: "First release"
+title: "Food Battle- First release"
 comments: true
 excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
-thumbnail: assets/images/foodBattles1.png
+post_image: assets/images/foodBattles1.png
 layout: post
 project_id: "FoodBattle"
 
@@ -18,9 +18,8 @@ categories:
  
 tags:
   - C#
-  - Cartoon
   - Online
-  - GameJam
+  - Multiplayer
   - Netcode
   - Group project
 
