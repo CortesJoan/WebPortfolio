@@ -2,12 +2,6 @@
 main:
   - name: Home
     url: /
-  - name: Home
-    url: /index.html
-  - name: About
-    url: "#"
-  - name: About Me
-    url: /about-me.html
   - name: Devlogs & Tutorials
     url: /blog-1.html
   - name: Contact
