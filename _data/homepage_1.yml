@@ -30,8 +30,8 @@ services:
 
 - title : "Passionate Solo Developer"
   icon : "ti-heart"
-  content : "Creates small solo projects like games and gamedev tools in free time. Driven
-"
+  content : "Creates small solo projects like games and gamedev tools in free time. Driven by the desire to learn and improve"
+
 ########################### Testimonial ###########################
 testimonial:
   enable : false
