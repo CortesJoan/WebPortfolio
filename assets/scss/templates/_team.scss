@@ -3,7 +3,7 @@
 }
 .team-overlay-content {
 	position: absolute;
-	width: 70%;
+	width: 80%;
 	left: 0px;
 	bottom: 40px;
 	h5{
@@ -12,7 +12,8 @@
 		transition: .2s ease;
 		transition-delay: .0s;
 		position: relative;
-		z-index: 1;
+		z-index: 1; 
+
 	}
 	p{
 		color: rgba(255, 255, 255, .7);
