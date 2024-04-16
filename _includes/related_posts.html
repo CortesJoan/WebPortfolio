@@ -9,9 +9,9 @@
         </div>
         <div class="row">
             {% for post in related_posts %}
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <div class="portfolio-block text-center border-0 ">
-                    <img src="{{post.thumbnail | relative_url}}" class="img-fluid" alt="{{post.title}}"/>
+                    <img src="{{post.post_image | relative_url}}" class="img-fluid" alt="{{post.title}}"/>
                     <a class="card-img-overlay" href="{{ site.baseurl }}{{ post.url }}">
                         <h5 class="card-title text-white mb-0">{{post.title}}</h5>
                       <p class="card-text text-white text-uppercase text-sm">{{post.excerpt | join: ", "}}</p>
