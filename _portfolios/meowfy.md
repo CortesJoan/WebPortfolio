@@ -4,6 +4,7 @@ layout: project
 title: "Meowfy"
 categories: ["Application Projects"]
 description: "A simple music player made with Java and Android Studio"
+showOnlySameCategoryInRelatedProjects: false
 thumbnail: assets/images/applications/meowfyLogo.png
 tags:
   - Java
@@ -145,5 +146,4 @@ $(document).ready(function() {
 
 </div>
 {% include related_posts.html property="project_id" value=page.project_id %}
-
- {% include share_this_on.html %}
+ 

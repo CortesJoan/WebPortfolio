@@ -3,7 +3,7 @@ title: "Food Battle- First release"
 comments: true
 excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
-post_image: assets/images/foodBattles1.png
+post_image: assets/images/foodBattles1b.png
 layout: post
 project_id: "FoodBattle"
 
@@ -43,9 +43,9 @@ gallery:
 ---
 ## Version info
 In this release you have the McBurgerCount faction fully playable.
- 
-{% assign related_portfolios = site.portfolios | where:"project_id",page.project_id %}
-{% include related_projects.html title="Related Projects" portfolios=related_portfolios current_item=page limit=3 %}
+ {% include related_projects.html project_id=page.project_id title="Related Work" limit=5 %}
+
+
 ## Download
 [GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary} 
   

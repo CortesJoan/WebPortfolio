@@ -3,9 +3,11 @@ project_id: "FoodBattle"
 layout: project
 title: "Food battle"
 categories: ["Video game Projects"]
-thumbnail: "/assets/images/portfolio/p-2.jpg"
+showOnlySameCategoryInRelatedProjects: true
+thumbnail: "/assets/images/games/food-battles/nuggetWarriorIcon.png"
 description: "Online multiplayer RTS  made with Unity and Mirror"
-thumbnail: assets/images/foodBattles1.png
+post_image:  "/assets/images/games/food-battles/nuggetWarriorIcon.png"
+
 tags:
   - C#
   - Cartoon
@@ -13,7 +15,9 @@ tags:
   - GameJam
   - Netcode
   - Group project
- 
+download: true
+download_link: "https://gitlab.com/EvilHack/RTSeadosProject"
+download_title: "GitLab Source Code"
 ###################### Team ######################
 team:
   enable : true
@@ -62,18 +66,15 @@ gallery:
    <p class="text-color font-weight-bold mb-2">Category</p>
    <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
   </div>
-   <!--<div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
-   <p>aqui habia algo?</p> -->
-  <!--</div>-->[text](food-battle.md)
-</div>
+  <!--<div class="col-lg-12 text-center">
+  # <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
+  # <p>aqui habia algo?</p> -->
+   <!--</div>-->
 
 <div class="col-lg-8 text-center" markdown=1>
 
 ## Description
-{% for portfolio in site.portfolios %}
-  {{ portfolio.title }} - {{ portfolio.project_id }}<br>
-{% endfor %}  
+
  This game is an online multiplayer RTS(max 4 players)  made with the Unity engine and the Mirror and FizzySteamworks addons to make the game work with Steam servers.
  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
 </div>
@@ -122,25 +123,11 @@ Mainly, I have been dedicated to the implementation of the multiplayer and the d
 
 ## Images
   
-   {% include carousel.html gallery=page.gallery %}
+{% include carousel.html gallery=page.gallery %}
 {% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
-
 
  {% include modal.html %}
 
-
-
-## Download
-
- [GitLab Source](https://gitlab.com/EvilHack/RTSeadosProject){: .btn .btn--primary}
-
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
-
- 
-</div>
 {% include related_posts.html property="project_id" value=page.project_id %}
-
-
- {% include share_this_on.html %}

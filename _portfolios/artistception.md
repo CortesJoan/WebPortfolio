@@ -3,8 +3,9 @@ project_id: "Artistception"
 layout: project
 title: "Artistception"
 categories: ["Video game Projects"]
+showOnlySameCategoryInRelatedProjects: true
 description: "2D platformer created with Unity where the art takes an important part"
-thumbnail: assets/images/games/artistception/menu1.png
+thumbnail: assets/images/games/artistception/menu1024.png
 tags:
   - C#
   - Artistic
@@ -18,12 +19,12 @@ team:
     designation : "Gameplay Programmer"
     image : "/assets/images/teams/logo300.png"
     
-  - name : "Joan Lecha"
-    designation : "Artist and Game Designer"
+  - name : "Joan Lecha Guix"
+    designation : "Artist,Game Designer"
     image : "/assets/images/teams/lecha.png"
     
   - name : "Roger Lario"
-    designation : "Level Designer and Programmer"
+    designation : "Level Designer, Programmer"
     image : "/assets/images/teams/roger.png"
 
 gallery:
@@ -51,7 +52,9 @@ gallery:
     image_path: /assets/images/games/artistception/fishBoss.png
     alt: "The final boss"
     title: "The final boss of the game"
-
+download: true
+download_link: "https://gitlab.com/EvilHack/artistception/"
+download_title: "GitLab Source"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -112,35 +115,22 @@ The main mechanics are:
 
 </div>
 
-## Gameplay
-
-Explain
-<div class="col-lg-12 text-center" markdown=1>
- <iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
-</div>
-
 <div class="col-lg-8 text-center" markdown=1>
 
 ## My work
 
-Mainly, I made the menus, the bosses code, the weapons system, the cinematics system, and helped to implement some character mechanics
+I was the main programmer, I made the menus, the bosses code, the weapons system, the cinematics system, and helped to implement some character mechanics.
 
 ## Images
   
-   {% include carousel.html gallery=page.gallery %}
+{% include carousel.html gallery=page.gallery %}
 {% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
 
  {% include modal.html %}
 
-## Download
-
- [GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary}
-
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
-
-</div>
+ 
 {% include related_posts.html property="project_id" value=page.project_id %}
 
- {% include share_this_on.html %}
+ 
