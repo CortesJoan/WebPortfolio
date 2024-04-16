@@ -27,6 +27,9 @@ gallery:
     image_path: /assets/images/games/music-game/goodPlay.mp4 
     lt: "Playing well" 
     title: "Playing well" 
+download: true
+download_link: "https://gitlab.com/EvilHack/GuitarHeroTest"
+download_title: "GitLab Source"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -124,10 +127,7 @@ $(document).ready(function() {
 });
 </script>
 
-## Download
-
- [GitLab Source](https://gitlab.com/EvilHack/GuitarHeroTest){: .btn .btn--primary}
-
+ 
 </div>
 
 <div class="col-lg-12 text-center" markdown=1>
