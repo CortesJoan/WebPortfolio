@@ -5,54 +5,115 @@ layout: default_2
 <section class="portfolio-single">
 	<div class="container">
 		<div class="row justify-content-center">
-          {{ content }}
+			{{ content }}
+
+
 		</div>
+		<div class="row justify-content-center">
+
+
+
+			<div class="col-lg-12 text-center">
+				{% if page.download %}
+				<h2>Download</h2>
+				<a href="{{ page.download_link }}" class="btn btn--primary">{{page.download_title}}</a>
+				{% endif %}
+
+			</div>
+			<div class="col-lg-8 text-center">
+				{% include share_this_on.html %}
+
+
+			</div>
+
+
+		</div>
+
 	</div>
+
 </section>
+
 <section class="section related-project">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h3 class="mb-5">Related Projects</h3>
 			</div>
+
 		</div>
 		<div class="row">
-            {% for portfolio in site.portfolios limit:"3" %}
+			{% if page.showOnlySameCategoryInRelatedProjects == true %}
+			{% assign current_categories = page.categories %}
+			{% for portfolio in site.portfolios %}
+			{% unless portfolio.url == page.url %}
+			{% assign has_matching_category = false %}
+			{% for current_category in current_categories %}
+			{% if portfolio.categories contains current_category %}
+			{% assign has_matching_category = true %}
+			{% break %}
+			{% endif %}
+			{% endfor %}
+			{% if has_matching_category %}
 			<div class="col-lg-4">
-				<div class="portfolio-block text-center border-0 ">
-				    <img src="{{portfolio.thumbnail | relative_url}}" class="img-fluid" alt="{{portfolio.title}}"/>
-				    <a class="card-img-overlay" href="{{portfolio.url}}">
-                      <h5 class="card-title text-white mb-0">{{portfolio.title}}</h5>
-                      <p class="card-text text-white text-uppercase text-sm">{{portfolio.category}}</p>
-				    </a>
+				<div class="portfolio-block text-center border-0">
+					<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
+					<a class="card-img-overlay" href="{{ portfolio.url }}">
+						<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
+						<p class="card-text text-white text-uppercase text-sm">
+							{% for category in portfolio.categories %}
+							{{ category }}{% unless forloop.last %}, {% endunless %}
+							{% endfor %}
+						</p>
+					</a>
 				</div>
 			</div>
-            {% endfor %}
+			{% endif %}
+			{% endunless %}
+			{% endfor %}
+			{% else %}
+			{% for portfolio in site.portfolios %}
+			{% unless portfolio.url == page.url %}
+			<div class="col-lg-4">
+				<div class="portfolio-block text-center border-0">
+					<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
+					<a class="card-img-overlay" href="{{ portfolio.url }}">
+						<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
+						<p class="card-text text-white text-uppercase text-sm">
+							{% for category in portfolio.categories %}
+							{{ category }}{% unless forloop.last %}, {% endunless %}
+							{% endfor %}
+						</p>
+					</a>
+				</div>
+			</div>
+			{% endunless %}
+			{% endfor %}
+			{% endif %}
 		</div>
 	</div>
 </section>
 
 <!-- Script for Modal Begins Here -->
 <script>
-	$(document).ready(function() {
-		$('.carousel img').click(function(event) {
+	$(document).ready(function () {
+		$('.carousel img').click(function (event) {
 			event.preventDefault(); // Prevent the default action
-	
+
 			var imgSrc = this.src;
 			$('#lightbox-img').attr('src', imgSrc);
-	
+
 			console.log('Modal should be open now without jumping the page.'); // Debug message
 		});
-	
+
 		// Check if the modal is being shown and log it
 		$('#lightboxModal').on('show.bs.modal', function () {
 			console.log('Modal is being shown.');
 		});
-	
+
 		// Check if the modal has finished being hidden and log it
 		$('#lightboxModal').on('hidden.bs.modal', function () {
 			console.log('Modal has been hidden.');
 		});
 	});
-	</script>
+</script>
 {% include call_to_action.html %}
