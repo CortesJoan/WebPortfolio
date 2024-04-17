@@ -125,8 +125,7 @@ Mainly, I have been dedicated to the implementation of the multiplayer and the d
   
 {% include carousel.html gallery=page.gallery %}
 {% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
-
- {% include modal.html %}
+ 
 
 </div>
 

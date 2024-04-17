@@ -115,7 +115,7 @@ The main mechanics are:
 
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div class="col-lg-12 text-center" markdown=1>
 
 ## My work
 
@@ -124,13 +124,9 @@ I was the main programmer, I made the menus, the bosses code, the weapons system
 ## Images
   
 {% include carousel.html gallery=page.gallery %}
-{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
-
- {% include modal.html %}
+{% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
+ 
 
 </div>
 
- 
 {% include related_posts.html property="project_id" value=page.project_id %}
-
- 
