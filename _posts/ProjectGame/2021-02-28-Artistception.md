@@ -5,7 +5,7 @@ excerpt: "The release of 2D plataformer  created with Unity  where the art takes
 lang: es
 layout: post
 project_id: "Artistception"
-
+post_image: assets/images/games/artistception/menu1024.png
 header:
   image: assets/images/games/artistception/menu1.png
   caption: "One of the main screens"
@@ -44,43 +44,10 @@ gallery:
     alt: "The final boss"
     title: "The final boss of the game"
 ---
-## Description
-This game is a 2D plataformer  created with Unity by a team of 3 people where the player enters to a different painting each level.
-Currently there are 2 fully functional levels
+## Version info
+In this release, two fully playable levels are included.
 
- 
- 
-## Data sheet
-* **Engine**: Unity3d
-* **Release**: PC
-* **Genre**: Adventure
-* **Mode(s)**: SinglePlayer
-* **Developer(s)**: Joan Lecha, Roger Lario, Joan Cortés 
-* **Graphic Style**: 2D
-
-## Mechanics
-The main mechanics are:
-* 2 different graphic styles
-* Educational dialogues
-* 1 painting → 1 level
-* Cinematics
-* 2 bosses
-* 2 levels
-* Sounds
-* Weapons
-* Main menu with variations
-* Game in Spanish and English
- 
-
-## Gameplay 
-//TODO
-<iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
-
-## My work
-Mainly, I made the menus, the bosses code, the weapons system , the cinematics system, and helped to implement some character mechanics
-## Images:
-{% include gallery caption="Artistception Sample Images" %}
+{% include related_projects.html project_id=page.project_id title="Related Work" limit=5 %}
 
 ## Download
-[GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary} 
-
+[GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary}

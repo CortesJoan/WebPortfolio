@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 
 set output=Jekyll_files.txt
-set ignore=_site,MasterDefaultPosts,.git,.jekyll-cache,.vscode,_layouts,_sass, assets,defaultJekillPosts,_pages,_includes,defaultJekillPosts,DiscardedPagesForNow
-set extensions=.html .md .yml
+set ignore=_site,MasterDefaultPosts,.git,.jekyll-cache,.vscode,_sass, defaultJekillPosts,_pages,defaultJekillPosts,DiscardedPagesForNow,PagesTORestructure,IgnorePosts,hidden
+set extensions=.html .md .yml .css .js .scss
 
 set progress=1  :: set to 1 to show progress, set to 0 to hide progress
 

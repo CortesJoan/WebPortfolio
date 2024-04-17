@@ -101,32 +101,7 @@ I did all the code and the game and the graphics are default Unity ones
 {% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
 
  {% include modal.html %}
-
-<!-- Script for Modal Begins Here -->
-<script>
-$(document).ready(function() {
-    $('.carousel img').click(function(event) {
-        event.preventDefault(); // Prevent the default action
-
-        var imgSrc = this.src;
-        $('#lightbox-img').attr('src', imgSrc);
-
-      Explain
-        console.log('Modal should be open now without jumping the page.'); // Debug message
-    });
-
-    // Check if the modal is being shown and log it
-    $('#lightboxModal').on('show.bs.modal', function () {
-        console.log('Modal is being shown.');
-    });
-
-    // Check if the modal has finished being hidden and log it
-    $('#lightboxModal').on('hidden.bs.modal', function () {
-        console.log('Modal has been hidden.');
-    });
-});
-</script>
-
+ 
  
 </div>
 
