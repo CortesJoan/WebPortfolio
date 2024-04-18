@@ -122,9 +122,10 @@ The main mechanics are:
 Mainly, I have been dedicated to the implementation of the multiplayer and the development of tools for the game designer. Although I have also programmed basic mechanics including some units and buildings
 
 ## Images
-  
-{% include carousel.html gallery=page.gallery %}
-{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
+
+ {% include carousel.html gallery=page.gallery %}
+ {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
+
  
 
 </div>

@@ -47,7 +47,7 @@ gallery:
 ## Version info
 In this release, two fully playable levels are included.
 
-{% include related_projects.html project_id=page.project_id title="Related Work" limit=5 %}
+{% include related_projects.html project_id=page.project_id title="Game page" limit=5 %}
 
 ## Download
 [GitLab Source](https://gitlab.com/EvilHack/artistception/){: .btn .btn--primary}

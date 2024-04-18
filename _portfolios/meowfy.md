@@ -6,6 +6,9 @@ categories: ["Application Projects"]
 description: "A simple music player made with Java and Android Studio"
 showOnlySameCategoryInRelatedProjects: false
 thumbnail: assets/images/applications/meowfyLogo.png
+download: true
+download_link: "(https://github.com/CortesJoan/Meowfy"
+download_title: "Github Source"
 tags:
   - Java
   - Android
@@ -92,6 +95,15 @@ A simple music player using the Spotify API made by 2 people
 * Login using Spotify account
 
 </div>
+## My work
+
+Mainly, I did the backend work of the app (the API connection, data management, JSON parsing) and the player features.
+
+
+## Images
+
+ {% include carousel.html gallery=page.gallery %}
+ {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
 
 ## Demo video
 
@@ -101,49 +113,7 @@ A simple music player using the Spotify API made by 2 people
 
 <div class="col-lg-12 text-center" markdown=1>
 
-## My work
-
-Mainly, I did the backend work of the app (the API connection, data management, JSON parsing) and the player features.
-
-## Images
-
-     {% include carousel.html gallery=page.gallery %}
-{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
-
- {% include modal.html %}
-
-<!-- Script for Modal Begins Here -->
-<script>
-$(document).ready(function() {
-    $('.carousel img').click(function(event) {
-        event.preventDefault(); // Prevent the default action
-
-        var imgSrc = this.src;
-        $('#lightbox-img').attr('src', imgSrc);
-
-        console.log('Modal should be open now without jumping the page.'); // Debug message
-    });
-
-    // Check if the modal is being shown and log it
-    $('#lightboxModal').on('show.bs.modal', function () {
-        console.log('Modal is being shown.');
-    });
-
-    // Check if the modal has finished being hidden and log it
-    $('#lightboxModal').on('hidden.bs.modal', function () {
-        console.log('Modal has been hidden.');
-    });
-});
-</script>
-
-## Download
-
- [GitHub Source](https://github.com/CortesJoan/Meowfy){: .btn .btn--primary}
 
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
-
-</div>
 {% include related_posts.html property="project_id" value=page.project_id %}
- 
