@@ -29,22 +29,10 @@ cta:
 
 ################## Social site ###############
 social:
-###  - name: facebook
- ###   icon: "ti-facebook"
-###    link: "#"
-
-  ###- name: twitter
- ###   icon: "ti-twitter-alt"
- ###   link: "#"
-
   - name: linkedin
     icon: "ti-linkedin"
     link: "https://www.linkedin.com/in/joan-cort%C3%A9s/"
-
-###  - name: pinterest
- ###   icon: "ti-pinterest"
-###    link: "#"
-#/
+ 
 # Build settings
 permalink: "/:title"
 markdown: kramdown
