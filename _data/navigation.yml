@@ -10,10 +10,10 @@ main:
 footer:
   - name: Home
     url: /home.html
-#  - name: Devlogs & Tutorials 
-#    url: /blog.html
   - name: Contact
     url: /contact.html
+#  - name: Devlogs & Tutorials 
+#    url: /blog.html
 
 ############## Bottom menu ###############
 bottom:
