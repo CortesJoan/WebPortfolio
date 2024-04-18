@@ -6,33 +6,20 @@ layout: default_2
 	<div class="container">
 		<div class="row justify-content-center">
 			{{ content }}
-
-
 		</div>
 		<div class="row justify-content-center">
-
-
-
 			<div class="col-lg-12 text-center">
 				{% if page.download %}
 				<h2>Download</h2>
 				<a href="{{ page.download_link }}" class="btn btn--primary">{{page.download_title}}</a>
 				{% endif %}
-
 			</div>
 			<div class="col-lg-8 text-center">
 				{% include share_this_on.html %}
-
-
 			</div>
-
-
 		</div>
-
 	</div>
-
 </section>
-
 <section class="section related-project">
 	<div class="container">
 		<div class="row">
@@ -92,5 +79,5 @@ layout: default_2
 		</div>
 	</div>
 </section>
- 
+
 {% include call_to_action.html %}

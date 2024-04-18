@@ -2,16 +2,16 @@
 main:
   - name: Home
     url: /
-  - name: Devlogs & Tutorials
-    url: /blog-1.html
+  #- name: Devlogs & Tutorials
+   # url: /blog-1.html
   - name: Contact
     url: /contact.html
 ########## footer menu ###############
 footer:
   - name: Home
     url: /home.html
-  - name: Devlogs & Tutorials 
-    url: /blog.html
+#  - name: Devlogs & Tutorials 
+#    url: /blog.html
   - name: Contact
     url: /contact.html
 
