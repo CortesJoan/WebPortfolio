@@ -9,7 +9,7 @@ hero_area:
     enable : true
     label : "contact me"
     link : "/contact"
-
+  linkedin_link: "https://www.linkedin.com/in/joan-cort%C3%A9s/"
 ########################### Service ##############################
 services:
 - title : "Tools & Pipeline Development"
