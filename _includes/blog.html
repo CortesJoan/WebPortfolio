@@ -17,7 +17,7 @@
 					<a href="{{post.url | relative_url}}.html"><img src="{{post.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100"></a>
 					{% if post.tags %}
 					<a class="blog-category"
-						href="/tag/{{post.tags[0] | limit:'1' | downcase | replace: ' ','_'}}">{{post.tags[0] | limit:"1" | replace:',','' }}</a>
+						href="">{{post.tags[0] | limit:"1" | replace:',','' }}</a>
 					{% endif %}
 				</div>
 				{% endif %}
