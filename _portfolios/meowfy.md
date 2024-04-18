@@ -7,7 +7,7 @@ description: "A simple music player made with Java and Android Studio"
 showOnlySameCategoryInRelatedProjects: false
 thumbnail: assets/images/applications/meowfyLogo.png
 download: true
-download_link: "(https://github.com/CortesJoan/Meowfy"
+download_link: "https://github.com/CortesJoan/Meowfy"
 download_title: "Github Source"
 tags:
   - Java

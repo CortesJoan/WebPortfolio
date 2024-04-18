@@ -52,6 +52,7 @@ gallery:
     image_path: /assets/images/games/artistception/fishBoss.png
     alt: "The final boss"
     title: "The final boss of the game"
+    
 download: true
 download_link: "https://gitlab.com/EvilHack/artistception/"
 download_title: "GitLab Source"
@@ -122,10 +123,9 @@ The main mechanics are:
 I was the main programmer, I made the menus, the bosses code, the weapons system, the cinematics system, and helped to implement some character mechanics.
 
 ## Images
-  
+
 {% include carousel.html gallery=page.gallery %}
 {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
- 
 
 </div>
 

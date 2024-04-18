@@ -53,7 +53,7 @@ By making the code available to the public, you can now run your own instance of
 
 ## Motivation
 
-As a moderator of an Discord anme community, I wanted a free alternative to keep the community updated with the latest tweets.
+As a moderator of an Discord anime community, I wanted a free alternative to keep the community updated with the latest tweets.
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -99,7 +99,7 @@ The project is structured into multiple Python files for modularity and maintain
 
 ## Hosting
 
-FigurasBot is hosted on Render, a cloud platform for running web services and applications. Render provides a reliable and scalable environment for hosting the bot, ensuring its continuous operation and availability.
+RssDiscordBot is hosted on Render, a cloud platform for running web services and applications. Render provides a reliable and scalable environment for hosting the bot, ensuring its continuous operation and availability.
 
 ## The bot working
 

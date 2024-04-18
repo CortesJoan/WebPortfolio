@@ -107,8 +107,7 @@ The main mechanics are:
 * Expiration.
 * Morale buffs and debuffs.
 
-  </div>
-
+</div>
 ## Gameplay
 
 <div class="col-lg-12 text-center" markdown=1>
@@ -123,10 +122,8 @@ Mainly, I have been dedicated to the implementation of the multiplayer and the d
 
 ## Images
 
- {% include carousel.html gallery=page.gallery %}
- {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
-
- 
+{% include carousel.html gallery=page.gallery %}
+{% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
 
 </div>
 

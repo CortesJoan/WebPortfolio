@@ -5,6 +5,8 @@ excerpt: "The release of 2D plataformer  created with Unity  where the art takes
 lang: es
 layout: post
 project_id: "Artistception"
+author: Joan Cortés
+
 post_image: assets/images/games/artistception/menu1024.png
 header:
   image: assets/images/games/artistception/menu1.png

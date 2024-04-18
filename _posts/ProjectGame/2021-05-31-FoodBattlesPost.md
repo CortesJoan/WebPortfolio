@@ -6,6 +6,7 @@ lang: es
 post_image: assets/images/foodBattles1b.png
 layout: post
 project_id: "FoodBattle"
+author: Joan Cortés
 
 header:
   image: assets/images/foodBattles1.png
