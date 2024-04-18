@@ -2,21 +2,21 @@
 {% assign team = page.team %}
 {% if team.enable %}
 <section class="team">
-	<div class="container-fluid p-0">
-		<div class="row no-gutters">
-			{% for item in team.item %}
-			<div class="col-md-4 col-sm-6">
-				<div class="team-item position-relative">
-					<img src="{{item.image | relative_url }}" alt="" class="img-fluid">
-					<div class="team-overlay-content px-4 py-3">
-						<h5 class="mb-0 text-white">{{item.name}}</h5>
-						<p>{{item.designation}}</p>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+        <div class="container-fluid p-0">
+                <div class="row no-gutters {% if team.item.size == 1 %}justify-content-center{% endif %}">
+                        {% for item in team.item %}
+                        <div class="col-md-4 col-sm-6">
+                                <div class="team-item position-relative">
+                                        <img src="{{item.image | relative_url }}" alt="" class="img-fluid">
+                                        <div class="team-overlay-content px-4 py-3">
+                                                <h5 class="mb-0 text-white">{{item.name}}</h5>
+                                                <p>{{item.designation}}</p>
+                                        </div>
+                                </div>
+                        </div>
+                        {% endfor %}
+                </div>
+        </div>
 </section>
 {% endif %}
 <!-- Team End -->
