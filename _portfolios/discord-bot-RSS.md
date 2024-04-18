@@ -1,9 +1,9 @@
 ---
-project_id: "FigurasBot" 
+project_id: "RssDiscordBot" 
 layout: project
-title: "FigurasBot"
+title: "RssDiscordBot"
 categories: ["Application Projects"]
-description: "A Discord bot that fetches and sends tweets from an RSS feed to designated channels"
+description: "An open-source Discord bot that fetches tweets from RSS feeds and sends them to designated channels"
 thumbnail: assets/images/applications/figurasbot_logo.png
 team:
   enable : true
@@ -15,44 +15,26 @@ tags:
   - Python
   - Discord
   - RSS
+  - Twitter
+  - Nitter
   - Firebase
-  - Solo project
+  - Open Source
   - Hobby project
-download: false
-download_link: "no for the moment is a private repo"
+download: true
+download_link: "https://github.com/CortesJoan/DiscordRSSBot"
 download_title: "Github Source"
 gallery:
-  - url: /assets/images/games/artistception/menu2.png
-    image_path: /assets/images/games/artistception/menu2.png
-    alt: "Menu 1"
-    title: "First version of the menu"
-  - url: /assets/images/games/artistception/pickUpTorch.png
-    image_path: /assets/images/games/artistception/pickUpTorch.png
-    alt: "placeholder image 2"
-    title: "And then there was light."
-  - url: /assets/images/games/artistception/mamoothA.png
-    image_path: /assets/images/games/artistception/mamoothA.png
-    alt: "The first boss cinematic"
-    title: "The first boss cinematic"
-  - url: /assets/images/games/artistception/fish1.png
-    image_path: /assets/images/games/artistception/fish1.png
-    alt: "The fish in the second level"
-    title: "The fish in the second level"
-  - url: /assets/images/games/artistception/fish2.png
-    image_path: /assets/images/games/artistception/fish2.png
-    alt: "placeholder image 2"
-    title: "Fish searching for the moon"
-  - url: /assets/images/games/artistception/fishBoss.png
-    image_path: /assets/images/games/artistception/fishBoss.png
-    alt: "The final boss"
-    title: "The final boss of the game"
+  - url: /assets/images/applications/botWorking1.png
+    image_path: /assets/images/applications/botWorking1.png
+    alt: "The bot in action"
+    title: "The bot in actionn"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
 
 ## {{page.title}}
 
-     {{page.description}}
+    {{page.description}}
 
 </div>
 
@@ -65,10 +47,13 @@ gallery:
 
 ## Description
 
-FigurasBot is a Discord bot developed to solve a specific need - fetching tweets from an anime figures Twitter account and sending them to designated channels on a Discord server. This was motivated by recent issues with Twitter bots on Discord. As a moderator of an anime Discord community, I wanted a free alternative to keep the community updated with the latest tweets.
+RssDiscordBot is an open-source Discord bot designed to fetch tweets from a specified Twitter account's RSS feed  and send them to designated channels on a Discord server. This bot provides a reliable solution for keeping your Discord community updated with the latest tweets from a Twitter account, without the need for direct Twitter integration.
 
-The bot is built using Python and leverages the discord.py library to interact with the Discord API. It fetches tweet data from Twitter using RSS feeds, allowing it to bypass the need for the Twitter API. The bot is designed to be easily configurable, with the ability to specify the RSS feed URL, target Discord channels, and the interval at which to check for new tweets.
+By making the code available to the public, you can now run your own instance of RssDiscordBot and target any Twitter account you wish, ensuring a seamless integration with your Discord server.
 
+## Motivation
+
+As a moderator of an Discord anme community, I wanted a free alternative to keep the community updated with the latest tweets.
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -79,6 +64,16 @@ The bot is built using Python and leverages the discord.py library to interact w
 {% include team.html %}
 </div>
 
+## Key Features
+
+- Fetches tweets from a specified Twitter account using RSS feeds from multiple Nitter instances (Twitter front-ends focused on privacy)
+- Posts new tweets to configured Discord channels
+- Allows dynamic management of target Discord channels using bot commands
+- Stores sent tweet links in Firebase Realtime Database for data persistence
+- Provides commands to start, pause, restart, or force sending tweets
+- Retrieves specific or all recent tweets using bot commands
+- Customizable interval for checking for new tweets
+
 ## Technical Highlights
 
 - Utilizes the discord.py library for seamless integration with the Discord API
@@ -88,15 +83,6 @@ The bot is built using Python and leverages the discord.py library to interact w
 - Supports dynamic addition and removal of target Discord channels using bot commands
 - Hosted on Render for reliable and continuous operation
 
-## Features
-
-- Fetches tweets from a specified Twitter RSS feed at regular intervals
-- Sends the fetched tweets to designated channels on a Discord server
-- Allows dynamic management of target Discord channels using bot commands
-- Stores bot configuration and sent tweet links in Firebase for data persistence
-- Provides commands to start, pause, and retrieve RSS feed entries
-- Hosted on Render for 24/7 availability
-
 </div>
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -105,8 +91,8 @@ The bot is built using Python and leverages the discord.py library to interact w
 
 The project is structured into multiple Python files for modularity and maintainability:
 
-- `bot.py`: Contains the main `FigurasBot` class that handles the bot functionality and commands
-- `rss_feed.py`: Implements the `RSSFeed` class responsible for fetching and parsing the Twitter RSS feed
+- `bot.py`: Contains the main `RssDiscordBot` class that handles the bot functionality and commands
+- `rss_feed.py`: Implements the `RSSFeed` class responsible for fetching and parsing the Twitter RSS feed from Nitter instances
 - `firebase_service.py`: Provides the `FirebaseService` class for interacting with the Firebase Realtime Database
 - `main.py`: The entry point of the application that initializes the bot and starts the event loop
 - `keep_alive.py`: A utility script to keep the bot running continuously on the hosting platform
@@ -115,6 +101,11 @@ The project is structured into multiple Python files for modularity and maintain
 
 FigurasBot is hosted on Render, a cloud platform for running web services and applications. Render provides a reliable and scalable environment for hosting the bot, ensuring its continuous operation and availability.
 
+## The bot working
+
+ {% include carousel.html gallery=page.gallery %}
+ {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
+
 ## Future Enhancements
 
 - Implement a user-friendly web interface for managing bot settings and target channels
@@ -122,5 +113,11 @@ FigurasBot is hosted on Render, a cloud platform for running web services and ap
 - Enhance error handling and logging for better monitoring and debugging
 - Explore integration with other social media platforms beyond Twitter
 
+## Limitations and Known Issues
+
+- The bot relies on the availability and reliability of Nitter instances, which may vary.
+- The bot does not handle rate limiting or other potential issues that may arise from frequent requests to Nitter instances (there are multiple instances by default to mitigate this issue) and there  are security measures to stop using rate limited instances.
+- The bot does not support direct Twitter integration and relies solely on RSS feeds provided by Nitter instances.
+
 </div>
- 
+{% include related_posts.html property="project_id" value=page.project_id %}
