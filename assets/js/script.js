@@ -7,11 +7,11 @@
 
   // navigation fixed top
   win.on('scroll', function () {
-    if ($(window).scrollTop() > 70) {
-      $('.main-nav').addClass('nav-top');
-    } else {
-      $('.main-nav').removeClass('nav-top');
-    }
+  ////  if ($(window).scrollTop() > 70) {
+    $('.main-nav').addClass('nav-top');
+    //} else {
+     //   $('.main-nav').removeClass('nav-top');
+   // }
   });
 
 
