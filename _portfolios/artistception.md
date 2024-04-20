@@ -101,8 +101,8 @@ Currently there are 2 fully functional levels
 
 ## Mechanics
 
-The main mechanics are:
-
+The main mechanics are:   
+ 
 * 2 different graphic styles
 * Educational dialogues
 * 1 painting → 1 level

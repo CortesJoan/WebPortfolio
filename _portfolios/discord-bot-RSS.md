@@ -60,9 +60,7 @@ As a moderator of an Discord anime community, I wanted a free alternative to kee
 
 ## Developer
 
-<div class="col-lg-8 text-center" markdown=1>
-{% include team.html %}
-</div>
+ {% include team.html %}
 
 ## Key Features
 

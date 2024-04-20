@@ -1,4 +1,4 @@
-#baseurl: "/WebPortfolio2" # the subpath of your site, e.g. /blog
+baseurl: "/WebPortfolio" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "Joan Cortés portfolio"
 email: "cortesjoancontact@gmail.com"
