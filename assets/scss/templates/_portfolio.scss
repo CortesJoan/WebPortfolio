@@ -99,8 +99,25 @@
 // 
 .portfolio-single {
   padding: 180px 0px 100px;
+
+
 }
 
+.portfolio-single .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 200px); /* Adjust the height as needed */
+}
+
+.portfolio-single .content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+ 
 .post-single-share {
   background: url("../images/bg/bg-1.jpg")no-repeat;
   background-size: cover;
