@@ -33,7 +33,11 @@ layout: default_2
 										<div class="list-inline-item">
 											<h5>Tags:</h5>
 										</div>
-										{{page | tags | capitalize | replace: " "," "}}
+										{% assign sorted_tags = page.tags | sort %}
+										{% for tag in sorted_tags %}
+										{% unless forloop.first %}, {% endunless %}
+										<a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+										{% endfor %}
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -50,5 +54,5 @@ layout: default_2
 			</div>
 
 		</div>
-	</div> 
+	</div>
 </section>
