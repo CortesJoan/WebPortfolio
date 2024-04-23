@@ -108,9 +108,13 @@ The main mechanics are:
 * Morale buffs and debuffs.
 
 </div>
-## Gameplay
+
+
 
 <div class="col-lg-12 text-center" markdown=1>
+
+## Gameplay
+
  <iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
 </div>
 

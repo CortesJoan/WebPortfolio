@@ -22,62 +22,60 @@ layout: default_2
 </section>
 <section class="section related-project">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h3 class="mb-5">Related Projects</h3>
+			<div class="row">
+					<div class="col-lg-12 text-center">
+							<h3 class="mb-5">Related Projects</h3>
+					</div>
 			</div>
-
-		</div>
-		<div class="row">
-			{% if page.showOnlySameCategoryInRelatedProjects == true %}
-			{% assign current_categories = page.categories %}
-			{% for portfolio in site.portfolios %}
-			{% unless portfolio.url == page.url %}
-			{% assign has_matching_category = false %}
-			{% for current_category in current_categories %}
-			{% if portfolio.categories contains current_category %}
-			{% assign has_matching_category = true %}
-			{% break %}
-			{% endif %}
-			{% endfor %}
-			{% if has_matching_category %}
-			<div class="col-lg-4">
-				<div class="portfolio-block text-center border-0">
-					<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
-					<a class="card-img-overlay" href="{{site.baseurl}}{{ portfolio.url }}">
-						<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
-						<p class="card-text text-white text-uppercase text-sm">
-							{% for category in portfolio.categories %}
-							{{ category }}{% unless forloop.last %}, {% endunless %}
-							{% endfor %}
-						</p>
-					</a>
-				</div>
+			<div class="row justify-content-center">
+					{% if page.showOnlySameCategoryInRelatedProjects == true %}
+					{% assign current_categories = page.categories %}
+					{% for portfolio in site.portfolios %}
+					{% unless portfolio.url == page.url %}
+					{% assign has_matching_category = false %}
+					{% for current_category in current_categories %}
+					{% if portfolio.categories contains current_category %}
+					{% assign has_matching_category = true %}
+					{% break %}
+					{% endif %}
+					{% endfor %}
+					{% if has_matching_category %}
+					<div class="col-lg-4">
+							<div class="portfolio-block text-center border-0">
+									<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
+									<a class="card-img-overlay" href="{{site.baseurl}}{{ portfolio.url }}">
+											<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
+											<p class="card-text text-white text-uppercase text-sm">
+													{% for category in portfolio.categories %}
+													{{ category }}{% unless forloop.last %}, {% endunless %}
+													{% endfor %}
+											</p>
+									</a>
+							</div>
+					</div>
+					{% endif %}
+					{% endunless %}
+					{% endfor %}
+					{% else %}
+					{% for portfolio in site.portfolios %}
+					{% unless portfolio.url == page.url %}
+					<div class="col-lg-4">
+							<div class="portfolio-block text-center border-0">
+									<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
+									<a class="card-img-overlay" href="{{site.baseurl}}{{portfolio.url}}">
+											<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
+											<p class="card-text text-white text-uppercase text-sm">
+													{% for category in portfolio.categories %}
+													{{ category }}{% unless forloop.last %}, {% endunless %}
+													{% endfor %}
+											</p>
+									</a>
+							</div>
+					</div>
+					{% endunless %}
+					{% endfor %}
+					{% endif %}
 			</div>
-			{% endif %}
-			{% endunless %}
-			{% endfor %}
-			{% else %}
-			{% for portfolio in site.portfolios %}
-			{% unless portfolio.url == page.url %}
-			<div class="col-lg-4">
-				<div class="portfolio-block text-center border-0">
-					<img src="{{ portfolio.thumbnail | relative_url }}" class="img-fluid" alt="{{ portfolio.title }}">
-					<a class="card-img-overlay" href="{{site.baseurl}}{{portfolio.url}}">
-						<h5 class="card-title text-white mb-0">{{ portfolio.title }}</h5>
-						<p class="card-text text-white text-uppercase text-sm">
-							{% for category in portfolio.categories %}
-							{{ category }}{% unless forloop.last %}, {% endunless %}
-							{% endfor %}
-						</p>
-					</a>
-				</div>
-			</div>
-			{% endunless %}
-			{% endfor %}
-			{% endif %}
-		</div>
 	</div>
 </section>
-
 {% include call_to_action.html %}
