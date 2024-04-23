@@ -24,8 +24,8 @@ download: true
 download_link: "https://github.com/CortesJoan/DiscordRSSBot"
 download_title: "Github Source"
 gallery:
-  - url: /assets/images/applications/botWorking1.png
-    image_path: /assets/images/applications/botWorking1.png
+  - url: /assets/images/applications/bot_working1.png
+    image_path: /assets/images/applications/bot_working1.png
     alt: "The bot in action"
     title: "The bot in actionn"
 ---
