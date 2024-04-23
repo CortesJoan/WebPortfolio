@@ -94,11 +94,9 @@ A simple music player using the Spotify API made by 2 people
 * Search that works with songs, artists, and playlists
 * Login using Spotify account
 
-</div>
 ## My work
 
 Mainly, I did the backend work of the app (the API connection, data management, JSON parsing) and the player features.
-
 
 ## Images
 
@@ -108,7 +106,10 @@ Mainly, I did the backend work of the app (the API connection, data management, 
 ## Demo video
 
 <div class="col-lg-12 text-center" markdown=1>
- <iframe width="640" height="360" src="https://drive.google.com/file/d/1CcLzuNwkFhcgXEirxSiKj_etGGEm17rS/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+ <iframe width="640" height="480" src="https://drive.google.com/file/d/1CcLzuNwkFhcgXEirxSiKj_etGGEm17rS/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
 </div>
 
 <div class="col-lg-12 text-center" markdown=1>

@@ -95,34 +95,41 @@ a:focus {
 	height: auto;
   }
 
-.modal { 
-	// position: fixed;
-	// width: auto;
-	// min-height: auto;
-	// top: 50%;
-	// left: 50%;
-	// margin-left: -150px;
-	// margin-top: -150px;
-	// min-height: 0;
-	// z-index: 9999;
-	// background: #fff;
-	// border: 1px solid $border-color;
-	// border-radius: $border-radius;
-	// box-shadow: $box-shadow;
-
-	// &__title {
-	// 	margin: 0;
-	// 	padding: 0.5em 1em;
-	// }
-
-	// &__supporting-text {
-	// 	padding: 0 1em 0.5em 1em;
-	// }
-
-	// &__actions {
-	// 	padding: 0.5em 1em;
-	// 	border-top: 1px solid $border-color;
-	// }
-}
-
  
+ 
+  
+  /* Styles for carousel images */
+  .carousel-item img {
+	max-height: calc(100vh - 150px);
+	  /* Ensure images don't exceed container width */
+	object-fit: contain; /* Maintain aspect ratio and fit within container */
+  }
+  .modal { 
+	  // position: fixed;
+	  // width: auto;
+	  // min-height: auto;
+	  // top: 50%;
+	  // left: 50%;
+	  // margin-left: -150px;
+	  // margin-top: -150px;
+	  // min-height: 0;
+	  // z-index: 9999;
+	  // background: #fff;
+	  // border: 1px solid $border-color;
+	  // border-radius: $border-radius;
+	  // box-shadow: $box-shadow;
+  
+	  // &__title {
+	  // 	margin: 0;
+	  // 	padding: 0.5em 1em;
+	  // }
+  
+	  // &__supporting-text {
+	  // 	padding: 0 1em 0.5em 1em;
+	  // }
+  
+	  // &__actions {
+	  // 	padding: 0.5em 1em;
+	  // 	border-top: 1px solid $border-color;
+	  // }
+  }
