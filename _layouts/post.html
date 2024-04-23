@@ -36,7 +36,7 @@ layout: default_2
 										{% assign sorted_tags = page.tags | sort %}
 										{% for tag in sorted_tags %}
 										{% unless forloop.first %}, {% endunless %}
-										<a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+										<a href="">{{ tag }}</a>
 										{% endfor %}
 									</div>
 								</div>
