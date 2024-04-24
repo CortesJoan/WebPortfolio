@@ -104,6 +104,10 @@ a:focus {
 	  /* Ensure images don't exceed container width */
 	object-fit: contain; /* Maintain aspect ratio and fit within container */
   }
+  .carousel-control-invert .carousel-control-prev-icon,
+.carousel-control-invert .carousel-control-next-icon {
+  filter: invert(1);
+}
   .modal { 
 	  // position: fixed;
 	  // width: auto;
