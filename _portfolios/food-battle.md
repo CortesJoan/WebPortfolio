@@ -2,7 +2,7 @@
 project_id: "FoodBattle"
 layout: project
 title: "Food battle"
-categories: ["Video game Projects"]
+categories: ["Personal Video game Projects"]
 showOnlySameCategoryInRelatedProjects: true
 thumbnail: "/assets/images/games/food-battles/nuggetWarriorIcon.png"
 description: "Online multiplayer RTS  made with Unity and Mirror"

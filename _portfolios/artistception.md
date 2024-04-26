@@ -2,7 +2,7 @@
 project_id: "Artistception"
 layout: project
 title: "Artistception"
-categories: ["Video game Projects"]
+categories: ["Personal Video game Projects"]
 showOnlySameCategoryInRelatedProjects: true
 description: "2D platformer created with Unity where the art takes an important part"
 thumbnail: assets/images/games/artistception/menu1024.png
