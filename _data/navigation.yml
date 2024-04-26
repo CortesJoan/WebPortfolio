@@ -9,12 +9,9 @@ main:
 ########## footer menu ###############
 footer:
   - name: Home
-    url: /home.html
+    url: /
   - name: Contact
-    url: /contact.html
-#  - name: Devlogs & Tutorials 
-#    url: /blog.html
-
+    url: /contact.html 
 ############## Bottom menu ###############
 bottom:
   - name: Terms of Service

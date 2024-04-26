@@ -3,15 +3,15 @@ title: "Food Battle- First release"
 comments: true
 excerpt: "Online multiplayer RTS(max 4 players)  made with Unity"
 lang: es
-post_image: assets/images/foodBattles1b.png
+post_image: assets/images/games/food-battles/square_post.png
 layout: post
 project_id: "FoodBattle"
 author: Joan Cortés
 
 header:
-  image: assets/images/foodBattles1.png
+  image: assets/images/games/food-battles/square_post.png
   caption: "A couple of units of the game includes a Barbaserker, 2 Archer and Chips and a few Nugget Warriors"
-  teaser: assets/images/foodBattles1.png
+  teaser: assets/images/games/food-battles/square_post.png
 categories:
   - Unity3d
   - Videogame project

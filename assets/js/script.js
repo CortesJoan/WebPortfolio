@@ -4,11 +4,11 @@
   // global variables
 
   var win = $(window);
-
+  $('.main-nav').addClass('nav-top');
   // navigation fixed top
   win.on('scroll', function () {
   ////  if ($(window).scrollTop() > 70) {
-    $('.main-nav').addClass('nav-top');
+  
     //} else {
      //   $('.main-nav').removeClass('nav-top');
    // }

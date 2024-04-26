@@ -12,7 +12,7 @@
 			<div class="col-lg-4 col-12">
 				<div class="text-center text-lg-right">
 					{% for menu in site.data.navigation.bottom %}
-					<a href="{{menu.link | relative_url }}">{{menu.name}} {% unless forloop.last %} <span class="mx-2">|</span>{% endunless %}</a>
+					<a href="{{menu.url | relative_url }}">{{menu.name}} {% unless forloop.last %} <span class="mx-2">|</span>{% endunless %}</a>
 					{% endfor %}
 				</div>
 			</div>
