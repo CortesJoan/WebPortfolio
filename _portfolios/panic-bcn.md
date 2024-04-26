@@ -29,6 +29,12 @@ gallery:
     image_path: /assets/images/games/panic-bcn/bcn_image_4.jpg
     alt: "One of the bosses"
     title: "One of the bosses"
+team:
+  enable : true
+  item:
+  - name : "Team garden"
+    designation : "Video game Studio"
+    image : "/assets/images/teams/team_garden.jpg"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -49,6 +55,10 @@ gallery:
 ## Description
 
 An unreleased remake of an old arcade 2D platformer game. I am only allowed to tell in more detail the features that were already present in the original game more than the things that would be added new to this remake
+
+## Developer
+
+{% include team.html %}
 
 ## Features
 

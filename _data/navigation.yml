@@ -15,6 +15,6 @@ footer:
 ############## Bottom menu ###############
 bottom:
   - name: Terms of Service
-    link: "/terms-of-service.html"
+    url: "/terms-of-service.html"
   - name: Privacy Policy
-    link: "/privacy-policy.html"
+    url: "/privacy-policy.html"

@@ -4,13 +4,18 @@ layout: project
 title: "Unreleased Octopus game"
 categories: ["Collaboration project"]
 description: An Unreleased 3d platformer-puzzle about octopus.
-thumbnail: assets/images/games/keru-keru/keru_keru_old_logo.png
+thumbnail: assets/images/games/keru-keru/keru_keru_old_logov2.png
 tags:
   - Unity 3d
   - Videogame projects
   - Collaboration project
 download: false
- 
+team:
+  enable : true
+  item:
+  - name : "Team garden"
+    designation : "Video game Studio"
+    image : "/assets/images/teams/team_garden.jpg"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -31,6 +36,10 @@ download: false
 ## Description
 
 An unreleased platformer-puzzle game about an octopus. I can not give too many more details about the game itself or provide captures at the moment. I will update this page when I get the permission to do so.
+
+## Developer
+
+{% include team.html %}
 
 ## My work here
 
