@@ -36,4 +36,5 @@ Joan Cortés reserves the right to review and change these terms of service at a
 
 ## Contact Information
 
-If you have any questions about these terms of service, please contact Joan Cortés at cortesjoancontact@gmail.com or (+34) 691392276.
+If you have any questions about these terms of service, please contact Joan Cortés at [cortesjoancontact@gmail.com](mailto:cortesjoancontact@gmail.com?subject=Terms of service) or [(+34) 691392276)](phonteto:+34691392276).
+

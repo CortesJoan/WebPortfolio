@@ -29,6 +29,5 @@ Joan Cortés reserves the right to update or change this privacy policy at any t
 
 ### Contact Information
 
-If you have any questions about this privacy policy, please contact Joan Cortés at cortesjoancontact@gmail.com or (+34) 691392276.
-
+If you have any questions about this privacy policy, please contact Joan Cortés at [cortesjoancontact@gmail.com](mailto:cortesjoancontact@gmail.com?subject=Privacy policy) or [(+34) 691392276)](phonteto:+34691392276).
 By using this website, you signify your acceptance of this policy. If you do not agree to this policy, please do not use this website. Your continued use of the website following the posting of changes to this policy will be deemed your acceptance of those changes.
