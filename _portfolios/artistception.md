@@ -16,7 +16,7 @@ team:
   enable : true
   item:
   - name : "Joan Cortés"
-    designation : "Gameplay Programmer"
+    designation : "Main Gameplay Programmer"
     image : "/assets/images/teams/logo300.png"
     
   - name : "Joan Lecha Guix"

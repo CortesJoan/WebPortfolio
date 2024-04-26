@@ -23,7 +23,7 @@ team:
   enable : true
   item:
   - name : "Joan Cortés"
-    designation : "Lead Programmer"
+    designation : "Main Programmer"
     image : "/assets/images/teams/logo300.png"
     
   - name : "Eric Bujaldon Marco"
@@ -31,7 +31,7 @@ team:
     image : "/assets/images/teams/eric.png"
     
   - name : "Sergi Granell "
-    designation : "Programmer and Lead Game Designer"
+    designation : "Programmer, Main Game Designer"
     image : "/assets/images/teams/sergi2b.jpg"
 gallery:
   - url: /assets/images/games/food-battles/previewMcBurger.png
