@@ -25,7 +25,7 @@ team:
    image : "/assets/images/teams/logo300.png"      
  - name : "Sergi Granell "    
    designation : "Frontend Developer"    
-   image : "/assets/images/teams/sergi.png"
+   image : "/assets/images/teams/sergi2b.jpg"
 gallery:  
  - url: /assets/images/applications/launchScreen.png    
    image_path: /assets/images/applications/launchScreen.png    

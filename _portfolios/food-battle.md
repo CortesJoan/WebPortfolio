@@ -32,7 +32,7 @@ team:
     
   - name : "Sergi Granell "
     designation : "Programmer and Lead Game Designer"
-    image : "/assets/images/teams/sergi.png"
+    image : "/assets/images/teams/sergi2b.jpg"
 gallery:
   - url: /assets/images/games/food-battles/previewMcBurger.png
     image_path: /assets/images/games/food-battles/previewMcBurger.png
