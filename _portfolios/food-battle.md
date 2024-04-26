@@ -30,8 +30,8 @@ team:
     designation : "3D Artist"
     image : "/assets/images/teams/eric.png"
     
-  - name : "Sergi Granell "
-    designation : "Programmer, Main Game Designer"
+  - name : "Sergi"
+    designation : "Game Designer and Programmer"
     image : "/assets/images/teams/sergi2b.jpg"
 gallery:
   - url: /assets/images/games/food-battles/previewMcBurger.png
