@@ -99,7 +99,7 @@ gallery:
 
 ## Mechanics
 
-The main mechanics are:
+ &ensp; &ensp;  The main mechanics are:
 
 * Construction.
 * Resource collection.
