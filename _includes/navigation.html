@@ -30,12 +30,13 @@
    </li>
 </ul>
 <script>
-    function downloadCV() {
-        var link = document.createElement('a');
-        link.href = '/assets/files/public/cv.pdf';  // Update path if needed
-        link.download = 'CVJoanCortesEnWithPortfolio.pdf'; 
-        document.body.appendChild(link); 
-        link.click();
-        document.body.removeChild(link); 
-    }
+  function downloadCV() {
+      var link = document.createElement('a');
+ 
+      link.href = 'data:application/pdf;base64,' + encodeURIComponent("{{ '/download/cv.pdf' | file_base64 }}");   
+      link.download = 'CVJoanCortesEnWithPortfolio.pdf'; 
+      document.body.appendChild(link); 
+      link.click();
+      document.body.removeChild(link); 
+  }
 </script>
