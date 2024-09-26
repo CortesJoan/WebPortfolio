@@ -25,4 +25,17 @@
     {% endif %}
   </li>
   {% endfor %}
+   <li class="nav-item">
+     <a class="nav-link" href="#" onclick="downloadCV()">Download CV</a> 
+   </li>
 </ul>
+<script>
+    function downloadCV() {
+        var link = document.createElement('a');
+        link.href = '/assets/files/public/cv.pdf';  // Update path if needed
+        link.download = 'CVJoanCortesEnWithPortfolio.pdf'; 
+        document.body.appendChild(link); 
+        link.click();
+        document.body.removeChild(link); 
+    }
+</script>
