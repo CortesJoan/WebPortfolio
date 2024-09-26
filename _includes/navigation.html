@@ -31,12 +31,13 @@
 </ul>
 <script>
   function downloadCV() {
-      var link = document.createElement('a');
- 
-      link.href = 'data:application/pdf;base64,' + encodeURIComponent("{{ '/download/cv.pdf' | file_base64 }}");   
-      link.download = 'CVJoanCortesEnWithPortfolio.pdf'; 
-      document.body.appendChild(link); 
+      const link = document.createElement('a');
+      link.href = 'download/cv.pdf'; // Replace with the actual path to your CV PDF
+      link.download = 'CortésJoanCV.pdf'; // Suggested filename for the download
+      document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link); 
+      document.body.removeChild(link);
   }
 </script>
+</body>
+</html>
