@@ -125,7 +125,7 @@ At its heart, Fast & Fractured is all about dynamic, physics-driven vehicular co
 
 ## Gameplay
 
-<iframe src="https://drive.google.com/file/d/FILE_ID/preview" width="640" height="360" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1Ix929TsCArMUuBlSz4XNdIzfBCxACh4H/preview" width="640" height="360" allow="autoplay"></iframe>
 </div>
 
 <div class="col-lg-12 text-center" markdown=1>
