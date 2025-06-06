@@ -3,9 +3,10 @@
 }
 .team-overlay-content {
 	position: absolute;
-	width: 80%;
+	width: 100%;
 	left: 0px;
-	bottom: 40px;
+	bottom: 20px;
+	box-sizing: border-box;
 	h5{
 		transform: translateX(-40px);
 		opacity: 0;
@@ -23,6 +24,8 @@
 		transition-delay: .0s;
 		position: relative;
 		z-index: 1;
+		white-space: normal;
+		overflow-wrap: break-word;
 	}
 
 	&::before {
