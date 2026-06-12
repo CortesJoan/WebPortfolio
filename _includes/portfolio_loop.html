@@ -1,4 +1,17 @@
+{% assign professional = site.portfolios | where_exp: "item", "item.categories contains 'Professional Projects'" %}
+{% assign personal = site.portfolios | where_exp: "item", "item.categories contains 'Personal Video game Projects'" %}
+{% assign application = site.portfolios | where_exp: "item", "item.categories contains 'Application Projects'" %}
+
+{% assign all_listed = professional | concat: personal | concat: application %}
+{% assign others = "" | split: "," %}
 {% for portfolio in site.portfolios %}
+  {% unless all_listed contains portfolio %}
+    {% assign others = others | push: portfolio %}
+  {% endunless %}
+{% endfor %}
+{% assign sorted_portfolios = all_listed | concat: others %}
+
+{% for portfolio in sorted_portfolios %}
 <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for category in portfolio.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
   <div class="position-relative inner-box">
     <div class="image position-relative ">
