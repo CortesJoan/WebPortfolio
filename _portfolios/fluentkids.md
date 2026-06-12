@@ -4,7 +4,7 @@ layout: project
 title: "Fluentkids"
 categories: ["Professional Projects"]
 description: "An interactive, gamified English learning platform for children."
-thumbnail: assets/images/portfolio/fluentkids_thumb.png
+thumbnail: assets/images/games/fluentkids/icon.png
 tags:
   - Unity 3d
   - C#
@@ -24,6 +24,10 @@ download: true
 download_link: "https://fluentkids.com/es"
 download_title: "Visit Fluentkids Website"
 gallery:
+  - url: /assets/images/games/fluentkids/icon.png
+    image_path: /assets/images/games/fluentkids/icon.png
+    alt: "Fluentkids App Icon"
+    title: "Official Fluentkids App Icon"
   - url: /assets/images/games/fluentkids/IMG_0659.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0659.jpeg
     alt: "Interactive activity screenshot"
