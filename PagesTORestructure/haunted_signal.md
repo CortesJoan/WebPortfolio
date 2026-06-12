@@ -42,7 +42,7 @@ team:
 <ul>
 {% for post in site.posts %}
   {% if post.categories contains "Unity3d" or post.categories contains "Unity projects" %}
-    <li><a href="{{ post.url}}">{{ post.title   post.header.image}}</a>
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
 	</li>
 	
   {% endif %}
