@@ -2,7 +2,7 @@
 project_id: "PanicBCN" 
 layout: project
 title: "PanicBCN Remake"
-categories: ["Collaboration project"]
+categories: ["Professional Project"]
 description: A remake of an old arcade 2D platformer game.
 thumbnail: assets/images/games/panic-bcn/panic_bcn_old_logo_resized.jpg
 team:
@@ -14,7 +14,7 @@ team:
 tags:
   - Unity 3d
   - Videogame projects
-  - Collaboration project
+  - Professional Project
 download: false
 gallery:
   - url: /assets/images/games/panic-bcn/bcn_image_1.jpg

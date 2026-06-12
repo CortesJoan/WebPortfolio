@@ -2,7 +2,7 @@
 project_id: "GardenWorld" 
 layout: project
 title: "GardenWorld"
-categories: ["Collaboration project"]
+categories: ["Professional Project"]
 description: An unreleased AA 3D platformer .
 thumbnail: assets/images/games/garden-world/TitleGW_Outlined2048.png
 team:
@@ -14,7 +14,7 @@ team:
 tags:
   - Unity 3d
   - Videogame projects
-  - Collaboration project
+  - Professional Project
   - AA
 download: false
 gallery:
