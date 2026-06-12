@@ -25,10 +25,17 @@ description: "A showcase of my game development projects, tools, and libraries b
 	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
 	          </label>
 	          {% assign categories = site.portfolios | map: 'categories' | join: ',' | split: ',' | uniq %}
-	          {% for category in categories %}
+	          {% if categories contains "Professional Projects" %}
 	          <label class="btn border-0">
-	            <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+	            <input type="radio" name="shuffle-filter" value="professional-projects" />Professional Projects
 	          </label>
+	          {% endif %}
+	          {% for category in categories %}
+	            {% if category != "Professional Projects" %}
+	            <label class="btn border-0">
+	              <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+	            </label>
+	            {% endif %}
 	          {% endfor %}
 	        </div>
       </div>

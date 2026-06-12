@@ -2,7 +2,7 @@
 project_id: "KeruKeru" 
 layout: project
 title: "Unreleased Octopus game"
-categories: ["Professional Project"]
+categories: ["Professional Projects"]
 description: An Unreleased 3d platformer-puzzle about octopus.
 thumbnail: assets/images/games/keru-keru/keru_keru_old_logov2.png
 tags:

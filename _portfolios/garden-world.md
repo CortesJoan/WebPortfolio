@@ -2,7 +2,7 @@
 project_id: "GardenWorld" 
 layout: project
 title: "GardenWorld"
-categories: ["Professional Project"]
+categories: ["Professional Projects"]
 description: An unreleased AA 3D platformer .
 thumbnail: assets/images/games/garden-world/TitleGW_Outlined2048.png
 team:

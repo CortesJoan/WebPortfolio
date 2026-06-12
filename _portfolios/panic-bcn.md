@@ -2,7 +2,7 @@
 project_id: "PanicBCN" 
 layout: project
 title: "PanicBCN Remake"
-categories: ["Professional Project"]
+categories: ["Professional Projects"]
 description: A remake of an old arcade 2D platformer game.
 thumbnail: assets/images/games/panic-bcn/panic_bcn_old_logo_resized.jpg
 team:
