@@ -1,8 +1,8 @@
 ---
 layout: default
 header_image: "/assets/images/bg/about-bg.jpg"
-title: "Portfolio"
-description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis."
+title: "Projects"
+description: "A showcase of my game development projects, tools, and libraries built with Unity and C#."
 ---
 
 {% include page_header.html %}
@@ -14,7 +14,7 @@ description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt l
 				<span class="h5 text-color text-uppercase">
 					my works
 				</span>
-				<h3 class="mb-5 mt-2">A collection of some recently completed projects, covering a wide range of design disciplines</h3>
+				<h3 class="mb-5 mt-2">A showcase of games, tools, and technical projects</h3>
 			</div>
 		</div>
 
@@ -24,18 +24,12 @@ description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt l
 	          <label class="btn border-0 active">
 	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
 	          </label>
+	          {% assign categories = site.portfolios | map: 'categories' | join: ',' | split: ',' | uniq %}
+	          {% for category in categories %}
 	          <label class="btn border-0">
-	            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+	            <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
 	          </label>
-	          <label class="btn border-0">
-	            <input type="radio" name="shuffle-filter" value="branding" />branding
-	          </label>
-	          <label class="btn border-0">
-	            <input type="radio" name="shuffle-filter" value="illustration" />Web Development
-	          </label>
-	           <label class="btn border-0">
-	            <input type="radio" name="shuffle-filter" value="photo" />Photography
-	          </label>
+	          {% endfor %}
 	        </div>
       </div>
     </div>		

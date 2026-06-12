@@ -4,6 +4,10 @@ main:
     url: /
   - name: About
     url: /about-me.html
+  - name: Projects
+    url: /portfolio.html
+  - name: Blog
+    url: /blog.html
   - name: Contact
     url: /contact.html
 ########## footer menu ###############
@@ -12,6 +16,10 @@ footer:
     url: /
   - name: About
     url: /about-me.html
+  - name: Projects
+    url: /portfolio.html
+  - name: Blog
+    url: /blog.html
   - name: Contact
     url: /contact.html
 ############## Bottom menu ###############
