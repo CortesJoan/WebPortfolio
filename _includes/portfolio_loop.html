@@ -3,9 +3,14 @@
 {% assign application = site.portfolios | where_exp: "item", "item.categories contains 'Application Projects'" %}
 
 {% assign all_listed = professional | concat: personal | concat: application %}
+{% assign all_urls = "" | split: "," %}
+{% for p in all_listed %}
+  {% assign all_urls = all_urls | push: p.url %}
+{% endfor %}
+
 {% assign others = "" | split: "," %}
 {% for portfolio in site.portfolios %}
-  {% unless all_listed contains portfolio %}
+  {% unless all_urls contains portfolio.url %}
     {% assign others = others | push: portfolio %}
   {% endunless %}
 {% endfor %}
