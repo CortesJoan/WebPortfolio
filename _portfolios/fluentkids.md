@@ -19,7 +19,7 @@ team:
     image : "/assets/images/teams/logo300.png"
   - name : "Fluent Education SL"
     designation : "EdTech Studio"
-    image : "/assets/images/portfolio/fluentkids_logo.svg"
+    image : "/assets/images/games/fluentkids/icon.png"
 download: true
 download_link: "https://fluentkids.com/es"
 download_title: "Visit Fluentkids Website"
@@ -28,22 +28,27 @@ gallery:
     image_path: /assets/images/games/fluentkids/icon.png
     alt: "Fluentkids App Icon"
     title: "Official Fluentkids App Icon"
+    description: "The official logo and app icon for Fluentkids, representing the brand's identity."
   - url: /assets/images/games/fluentkids/IMG_0659.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0659.jpeg
     alt: "Interactive activity screenshot"
     title: "Vocabulary and letters activities"
+    description: "Gamified activities where kids learn English letters and vocabulary interactively."
   - url: /assets/images/games/fluentkids/IMG_0660.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0660.jpeg
     alt: "Learning mini-games"
     title: "Interactive game-like lessons"
+    description: "Fun mini-games with native audio designed to keep children engaged while learning."
   - url: /assets/images/games/fluentkids/IMG_0661.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0661.jpeg
     alt: "Educational challenges"
     title: "Teacher-approved activities"
+    description: "Curated learning paths approved by educators to improve listening and comprehension."
   - url: /assets/images/games/fluentkids/IMG_0662.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0662.jpeg
     alt: "Pronunciation and listening exercises"
     title: "Speaking and listening practice"
+    description: "Interactive pronunciation activities designed to help kids speak English with confidence."
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -87,6 +92,6 @@ My role at Fluentkids focuses on content development, maintenance, and building 
 ## Screenshots
 
 {% include carousel.html gallery=page.gallery %}
-{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
+{% include modal.html gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
 
 </div>

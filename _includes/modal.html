@@ -20,6 +20,16 @@
             {% for image in include.gallery %}
               <div class="carousel-item {% if forloop.first %} active {% endif %}">
                 <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}">
+                {% if image.title or image.description %}
+                <div class="carousel-caption d-block" style="background: rgba(0, 0, 0, 0.65); padding: 12px 18px; border-radius: 8px; backdrop-filter: blur(6px); bottom: 20px; left: 8%; right: 8%; text-shadow: none; border: 1px solid rgba(255,255,255,0.1);">
+                  {% if image.title %}
+                  <h5 class="text-white mb-1" style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.5px;">{{ image.title }}</h5>
+                  {% endif %}
+                  {% if image.description %}
+                  <p class="text-light mb-0" style="font-family: 'Open Sans', sans-serif; font-size: 13px; opacity: 0.95; line-height: 1.4;">{{ image.description }}</p>
+                  {% endif %}
+                </div>
+                {% endif %}
               </div>
             {% endfor %}
           </div>
