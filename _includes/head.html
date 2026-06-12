@@ -1,17 +1,20 @@
 <head>
   <meta charset="utf-8">
+  {% include seo.html %}
   <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 
   <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
   
   <!-- theme meta -->
   <meta name="theme-name" content="dizer-jekyll" />
     
   {% if site.author %}
-  <meta name="author" content="{{ . }}">
+  <meta name="author" content="{{ site.author }}">
   {% endif %}
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   {% for css in site.data.plugins.css %}
   <link rel="stylesheet" href="{{ css | relative_url }}">
@@ -21,7 +24,7 @@
   <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
-  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
   
 </head>

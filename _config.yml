@@ -1,5 +1,5 @@
 baseurl: "/WebPortfolio" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+url: "https://cortesjoan.github.io" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "Joan Cortés portfolio"
 email: "cortesjoancontact@gmail.com"
 phone: "(+34) 691392276"
@@ -13,7 +13,7 @@ logo_icon: "/assets/images/logo64.png"
 contact_form_action: "https://formspree.io/f/xgekoqro" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 footer_content: "You can reach me by the  contact page or in the next sites:"
-copyright: "joan cortés &copy; 2024 All Right Reserved"
+copyright: "Joan Cortés &copy; 2024-2026 All Rights Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -59,7 +59,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination page
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: "posts"
