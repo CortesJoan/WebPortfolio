@@ -9,16 +9,37 @@ tags:
   - Unity 3d
   - C#
   - Fullstack Development
+  - Tools Engineering
   - Professional Projects
 team:
   enable : true
   item:
-  - name : "Fluentkids Team"
-    designation : "EdTech Company"
+  - name : "Joan Cortés"
+    designation : "Game & Tools Developer"
     image : "/assets/images/teams/logo300.png"
+  - name : "Fluent Education SL"
+    designation : "EdTech Studio"
+    image : "/assets/images/portfolio/fluentkids_logo.svg"
 download: true
 download_link: "https://fluentkids.com/es"
 download_title: "Visit Fluentkids Website"
+gallery:
+  - url: /assets/images/games/fluentkids/IMG_0659.jpeg
+    image_path: /assets/images/games/fluentkids/IMG_0659.jpeg
+    alt: "Interactive activity screenshot"
+    title: "Vocabulary and letters activities"
+  - url: /assets/images/games/fluentkids/IMG_0660.jpeg
+    image_path: /assets/images/games/fluentkids/IMG_0660.jpeg
+    alt: "Learning mini-games"
+    title: "Interactive game-like lessons"
+  - url: /assets/images/games/fluentkids/IMG_0661.jpeg
+    image_path: /assets/images/games/fluentkids/IMG_0661.jpeg
+    alt: "Educational challenges"
+    title: "Teacher-approved activities"
+  - url: /assets/images/games/fluentkids/IMG_0662.jpeg
+    image_path: /assets/images/games/fluentkids/IMG_0662.jpeg
+    alt: "Pronunciation and listening exercises"
+    title: "Speaking and listening practice"
 ---
 
 <div class="col-lg-8 text-center" markdown=1>
@@ -38,25 +59,30 @@ download_title: "Visit Fluentkids Website"
 
 ## Description
 
-Fluentkids is a fun, playful, and interactive English learning platform designed specifically for children. It levels up children's language skills through a combination of native-speaker lessons, game-like activities, and engaging interactive challenges.
+Fluentkids is a playful and interactive English learning platform designed for children aged 2 to 8. It leverages game-like activities, native-speaker lessons, and a safe, ad-free environment to make learning English natural and engaging.
 
 * **Official Website (Spanish)**: [fluentkids.com/es](https://fluentkids.com/es)
 * **Official Website (English)**: [fluentkids.com/en](https://fluentkids.com/en)
 
 ## My Work Here
 
-As a professional developer on the team, my work focuses on building and expanding the platform:
+My role at Fluentkids focuses on content development, maintenance, and building custom pipeline tools to improve efficiency:
 
-### Interactive Gameplay & Learning Systems
-* Designed and implemented gamified interactive activities and mini-games to help children learn vocabulary and grammar in a natural, playful way.
-* Engineered clean, modular gameplay components in Unity to support fast iteration on new educational content.
+### Content Development & Maintenance
+* Developed new interactive educational content and activities in Unity / C#.
+* Maintained and optimized existing gameplay mechanics and learning modules to ensure smooth performance across devices.
 
-### Fullstack & Integration
-* Contributed to the backend systems, APIs, and client-server integration to ensure smooth progress tracking and user authentication.
-* Applied clean code practices and design patterns to keep the codebase scalable and maintainable.
+### Custom Tooling & Batch Generation
+* Designed and built editor tools in Unity to streamline the development cycle for content creators.
+* Created batch-processing scripts and automated generators to produce activities at scale, reducing manual overhead and speeding up content deployment.
 
 ## Developers
 
 {% include team.html %}
+
+## Screenshots
+
+{% include carousel.html gallery=page.gallery %}
+{% include modal.html modal_id='lightboxModal' img_id='lightbox-img' %}
 
 </div>
