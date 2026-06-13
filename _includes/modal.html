@@ -1,62 +1,62 @@
-<!-- Modal Begins Here -->
-<div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<!-- Lightbox Modal -->
+<div class="modal fade portfolio-lightbox" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="lightboxModalLabel">Image Gallery</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Carousel Begins Here -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            {% for image in include.gallery %}
-              <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
-            {% endfor %}
-          </ol>
+      <button type="button" class="lightbox-close" data-dismiss="modal" aria-label="Close">
+        <span>&times;</span>
+      </button>
+      <button class="lightbox-prev" data-target="#lightboxCarousel" data-slide="prev" aria-label="Previous">
+        <span class="ti-angle-left"></span>
+      </button>
+      <button class="lightbox-next" data-target="#lightboxCarousel" data-slide="next" aria-label="Next">
+        <span class="ti-angle-right"></span>
+      </button>
+      <div class="modal-body p-0">
+        <div id="lightboxCarousel" class="carousel slide" data-ride="false">
           <div class="carousel-inner">
             {% for image in include.gallery %}
-              <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}">
-                {% if image.title or image.description %}
-                <div class="carousel-caption d-block" style="background: rgba(0, 0, 0, 0.65); padding: 12px 18px; border-radius: 8px; backdrop-filter: blur(6px); bottom: 20px; left: 8%; right: 8%; text-shadow: none; border: 1px solid rgba(255,255,255,0.1);">
-                  {% if image.title %}
-                  <h5 class="text-white mb-1" style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.5px;">{{ image.title }}</h5>
-                  {% endif %}
-                  {% if image.description %}
-                  <p class="text-light mb-0" style="font-family: 'Open Sans', sans-serif; font-size: 13px; opacity: 0.95; line-height: 1.4;">{{ image.description }}</p>
-                  {% endif %}
-                </div>
+            <div class="carousel-item {% if forloop.first %} active {% endif %}">
+              <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}">
+              {% if image.title or image.description %}
+              <div class="lightbox-caption">
+                {% if image.title %}
+                <span>{{ image.title }}</span>
                 {% endif %}
               </div>
+              {% endif %}
+            </div>
             {% endfor %}
           </div>
-          {% if include.gallery.size > 1 %}
-          <a class="carousel-control-prev {% if include.invert_icons %}carousel-control-invert{% endif %}" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next {% if include.invert_icons %}carousel-control-invert{% endif %}" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          {% endif %}
         </div>
-        <!-- Carousel Ends Here -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 <script>
   $(document).ready(function() {
-    $('#lightboxModal').on('shown.bs.modal', function () {
-      $('#carouselExampleIndicators').carousel();
+    var $modal = $('#lightboxModal');
+    var $carousel = $('#lightboxCarousel');
+
+    $modal.on('shown.bs.modal', function () {
+      $carousel.carousel(0);
+    });
+
+    $modal.find('.lightbox-prev').on('click', function() {
+      $carousel.carousel('prev');
+    });
+    $modal.find('.lightbox-next').on('click', function() {
+      $carousel.carousel('next');
+    });
+
+    $modal.on('hidden.bs.modal', function () {
+      $carousel.carousel(0);
+    });
+
+    $(document).on('keydown', function(e) {
+      if (!$modal.hasClass('show')) return;
+      if (e.key === 'ArrowLeft') $carousel.carousel('prev');
+      if (e.key === 'ArrowRight') $carousel.carousel('next');
+      if (e.key === 'Escape') $modal.modal('hide');
     });
   });
 </script>
-<!-- Modal Ends Here -->

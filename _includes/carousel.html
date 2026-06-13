@@ -1,18 +1,11 @@
 <!-- Carousel Begins Here -->
 <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    {% for image in include.gallery %}
-    <li data-target="#carousel-indicators" data-slide-to="{{ forloop.index }}"
-      class="{% if forloop.first %}active{% endif %}"></li>
-    {% endfor %}
-  </ol>
-
   {% if include.gallery.size > 1 %}
-  <a class="carousel-control-prev {% if include.invert_icons %}carousel-control-invert{% endif %}" href="#carousel-indicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev portfolio-carousel-control" href="#carousel-indicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next {% if include.invert_icons %}carousel-control-invert{% endif %}" href="#carousel-indicators" role="button" data-slide="next">
+  <a class="carousel-control-next portfolio-carousel-control" href="#carousel-indicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -22,14 +15,14 @@
     <div class="carousel-item {% if forloop.first %} active {% endif %}">
       <div class="position-relative">
         <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" data-toggle="modal"
-          data-target="#lightboxModal" style="cursor: pointer;">
+          data-target="#lightboxModal" style="cursor: pointer; border-radius: 12px;">
         {% if image.title or image.description %}
-        <div class="carousel-caption d-block" style="background: rgba(0, 0, 0, 0.65); padding: 12px 18px; border-radius: 8px; backdrop-filter: blur(6px); bottom: 20px; left: 8%; right: 8%; text-shadow: none; border: 1px solid rgba(255,255,255,0.1);">
+        <div class="carousel-caption d-block portfolio-caption">
           {% if image.title %}
-          <h5 class="text-white mb-1" style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.5px;">{{ image.title }}</h5>
+          <h5 class="text-white mb-1">{{ image.title }}</h5>
           {% endif %}
           {% if image.description %}
-          <p class="text-light mb-0" style="font-family: 'Open Sans', sans-serif; font-size: 13px; opacity: 0.95; line-height: 1.4;">{{ image.description }}</p>
+          <p class="text-light mb-0">{{ image.description }}</p>
           {% endif %}
         </div>
         {% endif %}

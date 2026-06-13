@@ -722,3 +722,183 @@
 .inner-box:hover img {
   transform: scale(1.05);
 }
+
+// Portfolio Carousel
+
+.portfolio-caption {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 12px 18px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  bottom: 20px;
+  left: 8%;
+  right: 8%;
+  text-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 13px;
+    opacity: 0.95;
+  }
+}
+
+.portfolio-carousel-control {
+  width: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 50%;
+  }
+}
+
+// Lightbox
+
+.portfolio-lightbox {
+  .modal-dialog {
+    max-width: 95vw;
+    margin: 1.5rem auto;
+  }
+
+  .modal-content {
+    background: #0a0a0f;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-body {
+    padding: 0;
+    position: relative;
+
+    img {
+      max-height: 85vh;
+      width: 100%;
+      object-fit: contain;
+      background: #0a0a0f;
+    }
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 1055;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+    &:hover {
+      background: rgba(232, 93, 117, 0.8);
+    }
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1055;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(232, 93, 117, 0.7);
+    }
+  }
+
+  .lightbox-prev {
+    left: 16px;
+  }
+
+  .lightbox-next {
+    right: 16px;
+  }
+
+  .lightbox-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 24px 32px 16px;
+    text-align: center;
+
+    span {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  // Hide default Bootstrap carousel indicators
+  .carousel-indicators {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .modal-content {
+      border-radius: 0;
+      min-height: 100vh;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+
+    .lightbox-prev {
+      left: 8px;
+    }
+
+    .lightbox-next {
+      right: 8px;
+    }
+  }
+}
