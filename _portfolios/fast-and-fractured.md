@@ -45,6 +45,30 @@ gallery:
     image_path: /assets/images/games/fast-and-fractured/ultimate-carme.gif
     alt: "Ultimate carme ability"
     title: "Ultimate carme ability"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_01.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_01.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_02.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_02.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_03.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_03.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_04.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_04.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_05.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_05.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/fast-and-fractured/ff_steam_06.jpg
+    image_path: /assets/images/games/fast-and-fractured/ff_steam_06.jpg
+    alt: "Fast & Fractured gameplay screenshot"
+    title: "Gameplay screenshot"
 ---
 
  <!--Title and desription. -->
