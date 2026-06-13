@@ -1,22 +1,24 @@
 <!-- Lightbox Modal -->
 <div class="modal fade portfolio-lightbox" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="lightbox-close" data-dismiss="modal" aria-label="Close">
         <span>&times;</span>
       </button>
-      <button class="lightbox-prev" data-target="#lightboxCarousel" data-slide="prev" aria-label="Previous">
+      <button class="lightbox-prev" aria-label="Previous">
         <span class="ti-angle-left"></span>
       </button>
-      <button class="lightbox-next" data-target="#lightboxCarousel" data-slide="next" aria-label="Next">
+      <button class="lightbox-next" aria-label="Next">
         <span class="ti-angle-right"></span>
       </button>
       <div class="modal-body p-0">
-        <div id="lightboxCarousel" class="carousel slide" data-ride="false">
+        <div id="lightboxCarousel" class="carousel slide" data-interval="false" data-wrap="false">
           <div class="carousel-inner">
             {% for image in include.gallery %}
             <div class="carousel-item {% if forloop.first %} active {% endif %}">
-              <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}">
+              <div class="lightbox-img-wrapper">
+                <img src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" loading="lazy">
+              </div>
               {% if image.title or image.description %}
               <div class="lightbox-caption">
                 {% if image.title %}
@@ -41,10 +43,12 @@
       $carousel.carousel(0);
     });
 
-    $modal.find('.lightbox-prev').on('click', function() {
+    $modal.find('.lightbox-prev').on('click', function(e) {
+      e.preventDefault();
       $carousel.carousel('prev');
     });
-    $modal.find('.lightbox-next').on('click', function() {
+    $modal.find('.lightbox-next').on('click', function(e) {
+      e.preventDefault();
       $carousel.carousel('next');
     });
 
@@ -54,8 +58,8 @@
 
     $(document).on('keydown', function(e) {
       if (!$modal.hasClass('show')) return;
-      if (e.key === 'ArrowLeft') $carousel.carousel('prev');
-      if (e.key === 'ArrowRight') $carousel.carousel('next');
+      if (e.key === 'ArrowLeft') { e.preventDefault(); $carousel.carousel('prev'); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); $carousel.carousel('next'); }
       if (e.key === 'Escape') $modal.modal('hide');
     });
   });

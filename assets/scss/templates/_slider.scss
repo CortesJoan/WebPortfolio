@@ -39,6 +39,8 @@
 
   .banner-content-2 {
     padding: 180px 0px 120px 0px;
+    position: relative;
+    z-index: 2;
     @include desktop-lg {
       padding: 150px 0 100px 0;
     }
