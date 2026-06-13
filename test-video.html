@@ -1,6 +1,10 @@
-<!-- Slider Start -->
-{% assign banner = site.data.homepage_1.hero_area %}
-<section class="banner-2 position-relative" id="hero-section" style="cursor: pointer;">
+---
+layout: default
+title: "Video Test"
+permalink: /test-video.html
+---
+
+<section class="banner-2 position-relative" id="hero-section" style="cursor: pointer; min-height: 100vh;">
 	<video class="hero-video" autoplay muted loop playsinline>
 		<source src="{{ '/assets/files/public/CortesJoanVideoReel.mp4' | relative_url }}" type="video/mp4">
 	</video>
@@ -9,34 +13,26 @@
 		<div class="row align-items-center">
 			<div class="col-lg-7 col-md-8">
 				<div class="banner-content-2">
-					<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
-					<h2 class="text-white mt-2">{{ banner.title | strip_html}}</h2>
-					<p class="my-4">{{ banner.content }}</p>
+					<span class="h5 text-uppercase text-yello">TEST PAGE</span>
+					<h2 class="text-white mt-2">Video Reel Test</h2>
+					<p class="my-4">Click anywhere on the video background to open the modal. The modal should continue from where the background video is.</p>
 					<div class="d-flex align-items-center flex-wrap gap-3">
-						{% if banner.button.enable %}
-						<a href="{{ banner.button.link | relative_url }}" class="btn btn-primary">{{ banner.button.label }}</a>
-						{% endif %}
+						<a href="{{ '/' | relative_url }}" class="btn btn-primary">Home</a>
 						<a href="#" class="btn btn-outline-hero" id="watch-reel-btn">
 							<i class="ti-control-play mr-2"></i> Watch Reel
 						</a>
 					</div>
-					<ul class="list-inline socials-links mt-4">
-						<li class="list-inline-item">
-							<a href="{{banner.linkedin_link}}" class="active"><i class="ti-linkedin"></i></a>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Video Reel Modal -->
 <div class="modal fade video-reel-modal" id="videoReelModal" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Joan Cortés — Dev Reel</h5>
+				<h5 class="modal-title">Dev Reel — Test</h5>
 				<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -50,18 +46,39 @@
 	</div>
 </div>
 
+<section class="section">
+	<div class="container">
+		<h2>Debug Info</h2>
+		<p>Background video: <span id="bg-status">checking...</span></p>
+		<p>Modal video: <span id="modal-status">checking...</span></p>
+		<button class="btn btn-primary mt-3" id="test-play-btn">Test Modal Play</button>
+	</div>
+</section>
+
 <script>
-function initHeroVideo() {
+function initTestVideo() {
 	if (typeof $ === 'undefined' || typeof $.fn.modal === 'undefined') {
-		setTimeout(initHeroVideo, 50);
+		setTimeout(initTestVideo, 50);
 		return;
 	}
 
+	var bgVideo = document.querySelector('.hero-video');
 	var pendingTime = -1;
+
+	function updateStatus() {
+		var bgEl = document.getElementById('bg-status');
+		var modalEl = document.getElementById('modal-status');
+		if (bgEl) bgEl.textContent = bgVideo ? 'readyState: ' + bgVideo.readyState + ' | paused: ' + bgVideo.paused : 'not found';
+		if (modalEl) {
+			var mv = document.getElementById('reelVideo');
+			modalEl.textContent = mv ? 'readyState: ' + mv.readyState + ' | src: ' + (mv.src ? 'set' : 'empty') : 'not found';
+		}
+	}
+	setInterval(updateStatus, 1000);
+	updateStatus();
 
 	document.getElementById('hero-section').addEventListener('click', function(e) {
 		if (e.target.closest('a, button, .btn')) return;
-		var bgVideo = document.querySelector('.hero-video');
 		if (bgVideo) {
 			pendingTime = bgVideo.currentTime;
 			bgVideo.pause();
@@ -71,6 +88,11 @@ function initHeroVideo() {
 
 	document.getElementById('watch-reel-btn').addEventListener('click', function(e) {
 		e.preventDefault();
+		pendingTime = -1;
+		$('#videoReelModal').modal('show');
+	});
+
+	document.getElementById('test-play-btn').addEventListener('click', function() {
 		pendingTime = -1;
 		$('#videoReelModal').modal('show');
 	});
@@ -97,17 +119,8 @@ function initHeroVideo() {
 			v.removeAttribute('src');
 			v.load();
 		}
-		var bgVideo = document.querySelector('.hero-video');
 		if (bgVideo) bgVideo.play();
 	});
-
-	document.addEventListener('keydown', function(e) {
-		if (e.key === 'Escape') {
-			var v = document.getElementById('reelVideo');
-			if (v && !v.paused) { v.pause(); }
-		}
-	});
 }
-initHeroVideo();
+initTestVideo();
 </script>
-<!-- Slider End -->
