@@ -5,14 +5,14 @@
       <button type="button" class="lightbox-close" data-dismiss="modal" aria-label="Close">
         <span>&times;</span>
       </button>
+      <button class="lightbox-prev" data-target="#lightboxCarousel" data-slide="prev" aria-label="Previous">
+        <span class="ti-angle-left"></span>
+      </button>
+      <button class="lightbox-next" data-target="#lightboxCarousel" data-slide="next" aria-label="Next">
+        <span class="ti-angle-right"></span>
+      </button>
       <div class="modal-body p-0">
         <div id="lightboxCarousel" class="carousel slide" data-interval="false" data-wrap="false">
-          <button class="lightbox-prev" id="lb-prev" aria-label="Previous">
-            <span class="ti-angle-left"></span>
-          </button>
-          <button class="lightbox-next" id="lb-next" aria-label="Next">
-            <span class="ti-angle-right"></span>
-          </button>
           <div class="carousel-inner">
             {% for image in include.gallery %}
             <div class="carousel-item {% if forloop.first %} active {% endif %}">
@@ -42,22 +42,11 @@
     var $modal = $('#lightboxModal');
     var $carousel = $('#lightboxCarousel');
 
-    $modal.on('shown.bs.modal', function () {
+    $modal.on('shown.bs.modal', function() {
       $carousel.carousel(0);
     });
 
-    $('#lb-prev').on('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $carousel.carousel('prev');
-    });
-    $('#lb-next').on('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $carousel.carousel('next');
-    });
-
-    $modal.on('hidden.bs.modal', function () {
+    $modal.on('hidden.bs.modal', function() {
       $carousel.carousel(0);
     });
 
