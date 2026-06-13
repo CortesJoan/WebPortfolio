@@ -4,7 +4,7 @@ layout: project
 title: "Keru and the Guardians of the Universe"
 categories: ["Professional Projects"]
 description: A top-down puzzle shooter where you wield elemental arrows to solve puzzles and fight Octodemons.
-thumbnail: assets/images/games/keru-keru/keru_steam_01.jpg
+thumbnail: assets/images/games/keru-keru/kerukeru_logo.jpg
 tags:
   - Unity 3d
   - Videogame projects
