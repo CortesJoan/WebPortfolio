@@ -108,12 +108,18 @@
 }
 
 .about-banner{
-	padding: 251px 0px 175px 0px;
+	padding: 180px 0px 120px 0px;
 
 	.socials-links{
 		li a {
 			color: $black-light;
 			border: 1px solid rgba(0,0,0,0.08);
+			transition: all 0.3s ease;
+			&:hover {
+				background: $primary-color;
+				border-color: $primary-color;
+				color: $white;
+			}
 		}
 		
 	}
