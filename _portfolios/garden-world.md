@@ -38,7 +38,7 @@ team:
     image : "/assets/images/teams/team_garden.jpg"
 ---
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## {{page.title}}
 
@@ -46,12 +46,7 @@ team:
 
 </div>
 
-  <div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Category</p>
-   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-  </div>
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 

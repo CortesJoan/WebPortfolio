@@ -41,25 +41,15 @@ gallery:
 ---
 
  <!--Title and desription. -->
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## {{page.title}}
 
      {{page.description}}
 
 </div>
- <!-- <div class="row">-->
 
-  <div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Category</p>
-   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-  </div>
-  <!--<div class="col-lg-12 text-center">
-  # <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
-  # <p>aqui habia algo?</p> -->
-   <!--</div>-->
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 
@@ -78,7 +68,7 @@ Step into the dusty streets of a dynamic, **sun-baked Spanish village** and prep
 **Quick Matches, Big Laughs:** Perfect for streamers and content creators seeking dynamic, shareable moments.
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Developers
 
@@ -93,7 +83,7 @@ Step into the dusty streets of a dynamic, **sun-baked Spanish village** and prep
 * **Graphic Style**: 3D Cartoony
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Mechanics
 
@@ -121,14 +111,14 @@ At its heart, Fast & Fractured is all about dynamic, physics-driven vehicular co
 
 
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## Gameplay
 
 <iframe width="640" height="360" src="https://drive.google.com/file/d/1BvsJuGa-Xr-MD2b-m_tsVeXeMKjSVmV8/view" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## My work
 * **AI Implementation:** Design from scratch the AI of the game used for the bots.

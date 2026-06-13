@@ -58,7 +58,7 @@ download_link: "https://gitlab.com/EvilHack/artistception/"
 download_title: "GitLab Source"
 ---
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## {{page.title}}
 
@@ -66,12 +66,7 @@ download_title: "GitLab Source"
 
 </div>
 
-  <div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Category</p>
-   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-  </div>
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 
@@ -80,7 +75,7 @@ Currently there are 2 fully functional levels
 
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Developers
 
@@ -97,7 +92,7 @@ Currently there are 2 fully functional levels
 
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Mechanics
 
@@ -116,7 +111,7 @@ The main mechanics are:
 
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## My work
 

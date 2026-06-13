@@ -4,55 +4,48 @@ layout: default_2
 
 <section class="section">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-10">
-				<div class="blog-single mb-5">
-					<div class="row justify-content-center">
-						<div class="col-lg-10">
-							<h3 class="mt-4 mb-2">{{page.title}}</h3>
-							<div class="post-meta text-uppercase mb-3">
-								<span class="text-color"> {{page.author}}</span>
-								<span class="text-color">/ {{page.date | date_to_long_string}}</span>
-							</div>
-							<p>{{page.excerpt | strip_html | truncatewords: "25"}}</p>
-						</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<a href="{{ '/blog.html' | relative_url }}" class="back-link mb-4 d-inline-block">
+					<i class="ti-arrow-left mr-2"></i>Back to Blog
+				</a>
+
+				<article class="blog-single">
+					<h1 class="mb-3">{{ page.title }}</h1>
+
+					<div class="post-meta text-uppercase mb-4">
+						{% if page.author %}
+						<span class="text-color">{{ page.author }}</span>
+						{% endif %}
+						{% if page.date %}
+						<span class="text-color">/ {{ page.date | date_to_long_string }}</span>
+						{% endif %}
 					</div>
+
 					{% if page.post_image %}
-					<div class="blog-img position-relative mt-5 mb-5">
-						<img src="{{page.post_image | relative_url}}" alt="{{post.title}}" class="img-fluid w-100" />
+					<div class="blog-img position-relative mb-5">
+						<img src="{{ page.post_image | relative_url }}" alt="{{ page.title }}" class="img-fluid w-100" />
 					</div>
 					{% endif %}
-					<div class="row justify-content-center">
-						<div class="col-lg-10 mx-auto">
-							<div class="post-content">
-								{{page.content}}
-							</div>
-							<div class="row align-items-center my-5">
-								<div class="col-lg-6">
-									<div class="list-inline post-tags">
-										<div class="list-inline-item">
-											<h5>Tags:</h5>
-										</div>
-										{% assign sorted_tags = page.tags | sort %}
-										{% for tag in sorted_tags %}
-										{% unless forloop.first %}, {% endunless %}
-										<a href="">{{ tag }}</a>
-										{% endfor %}
-									</div>
-								</div>
-								<div class="col-lg-6">
-									{% include social_share_post.html %}
-								</div>
-							</div>
-							<div class="comment-form p-3 p-lg-5">
-								<div id="disqus_thread"></div>
-								{% include disqus_comments.html %}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
+					<div class="post-content">
+						{{ page.content }}
+					</div>
+
+					{% if page.tags.size > 0 %}
+					<div class="post-tags mt-5 mb-4">
+						<h5 class="mb-3">Tags</h5>
+						{% for tag in page.tags %}
+						<a href="{{ tag | slugify | prepend: '/tag/' | relative_url }}">{{ tag }}</a>
+						{% endfor %}
+					</div>
+					{% endif %}
+
+					<div class="my-4">
+						{% include social_share_post.html %}
+					</div>
+				</article>
+			</div>
 		</div>
 	</div>
 </section>

@@ -24,11 +24,6 @@ download: true
 download_link: "https://fluentkids.com/es"
 download_title: "Visit Fluentkids Website"
 gallery:
-  - url: /assets/images/games/fluentkids/icon.png
-    image_path: /assets/images/games/fluentkids/icon.png
-    alt: "Fluentkids App Icon"
-    title: "Official Fluentkids App Icon"
-    description: "The official logo and app icon for Fluentkids, representing the brand's identity."
   - url: /assets/images/games/fluentkids/IMG_0659.jpeg
     image_path: /assets/images/games/fluentkids/IMG_0659.jpeg
     alt: "Interactive activity screenshot"
@@ -51,20 +46,7 @@ gallery:
     description: "Interactive pronunciation activities designed to help kids speak English with confidence."
 ---
 
-<div class="col-lg-8 text-center" markdown=1>
-
-## {{page.title}}
-
-    {{page.description}}
-
-</div>
-
-<div class="col-lg-12 text-center">
-  <p class="text-color font-weight-bold mb-2">Category</p>
-  <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-</div>
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 

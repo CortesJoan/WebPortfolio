@@ -53,25 +53,20 @@ gallery:
    title: "The player"          
 ---
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 ## {{page.title}}
 
 {{page.description}}
 </div>  
 
-<div class="col-lg-12 text-center">
-<p class="text-color font-weight-bold mb-2">Category</p>
-<p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>  
-</div>  
-
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## Developers
 
 {% include team.html %}
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ##  Data sheet
 
@@ -83,7 +78,7 @@ gallery:
 
 ## Features
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 * A simple but functional player with shuffle, loop, etc.
 * Add your favorite songs to a favorite list
@@ -96,7 +91,7 @@ gallery:
 
 ## Technical Highlights
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 * **API Integration:** Successfully integrated the Spotify Web API to access user data, playlists, and enable music streaming functionalities.
 * **Data Management:** Implemented efficient data management strategies using Firebase Realtime Database for storing and retrieving user preferences and playlists.
@@ -107,7 +102,7 @@ gallery:
 
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## My Work
 
@@ -119,7 +114,7 @@ Furthermore, I collaborated with the frontend developer to implement core player
 
 ## Images
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 {% include carousel.html gallery=page.gallery invert_icons=true %}
 {% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' invert_icons=true %}
@@ -128,14 +123,14 @@ Furthermore, I collaborated with the frontend developer to implement core player
 
 ## Demo video
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 <iframe width="1024" height="1024" src="https://drive.google.com/file/d/1CcLzuNwkFhcgXEirxSiKj_etGGEm17rS/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
 
 </div>
 
 ## Future Enhancements
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 * **Offline Playback:** Explore options for enabling offline music playback to enhance user experience.
 * **Social Features:** Integrate social features allowing users to share playlists  outside the application and discover music with friends.

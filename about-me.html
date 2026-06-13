@@ -1,17 +1,20 @@
 ---
 layout: default
-header_image: "/assets/images/bg/about-bg-2.jpg"
+header_image: "/assets/images/bg/banner-2.png"
 title: "Joan Cortés"
 bio: "Unity Game Developer from Barcelona, Spain"
 description: "I'm a Unity game programmer with 3+ years of experience building scalable, maintainable game systems. I specialize in gameplay mechanics, custom editor tools, and pipeline development — always applying clean code principles and design patterns to deliver polished, professional results."
 ---
 <section class="about-banner" style="background-image:url({{page.header_image | relative_url}});">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h4 class="text-color">{{page.title}}</h4>
-				<h3>{{page.bio}}</h3>
-				<p class="text-sm-2 mt-4 mb-5 text-black">{{page.description}}</p>
+		<div class="row align-items-center">
+			<div class="col-lg-5 mb-4 mb-lg-0">
+				<img src="{{ '/assets/images/games/food-battles/nuggetWarriorIcon.png' | relative_url }}" alt="Joan Cortés" class="img-fluid about-portrait">
+			</div>
+			<div class="col-lg-6 offset-lg-1">
+				<span class="h5 text-color text-uppercase">{{page.bio}}</span>
+				<h2 class="mt-2 mb-4">{{page.title}}</h2>
+				<p class="text-sm-2 mb-4">{{page.description}}</p>
 				<ul class="list-inline socials-links">
 					<li class="list-inline-item">
 						<a href="https://www.linkedin.com/in/joan-cort%C3%A9s/" target="_blank" rel="noopener"><i class="ti-linkedin"></i></a>
@@ -32,56 +35,6 @@ description: "I'm a Unity game programmer with 3+ years of experience building s
 
 <!-- Skill Start -->
 <!-- DISABLED: My Skills section removed per request -->
-<!-- <section class="section skill">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-5">
-				<span class="h5 text-color text-uppercase">
-					my skills
-				</span>
-				<h3 class="mb-4 mt-2">Unity Developer & Tools Engineer</h3>
-				<p class="mb-0">With a strong foundation in C# and Unity, I build everything from gameplay systems and custom editor tools to full game projects. I follow SOLID principles and clean architecture patterns, and I'm experienced across multiple languages including Java, Python, and version control with Git and SVN.</p>
-			</div>
-
-			<div class="col-lg-6 offset-lg-1 mb-5">
-				<div class="progress-block skill-2-bg">
-					<h6 class="text-uppercase">Unity / C#</h6>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped" data-percent="95">
-					  	<span class="skill-number">95</span>
-					  </div>
-					</div>
-				</div>
-					
-				<div class="progress-block skill-2-bg">
-					<h6 class="text-uppercase">Game Design</h6>
-					<div class="progress">
-					  	<div class="progress-bar progress-bar-striped" data-percent="85">
-					  		<span class="skill-number">85</span>
-					  	</div>
-					</div>
-				</div>
-					
-				<div class="progress-block skill-2-bg">
-					<h6 class="text-uppercase">Tools Development</h6>
-					<div class="progress">
-					  	<div class="progress-bar progress-bar-striped" data-percent="90">
-					  		<span class="skill-number">90</span>
-					  	</div>
-					</div>
-				</div>
-				<div class="progress-block skill-2-bg">
-					<h6 class="text-uppercase">Clean Architecture</h6>
-					<div class="progress mb-0">
-					  	<div class="progress-bar progress-bar-striped" data-percent="80">
-					  		<span class="skill-number">80</span>
-					  	</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
 <!-- Skill End -->
 
 <!-- Call To action Start -->

@@ -30,7 +30,7 @@ gallery:
     title: "The bot in actionn"
 ---
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## {{page.title}}
 
@@ -38,12 +38,7 @@ gallery:
 
 </div>
 
-  <div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Category</p>
-   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-  </div>
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 
@@ -56,7 +51,7 @@ By making the code available to the public, you can now run your own instance of
 As a moderator of an Discord anime community, I wanted a free alternative to keep the community updated with the latest tweets.
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Developer
 
@@ -83,7 +78,7 @@ As a moderator of an Discord anime community, I wanted a free alternative to kee
 
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Code Structure
 

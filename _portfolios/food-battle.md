@@ -53,25 +53,15 @@ gallery:
 ---
 
  <!--Title and desription. -->
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## {{page.title}}
 
      {{page.description}}
 
 </div>
- <!-- <div class="row">-->
 
-  <div class="col-lg-12 text-center">
-   <p class="text-color font-weight-bold mb-2">Category</p>
-   <p>{% for category in page.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
-  </div>
-  <!--<div class="col-lg-12 text-center">
-  # <p class="text-color font-weight-bold mb-2">Si se quieren poner mas tags en rojo</p>
-  # <p>aqui habia algo?</p> -->
-   <!--</div>-->
-
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Description
 
@@ -79,7 +69,7 @@ gallery:
  In the game you have to command your food faction to become the best food in the table destroying all the other factions.
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Developers
 
@@ -95,7 +85,7 @@ gallery:
 
 </div>
 
-<div class="col-lg-8 text-center" markdown=1>
+<div markdown=1>
 
 ## Mechanics
 
@@ -111,14 +101,14 @@ gallery:
 
 
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## Gameplay
 
  <iframe width="640" height="360" src="https://drive.google.com/file/d/1pIRTbpWstjJ8MoKduW5ypt_UIMwg-sko/preview?usp=sharing" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="col-lg-12 text-center" markdown=1>
+<div markdown=1>
 
 ## My work
 
