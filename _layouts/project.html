@@ -39,9 +39,17 @@ layout: default_2
 		{% if page.download %}
 		<div class="row justify-content-center mt-5">
 			<div class="col-lg-8 text-center">
+				{% if page.downloads %}
+				{% for d in page.downloads %}
+				<a href="{{ d.link }}" class="btn btn-primary btn-download {% unless forloop.first %}mt-3 mt-sm-0 ml-sm-3{% endunless %}" target="_blank" rel="noopener noreferrer">
+					<i class="{{ d.icon | default: 'ti-download' }} mr-2"></i>{{ d.title }}
+				</a>
+				{% endfor %}
+				{% else %}
 				<a href="{{ page.download_link }}" class="btn btn-primary btn-download" target="_blank" rel="noopener noreferrer">
 					<i class="ti-download mr-2"></i>{{ page.download_title }}
 				</a>
+				{% endif %}
 			</div>
 		</div>
 		{% endif %}

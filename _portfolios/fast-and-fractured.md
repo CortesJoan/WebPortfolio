@@ -18,6 +18,13 @@ tags:
 download: true
 download_link: "https://cevr-icales.itch.io/fast-fractured"
 download_title: "Download the demo on itch.io"
+downloads:
+  - link: "https://store.steampowered.com/app/4121100/Fast__Fractured/"
+    title: "Play the demo on Steam"
+    icon: "ti-game"
+  - link: "https://cevr-icales.itch.io/fast-fractured"
+    title: "Download the demo on itch.io"
+    icon: "ti-download"
 ###################### Team ######################
 team:
   enable : true
