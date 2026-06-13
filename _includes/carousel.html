@@ -1,5 +1,10 @@
 <!-- Carousel Begins Here -->
-<div id="carousel-indicators" class="carousel slide" data-ride="carousel">
+<style>
+  #carousel-indicators .carousel-inner { border-radius: 12px; overflow: hidden; }
+  #carousel-indicators .carousel-item { backface-visibility: hidden; }
+  #carousel-indicators .carousel-item img { backface-visibility: hidden; transform: translateZ(0); }
+</style>
+<div id="carousel-indicators" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="hover">
   {% if include.gallery.size > 1 %}
   <a class="carousel-control-prev portfolio-carousel-control" href="#carousel-indicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -14,8 +19,9 @@
     {% for image in include.gallery %}
     <div class="carousel-item {% if forloop.first %} active {% endif %}">
       <div class="position-relative">
-        <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" data-toggle="modal"
-          data-target="#lightboxModal" style="cursor: pointer; border-radius: 12px;">
+        <img class="d-block w-100" src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" decoding="async"
+          data-toggle="modal" data-target="#lightboxModal" data-lightbox-index="{{ forloop.index0 }}"
+          style="cursor: pointer;">
         {% if image.title or image.description %}
         <div class="carousel-caption d-block portfolio-caption">
           {% if image.title %}

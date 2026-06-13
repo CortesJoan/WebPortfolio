@@ -17,7 +17,7 @@
             {% for image in include.gallery %}
             <div class="carousel-item {% if forloop.first %} active {% endif %}">
               <div class="lightbox-img-wrapper">
-                <img src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" loading="lazy">
+                <img src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.alt }}" loading="lazy" decoding="async">
               </div>
               {% if image.title or image.description %}
               <div class="lightbox-caption">
@@ -41,13 +41,18 @@
   $(document).ready(function() {
     var $modal = $('#lightboxModal');
     var $carousel = $('#lightboxCarousel');
+    var $items = $carousel.find('.carousel-item');
+    var targetIndex = 0;
 
-    $modal.on('shown.bs.modal', function() {
-      $carousel.carousel(0);
+    // Remember which thumbnail opened the lightbox
+    $(document).on('click', '[data-target="#lightboxModal"][data-lightbox-index]', function() {
+      targetIndex = parseInt($(this).attr('data-lightbox-index'), 10) || 0;
     });
 
-    $modal.on('hidden.bs.modal', function() {
-      $carousel.carousel(0);
+    // Jump straight to that slide (no animation) before the modal is shown
+    $modal.on('show.bs.modal', function() {
+      $items.removeClass('active');
+      $items.eq(targetIndex).addClass('active');
     });
 
     $(document).on('keydown', function(e) {
