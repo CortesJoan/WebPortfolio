@@ -34,7 +34,7 @@ gallery:
 
 ## {{page.title}}
 
-    {{page.description}}
+{{page.description}}
 
 </div>
 

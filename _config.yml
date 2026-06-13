@@ -1,12 +1,15 @@
 baseurl: "/WebPortfolio" # the subpath of your site, e.g. /blog
 url: "https://cortesjoan.github.io" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "Joan Cortés portfolio"
+name: "Joan Cortés"
 email: "cortesjoancontact@gmail.com"
 phone: "(+34) 691392276"
 address: "Barcelona,Spain"
 author: Joan Cortés
 description: >- # this means to ignore newlines
-  Joan Cortés Web Portfolio
+  Joan Cortés — Unity Game Developer from Barcelona. I build scalable, maintainable
+  game systems, custom editor tools and content pipelines in C#.
+og_image: "/assets/images/bg/banner-2.png"
 logo: "/assets/images/logo64.png"
 logo_icon: "/assets/images/logo64.png"
 # contact form action
@@ -16,7 +19,6 @@ footer_content: "You can reach me by the  contact page or in the next sites:"
 copyright: "Joan Cortés &copy; 2024-2026 All Rights Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
-google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
 
 ############### Call to Action ###############
 cta:
@@ -32,14 +34,29 @@ social:
   - name: linkedin
     icon: "ti-linkedin"
     link: "https://www.linkedin.com/in/joan-cort%C3%A9s/"
+  - name: github
+    icon: "ti-github"
+    link: "https://github.com/CortesJoan"
  
 # Build settings
 permalink: "/:title"
 markdown: kramdown
+
+# Files/folders kept out of the published site
+exclude:
+  - test-video.html
+  - PagesTORestructure
+  - hidden
+  - Start.bat
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-sitemap
 
 # Scss Directory
 sass:

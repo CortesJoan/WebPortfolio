@@ -62,7 +62,7 @@ download_title: "GitLab Source"
 
 ## {{page.title}}
 
-     {{page.description}}
+{{page.description}}
 
 </div>
 

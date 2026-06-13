@@ -10,6 +10,7 @@ hero_area:
     label : "contact me"
     link : "/contact"
   linkedin_link: "https://www.linkedin.com/in/joan-cort%C3%A9s/"
+  github_link: "https://github.com/CortesJoan"
 ########################### Service ##############################
 services:
 - title : "Tools & Pipeline Development"

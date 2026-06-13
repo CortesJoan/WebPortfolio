@@ -1,15 +1,50 @@
 ---
 project_id: "KeruKeru" 
 layout: project
-title: "Unreleased Octopus game"
+title: "Keru and the Guardians of the Universe"
 categories: ["Professional Projects"]
-description: An Unreleased 3d platformer-puzzle about octopus.
-thumbnail: assets/images/games/keru-keru/keru_keru_old_logov2.png
+description: A top-down puzzle shooter where you wield elemental arrows to solve puzzles and fight Octodemons.
+thumbnail: assets/images/games/keru-keru/keru_steam_01.jpg
 tags:
   - Unity 3d
   - Videogame projects
   - Professional Project
-download: false
+download: true
+download_link: "https://store.steampowered.com/app/3497440/Keru_and_the_Guardians_of_the_Universe/"
+download_title: "Play the demo on Steam"
+gallery:
+  - url: /assets/images/games/keru-keru/keru_steam_01.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_01.jpg
+    alt: "Keru and the Guardians of the Universe — key art"
+    title: "Keru and the Guardians of the Universe"
+  - url: /assets/images/games/keru-keru/keru_steam_02.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_02.jpg
+    alt: "Gameplay — solving puzzles with elemental arrows"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_03.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_03.jpg
+    alt: "Gameplay — exploring the universe"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_04.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_04.jpg
+    alt: "Gameplay — fighting Octodemons"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_05.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_05.jpg
+    alt: "Gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_06.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_06.jpg
+    alt: "Gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_07.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_07.jpg
+    alt: "Gameplay screenshot"
+    title: "Gameplay screenshot"
+  - url: /assets/images/games/keru-keru/keru_steam_08.jpg
+    image_path: /assets/images/games/keru-keru/keru_steam_08.jpg
+    alt: "Gameplay screenshot"
+    title: "Gameplay screenshot"
 team:
   enable : true
   item:
@@ -22,7 +57,7 @@ team:
 
 ## {{page.title}}
 
-    {{page.description}}
+{{page.description}}
 
 </div>
 
@@ -30,11 +65,18 @@ team:
 
 ## Description
 
-An unreleased platformer-puzzle game about an octopus. I can not give too many more details about the game itself or provide captures at the moment. I will update this page when I get the permission to do so.
+Keru and the Guardians of the Universe is a top-down puzzle shooter. Playing as Keru, the youngest Guardian of the Universe of Love, you shoot arrows imbued with elemental power to solve puzzles and fight Octodemons and bosses from the Universe of Chaos. Travel the universe and reunite your family!
+
+The game has not released yet, but a **playable demo is available on Steam**.
 
 ## Developer
 
 {% include team.html %}
+
+## Images
+
+{% include carousel.html gallery=page.gallery %}
+{% include modal.html  gallery=page.gallery modal_id='lightboxModal' img_id='lightbox-img' %}
 
 ## My work here
 

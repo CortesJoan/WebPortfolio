@@ -5,3 +5,6 @@ _site
 Gemfile.lock
 .jekyll-cache
 Jekyll_files.txt
+
+# Too large for GitHub (>100MB) - host externally instead
+assets/images/games/keru-keru/BossGameplay.mp4
