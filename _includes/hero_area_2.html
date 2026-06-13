@@ -1,48 +1,12 @@
-<!-- Slider Start -->
-{% assign banner = site.data.homepage_1.hero_area %}
-<section class="banner-2 position-relative" id="hero-section" style="cursor: pointer;">
-	<video class="hero-video" autoplay muted loop playsinline>
-		<source src="{{ '/assets/files/public/CortesJoanVideoReel.mp4' | relative_url }}" type="video/mp4">
-	</video>
-	<div class="hero-overlay"></div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-7 col-md-8">
-				<div class="banner-content-2">
-					<span class="h5 text-uppercase" style="color: #ffd166 !important;">{{banner.subtitle}}</span>
-					<h2 class="mt-2" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{{ banner.title | strip_html}}</h2>
-					<p class="my-4" style="color: #ffffff !important; text-shadow: 0 1px 4px rgba(0,0,0,0.3);">{{ banner.content }}</p>
-					<div class="d-flex align-items-center flex-wrap gap-3">
-						{% if banner.button.enable %}
-						<a href="{{ banner.button.link | relative_url }}" class="btn btn-primary">{{ banner.button.label }}</a>
-						{% endif %}
-						<a href="#" class="btn btn-outline-hero" id="watch-reel-btn">
-							<i class="ti-control-play mr-2"></i> Watch Reel
-						</a>
-					</div>
-					<ul class="list-inline socials-links mt-4">
-						<li class="list-inline-item">
-							<a href="{{banner.linkedin_link}}" class="active"><i class="ti-linkedin"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- Video Reel Modal -->
 <div class="modal fade video-reel-modal" id="videoReelModal" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Joan Cortés — Dev Reel</h5>
-				<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
+			<button type="button" class="reel-close" data-dismiss="modal" aria-label="Close">
+				<span>&times;</span>
+			</button>
 			<div class="modal-body p-0">
-				<video id="reelVideo" controls preload="auto" playsinline>
+				<video id="reelVideo" controls playsinline preload="auto">
 					<source src="{{ '/assets/files/public/CortesJoanVideoReel.mp4' | relative_url }}" type="video/mp4">
 				</video>
 			</div>
@@ -59,19 +23,14 @@ function initHeroVideo() {
 
 	var pendingTime = -1;
 
-	document.getElementById('hero-section').addEventListener('click', function(e) {
-		if (e.target.closest('a, button, .btn')) return;
+	document.getElementById('watch-reel-btn').addEventListener('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
 		var bgVideo = document.querySelector('.hero-video');
 		if (bgVideo) {
 			pendingTime = bgVideo.currentTime;
 			bgVideo.pause();
 		}
-		$('#videoReelModal').modal('show');
-	});
-
-	document.getElementById('watch-reel-btn').addEventListener('click', function(e) {
-		e.preventDefault();
-		pendingTime = -1;
 		$('#videoReelModal').modal('show');
 	});
 
@@ -93,16 +52,28 @@ function initHeroVideo() {
 	$('#videoReelModal').on('hide.bs.modal', function() {
 		var v = document.getElementById('reelVideo');
 		if (v) {
+			var modalTime = v.currentTime;
 			v.pause();
+			v.currentTime = 0;
+
+			var bgVideo = document.querySelector('.hero-video');
+			if (bgVideo) {
+				bgVideo.currentTime = modalTime;
+				bgVideo.play();
+			}
+		}
+	});
+
+	$('#videoReelModal').on('hidden.bs.modal', function() {
+		var v = document.getElementById('reelVideo');
+		if (v) {
 			v.removeAttribute('src');
 			v.load();
 		}
-		var bgVideo = document.querySelector('.hero-video');
-		if (bgVideo) bgVideo.play();
 	});
 
 	document.addEventListener('keydown', function(e) {
-		if (e.key === 'Escape') {
+		if (e.key === 'Escape' && $('#videoReelModal').hasClass('show')) {
 			var v = document.getElementById('reelVideo');
 			if (v && !v.paused) { v.pause(); }
 		}
@@ -110,4 +81,3 @@ function initHeroVideo() {
 }
 initHeroVideo();
 </script>
-<!-- Slider End -->
